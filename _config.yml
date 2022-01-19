@@ -19,9 +19,7 @@ email: mukherjeeabhirup44@gmail.com
   # Write an awesome description for your new site here. You can edit this
   # line in _config.yml. It will appear in your document head meta (for
   # Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "neon"
 search: true
 
 # Build settings
@@ -31,22 +29,9 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
@@ -57,24 +42,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# author:
-#   name   : "First Lastname"
-#   avatar : "/assets/images/bio-photo.jpg"
-#   bio    : "My awesome biography constrained to a sentence or two goes here."
-#   links:
-#     - label: "Website"
-#       icon: "fas fa-fw fa-link"
-#       url: "https://"
-#     - label: "Twitter"
-#       icon: "fab fa-fw fa-twitter-square"
-#       url: "https://twitter.com/"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
-
 footer:
   links:
     # - label: "Twitter"
@@ -82,7 +49,7 @@ footer:
       # url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/abhirup-mhttps://github.com/"
+      url: "https://github.com/abhirup-m"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
