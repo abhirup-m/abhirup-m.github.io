@@ -1,6 +1,6 @@
 ---
 title: "Hi there!"
-excerpt: My name is <strong>Abhirup Mukherjee</strong>.<br>I am a Ph.D. research scholar at the <strong>Indian Institute of Science Education and Research Kolkata</strong>.
+excerpt: <strong>My name is Abhirup Mukherjee.<br> I am a PhD research scholar at IISER Kolkata.</strong>
 layout: splash
 permalink: /
 header:
@@ -8,4 +8,13 @@ header:
   actions:
     - label: "More About Me Here"
       url: /about/
+feature_row:
+  - image_path: assets/images/research2.jpg
+    title: "Check out my research interests"
+  - image_path: assets/images/research2.jpg
+    title: "Check out my research interests"
+  - image_path: assets/images/research2.jpg
+    title: "Check out my research interests"
 ---
+
+{% include feature_row %}
