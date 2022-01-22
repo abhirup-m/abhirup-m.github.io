@@ -9,12 +9,9 @@ header:
     - label: "More About Me Here"
       url: /about/
 feature_row:
-  - image_path: assets/images/research2.jpg
+  - image_path: assets/images/research_.svg
     title: "Check out my research interests"
-  - image_path: assets/images/research2.jpg
-    title: "Check out my research interests"
-  - image_path: assets/images/research2.jpg
-    title: "Check out my research interests"
+    url: /interests/
 ---
 
 {% include feature_row %}
