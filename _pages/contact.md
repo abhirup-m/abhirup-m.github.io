@@ -4,7 +4,7 @@ title: "Contact Me"
 
 ---
 
-- You can always send me [emails <i class="fas fa-envelope-square"></i>](mailto:mukherjeeabhirup444@gmail.com){: target="_blank" style="text-decoration:none"} for any sort of communication, request or recommendation.
+- You can always send me [emails <i class="fas fa-envelope-square"></i>](mailto:mukherjeeabhirup44@gmail.com){: target="_blank" style="text-decoration:none"} for any sort of communication, request or recommendation.
 
 - You can also reach out to me on [Facebook <i class="fab fa-facebook"></i>](https://www.facebook.com/Seary.Blue){: target="_blank" style="text-decoration:none"} or [LinkedIn <i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/abhirup-mukherjee-665588229){: target="_blank" style="text-decoration:none"}. Please keep in mind, though, that I am not very active on those platforms.
 
