@@ -1,6 +1,8 @@
 ---
 permalink: /contact/
 title: "Contact Me"
+header:
+  image: /assets/images/contact_blur.png
 
 ---
 
