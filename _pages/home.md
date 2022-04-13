@@ -9,15 +9,15 @@ header:
     - label: "More About Me Here"
       url: /about/
 feature_row:
-  - image_path: assets/images/research.png
-    title: Research
-    url: /interests/
+  - image_path: assets/images/research.svg
+    title: Research - Work and Interests
+    url: /research/
   - image_path: assets/images/anime.jpg
     title: All About the Anime I Watch
-    url: /interests/
-  - image_path: assets/images/linux.png
+    url: /anime/
+  - image_path: assets/images/rice.png
     title: Linux Ricing
-    url: /interests/
+    url: /ricing/
 
 ---
 
