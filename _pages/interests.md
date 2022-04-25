@@ -1,5 +1,5 @@
 ---
-permalink: /research/
+permalink: /interests/
 title: "Research"
 header:
     image: /assets/images/rsearch_header.svg
