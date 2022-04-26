@@ -13,9 +13,9 @@ feature_row:
     title: Research Interests
     url: /interests/
   - image_path: /assets/images/work.svg
-    title: Work - Complete and Ongoing
+    title: Work - Complete & Ongoing
     url: /work/
-  - image_path: /assets/images/rice.png
+  - image_path: /assets/images/ricing.svg
     title: Other Stuff I Dabble In
     url: /ricing/
 
