@@ -12,4 +12,4 @@ header:
 
 - If you are interested, you can also check out my hobby projects and the numerical parts of my research on [Github <i class="fab fa-github"></i>](https://github.com/abhirup-m){: target="_blank" style="text-decoration:none"}.
 
-- Feel free to check out our work at [Projectyl](https://www.facebook.com/projectyl.in) if you are interested in landing a summer or winter project in physics. Hit me up if you want to be a part of the group.
+- Feel free to check out our work at [Projectyl](https://projectyl.github.io/) if you are interested in landing a summer or winter project in physics. Hit me up if you want to be a part of the group.
