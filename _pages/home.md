@@ -16,8 +16,8 @@ feature_row:
     title: Work - Complete & Ongoing
     url: /work/
   - image_path: /assets/images/ricing.svg
-    title: Other Stuff I Dabble In
-    url: /ricing/
+    title: Other Stuff
+    url: /other/
 
 ---
 
