@@ -1,7 +1,25 @@
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Home"
-    url: /
-  - title: "Contact Me"
+header:
+
+  - titles:
+      # @start locale config
+      en      : &EN       Work
+      # @end locale config
+    url: /work/
+
+  - titles:
+      # @start locale config
+      en      : &EN       Research Interests
+      # @end locale config
+    url: /interests/
+
+  - titles:
+      # @start locale config
+      en      : &EN       About Me
+      # @end locale config
+    url: /about/
+
+  - titles:
+      # @start locale config
+      en      : &EN       Contact Info
+      # @end locale config
     url: /contact/
