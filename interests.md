@@ -22,34 +22,22 @@ I am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iis
 - **Quantum hall** and other topologically active systems
 - Relation between renormalisation group and **optimization** problems
 
-Below is a list of the projects I have been involved in (complete as well as ongoing) to give a more detailed picture of my research interests. 
-
-
 ---
+
+Below is a list of the projects I have been involved in (complete as well as ongoing), hopefully that will provide a more detailed picture of my research interests. 
 
 ### Ongoing Projects
 
-#### [Luttinger volume as a function of a flux-dependent mutual information](/work/#lutt-th)
+- [**Luttinger volume as a function of flux-dependent entanglement**](/work/#lutt-th)
 
-In the presence of a vector potential that pierces a system placed on a torus, the entanglement entropy becomes a function of the flux, and the point here is to relate this entanglement measure to the Luttinger volume (number of \\(k-\\)space points inside the Fermi volume).
+- [**New auxiliary model approach to studying strongly correlated systems**](/work/#aux)
 
-#### [A new auxiliary model approach to studying fermionic systems of strong correlation](/work/#aux)
-
-This is an attempt to create an analytical formalism that leverages the power of a unitary renormalisation group and auxiliary models to study strongly-correlated systems with translation symmetry.
-
-#### [A minimal impurity model for metal-insulator transition](/work/#imp-mit)
-
-This project involves the search for a minimal impurity model that shows a phase transition. 
-
+- [**Minimal impurity model for local MIT of Mott kind**](/work/#imp-mit)
 
 ---
 
 ### Completed Projects
 
-#### [Frustration shapes multi-channel Kondo physics: a star graph perspective](/work/#mckondo)
+- [**Frustration shapes multi-channel Kondo physics: a star graph perspective**](/work/#mckondo)
 
-This is a study of the multichannel Kondo model using the unitary RG and entanglement RG methods to extract the effect of quantum frustration on impurity screening in particular and the low-energy impurity physics in general.
-
-#### [**Unveiling the Kondo cloud: Unitary renormalization-group study of the Kondo model**](/work/#kondo){:link}
-
-Here we solved the single-channel Kondo impurity model using the unitary RG formalism to obtain the low-energy state of the impurity and of the conduction electrons that scatter against the impurity.
+- [**Unveiling the Kondo cloud: Unitary RG study of the Kondo model**](/work/#kondo){:link}
