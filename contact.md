@@ -1,6 +1,6 @@
 ---
 layout: article
-title: I typically respond within a year
+title: Get in touch
 permalink: /contact/
 
 ---

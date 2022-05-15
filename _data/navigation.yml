@@ -8,7 +8,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Research Interests
+      en      : &EN       Interests
       # @end locale config
     url: /interests/
 

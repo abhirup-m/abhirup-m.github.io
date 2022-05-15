@@ -1,6 +1,6 @@
 ---
 layout: article
-title: This is the stuff I am bashing my head on
+title: Research Interests
 permalink: /interests/
 
 ---
@@ -33,8 +33,6 @@ Below is a list of the projects I have been involved in (complete as well as ong
 - [**New auxiliary model approach to studying strongly correlated systems**](/work/#aux)
 
 - [**Minimal impurity model for local MIT of Mott kind**](/work/#imp-mit)
-
----
 
 ### Completed Projects
 

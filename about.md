@@ -1,6 +1,6 @@
 ---
 layout: article
-title: tl;dr - A weeb obsessed with obscure software and studying queer stuff
+title: All about me
 permalink: /about/
 
 ---
@@ -11,7 +11,7 @@ I work in theoretical condensed matter physics, and am a part of the Emergent Ph
 I study various topics in the field of strongly correlated materials.
 When I am not working, I enjoy catching up on the seasonal [anime](https://myanimelist.net/featured/1382/What_is_Anime). Although I am not particularly picky when it comes to the genres of the anime I watch, I do enjoy [slice of life](https://en.wikipedia.org/wiki/Slice_of_life#:~:text=Slice%20of%20life%20anime%20and%20manga%20are%20narratives%20%22without%20fantastical,ties%20with%20the%20characters.%22%20The) shows and thrillers the most. From time to time, I also pick up crime novels. Whenever I get some time, I try out new Linux distributions, and I am quite passionate about [ricing my desktop](https://www.reddit.com/r/unixporn/wiki/themeing/dictionary#wiki_rice).
 I loved watching and playing football until high school.
-I am part of an organisation named [Projectyl](https://projectyl.github.io/) that helps undergraduate and graduate students in finding and applying for short projects and internships in India, with the goal of making it easier for them to transition into their research programs. My contact information is available [here](/contact/). Meanwhile, enjoy these weird mugshots.
+I am part of an organisation named [Projectyl](https://projectyl.github.io/) that helps undergraduate and graduate students in finding and applying for short projects and internships in India, with the goal of making it easier for them to transition into their research programs. My contact information is available [here](/contact/). Meanwhile, enjoy these mugshots.
 
 <img src="/assets/images/self1.jpg" style="display: inline; margin-left: 3em; margin-right: 3em;" width="300"/>
 <img src="/assets/images/self2.jpg" style="display: inline; margin-right: 3em; margin-left: 3em;" width="300"/>
