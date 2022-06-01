@@ -21,12 +21,12 @@ I am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iis
 
 <div markdown="1">
 <img src="/assets/images/xkcd-sand.jpg" style="display: inline; float: right; margin-left: 2em;" width="500"/>
-- **Impurity models** and phase transitions therein
-- Use of **auxiliary models** in studying fermionic emergence
-- **Entanglement**, topology and other properties of Fermi liquids
-- Emergence in **heavy fermion** systems
-- **Quantum hall** and other topologically active systems
+- Emergence in **heavy fermion** systems via lattice impurity models
+- **Quantum hall systems** and other topologically states of matter
+- **Quantum impurity models** and phase transitions within them
+- Using **auxiliary models** for studying emergence in fermionic systems
+- **Entanglement**, topology and other properties of metallic systems
 - Renormalisation group in the context of **optimization** problems
 </div>
 <br>
-To get a more detailed idea of my research interests, it might be helpful to take a look at the [projects](/work/) I am currently involved in, or have worked on in the past.
+To get a more detailed idea of the topics I am interested in, please take a look at my [research work](/work/).
