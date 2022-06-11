@@ -8,9 +8,15 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Interests
+      en      : &EN       Research Interests
       # @end locale config
     url: /interests/
+
+  - titles:
+      # @start locale config
+      en      : &EN       Anime Ratings
+      # @end locale config
+    url: /myanimelist/
 
   - titles:
       # @start locale config
