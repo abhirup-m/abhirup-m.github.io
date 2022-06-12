@@ -21,7 +21,10 @@ links = []
 data = []
 for tag in tqdm(soup.find_all('a', attrs={"class": "animetitle"})):
     links.append("https://myanimelist.net" + tag['href'])
-    data.append([tag.text.strip(), tag.find_next('span').find_next('span').text.strip()])
+    name = tag.text.strip()
+    rating = tag.find_next('span').find_next('span').text.strip()
+    data.append([name, rating])
+
 
 avg_ratings = tqdm(Pool().imap(get_avg, links), total=len(links))
 for (i,datum),r in zip(enumerate(data), avg_ratings):
