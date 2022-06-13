@@ -203,19 +203,32 @@
     }
   }
   table {
-    display: block;
     width: 100%;
-    border-collapse: collapse;
     @include overflow(auto);
     thead, tfoot {
       background-color: $text-background-color;
     }
     th, td {
       padding: map-get($spacers, 2);
-      border: 1px solid $border-color-l;
     }
     th {
       font-weight: map-get($base, font-weight-bold);
     }
   }
+	table.sortable tbody {
+	    counter-reset: sortabletablescope;
+	}
+	table.sortable thead tr::before {
+	    content: "";
+	    display: table-cell;
+	}
+	table.sortable tbody tr.numbered::before {
+	    content: counter(sortabletablescope);
+	    counter-increment: sortabletablescope;
+	    display: table-cell;
+	    padding: map-get($spacers, 2);
+	}
+	table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
 }

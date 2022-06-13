@@ -1,6 +1,6 @@
 ---
 layout: article
-title: All about me
+title: All about me<hr>
 permalink: /about/
 
 ---
