@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Research Interests<hr>
+title: Research Interests
 permalink: /interests/
 
 ---

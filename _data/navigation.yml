@@ -14,9 +14,9 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Anime Ratings
+      en      : &EN       Other Stuff
       # @end locale config
-    url: /myanimelist/
+    url: /other/
 
   - titles:
       # @start locale config

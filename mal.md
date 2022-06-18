@@ -1,15 +1,15 @@
 ---
 layout: article
-title: Anime Ratings<hr>
+title: Anime Ratings
 permalink: /myanimelist/
 
 ---
 
-<div style="float:left;width:420px;margin-bottom:2em;" markdown=1>
+<div style="float:left;width:420px;margin-bottom:4em;" markdown=1>
 These are my personal ratings to the anime I have watched over the years. They are pulled from my [MAL profile](https://myanimelist.net/profile/SearyBlue). All ratings are out of 10.
 
 {% assign meanings = "legendary, outstanding, wonderful, enjoyable, average, watchable, boring, repulsive, unwatchable, blasphemous" | split: ',' %}
-<table style="border:0.2em solid gray;margin-top:3em;">
+<table style="float:left;width:350px;border:0.2em solid gray;margin-top:1em;">
 {% for i in (0..4) %}
 {% assign n1 = i | times:2 %}
 {% assign n2 = n1 | plus:1 %}
@@ -20,8 +20,9 @@ These are my personal ratings to the anime I have watched over the years. They a
 {% endfor %}
 </table>
 </div>
-<div style="float:right;">
-<img src="/assets/images/love-chunibyo.png" width="700px" style="margin-right:0.5em;margin-top:3em;">
+
+<div style="float:left;margin-left:1em;">
+<img src="/assets/images/love-chunibyo.png" width="700px" style="margin:1.5em;">
 </div>
 
 {% assign len = site.data.myanimelist.size %}

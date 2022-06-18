@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Work - Past & Present<hr>
+title: Work - Past & Present
 permalink: /work/
 
 ---
