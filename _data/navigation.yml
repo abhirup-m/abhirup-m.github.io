@@ -20,12 +20,6 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       About Me
-      # @end locale config
-    url: /about/
-
-  - titles:
-      # @start locale config
       en      : &EN       Contact Info
       # @end locale config
     url: /contact/
