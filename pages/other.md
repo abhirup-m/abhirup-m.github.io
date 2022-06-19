@@ -7,4 +7,6 @@ permalink: /other/
 
 These are some other stuff I dabble in.
 
-- [Ratings of anime I have watched](/myanimelist/)
+- [My anime ratings](/myanimelist/)
+
+- [My favourite anime](/fav-ani/)

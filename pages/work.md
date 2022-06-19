@@ -6,7 +6,7 @@ permalink: /work/
 ---
 
 
-## Ongoing Projects
+### Ongoing Projects
 
 ### [Luttinger volume as a function of the flux-resolved mutual information]()
 
@@ -23,7 +23,7 @@ permalink: /work/
 <i>To be added</i>
 </details>
 
-## Completed Projects
+### Completed Projects
 
 ### [Local metal-insulator transition in a generalised Anderson impurity model]()
 
