@@ -8,10 +8,13 @@ permalink: /myanimelist/
 Anime refers to a specific form of media - hand-drawn or computer-generated animated shows that originate from Japan. Anime differ from western animation productions in various aspects - art style, themes, target audience, etc. Anime have a distinct 2D style that has a particular appeal and that sets it apart from computer generated animation. The themes explored in anime are often very serious, ranging from shows like [Neon Genesis Evangelion](https://myanimelist.net/anime/30/Neon_Genesis_Evangelion) and [Serial Experiments Lain](https://myanimelist.net/anime/339/Serial_Experiments_Lain) that focus on the human psyche and depression, to more modern shows like [Death Note](https://myanimelist.net/anime/1535/Death_Note), [Code Geass](https://myanimelist.net/anime/1575/Code_Geass__Hangyaku_no_Lelouch) and [Attack on Titan](https://myanimelist.net/anime/16498/Shingeki_no_Kyojin) that deal with topics like racism, genocide and the subjective nature of morality. Some very popular and mainstream anime include Dragon Ball, Pokémon and Naruto. These are my personal ratings of the anime that I have watched over the years. They are pulled from my [MAL profile](https://myanimelist.net/profile/SearyBlue). All ratings are out of 10.
 {: style="text-align: justify"}
 
-<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png" style="margin-bottom:3em;"></a>
+<div style="text-align:center;margin:4em;width:800px">
+<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png"></a>
+</div>
 
+<div style="margin: 0px auto;margin-bottom: 4em; text-align:center;width:25em;">
 {% assign meanings = "legendary, outstanding, wonderful, enjoyable, average, watchable, boring, repulsive, unwatchable, blasphemous" | split: ',' %}
-<table style="border:0.2em solid white;width:25em;">
+<table style="border:0.2em solid white;">
 {% for i in (0..4) %}
 {% assign n1 = i | times:2 %}
 {% assign n2 = n1 | plus:1 %}
@@ -21,6 +24,7 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 </tr>
 {% endfor %}
 </table>
+</div>
 
 {% assign len = site.data.myanimelist.size %}
 {% assign lim = 40 %}
@@ -66,5 +70,8 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 {% endfor %}
 </table>
 
-<img src="{{ image_paths[i] }}" width="100%" style="margin-bottom:4em;margin-top:4em;">
+<div style="text-align:center;margin:6em;width:800px">
+<img src="{{ image_paths[i] }}">
+</div>
+
 {% endfor %}
