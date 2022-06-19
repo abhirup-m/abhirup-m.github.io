@@ -35,9 +35,9 @@
     }
   }
   h1,
-  h2 {
-    @include split-line(bottom);
-  }
+  // h2 {
+  //   @include split-line(bottom);
+  // }
   hr {
     border: none;
     @include horizontal-rules();
