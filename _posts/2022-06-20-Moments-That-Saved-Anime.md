@@ -15,18 +15,31 @@ Here are some moments in various anime series that have become iconic over the y
 <ol>
 <h2><li>Attack on Titan</li></h2>
 <h3> "Eren. Have a minute? We need to talk."</h3>
+<video style="width:100%;" controls>
+  <source src="/assets/videos/reiner-b.mp4" type="video/mp4">
+</video>
 
 <h2><li>Code Geass: Lelouch of the Rebellion</li></h2>
-<h3> "And that..", "Yes, is the Zero requiem."</h3>
+<h3>"And that..", "Yes, is the Zero requiem."</h3>
 
 <h2><li>Clannad After Story</li></h2>
-<h3> Ushio, father, toy</h3>
+<h3>Ushio, father, toy</h3>
+<video style="width:100%;" controls>
+  <source src="/assets/videos/ushio-father.mp4" type="video/mp4">
+</video>
 
 <h2><li>Kaguya Sama: Love is War!</li></h2>
-<h3> "Ishigami, you did well."</h3>
+<h3>"Ishigami, you did well."</h3>
+<video style="width:100%;" controls>
+  <source src="/assets/videos/ishigami.mp4" type="video/mp4">
+</video>
+
 
 <h2><li>Steins Gate</li></h2>
 <h3> "These will be the longest 3 weeks of your life"</h3>
+<video style="width:100%;" controls>
+  <source src="/assets/videos/machi.mp4" type="video/mp4">
+</video>
 
 <h2><li>Fruits Basket</li></h2>
 <h3> "Lets make footprints in the snow together."</h3>
@@ -43,7 +56,7 @@ Here are some moments in various anime series that have become iconic over the y
 <h2><li>Attack on Titan</li></h2>
 <h3>"I keep moving forward..."</h3>
 <video style="width:100%;" controls>
-  <source src="" type="video/mp4">
+  <source src="/assets/videos/forward.mp4" type="video/mp4">
 </video>
 
 </ol>
