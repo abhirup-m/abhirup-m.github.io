@@ -14,9 +14,9 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Other Stuff
+      en      : &EN       Posts
       # @end locale config
-    url: /other/
+    url: /posts/
 
   - titles:
       # @start locale config

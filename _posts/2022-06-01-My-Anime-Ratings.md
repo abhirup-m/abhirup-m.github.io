@@ -1,7 +1,10 @@
 ---
 layout: article
-title: Anime Ratings
+title: My Anime Ratings
 permalink: /myanimelist/
+tags:
+  - anime
+  - ratings
 
 ---
 
