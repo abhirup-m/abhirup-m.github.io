@@ -34,12 +34,9 @@
       }
     }
   }
-  h2 {
-    @include split-line(bottom);
-  }
   hr {
     border: none;
-    @include horizontal-rules();
+    // @include horizontal-rules();
   }
   blockquote {
     padding-left: map-get($spacers, 3);
