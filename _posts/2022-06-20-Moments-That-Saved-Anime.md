@@ -13,59 +13,52 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 Here are some moments in various anime series that have become iconic over the years and that portray the depth, intrigue and beauty of storytelling in this form of media. I have restricted myself to one moment per show, for the sake of versatility. 
 <p style="color:yellow;font-weight:bold;">Needless to say, there will be huge spoilers. You have been warned.</p>
 
-<ol>
-<h2><li>Attack on Titan</li></h2>
-<h3> "Eren. Have a minute? We need to talk."</h3>
+### Fruits Basket 2019: The Final
+_"Lets make footprints in the snow together."_
 <video style="width:100%;" controls>
-  <source src="/assets/videos/reiner-b.mp4" type="video/mp4">
+  <source src="/assets/videos/machi.mp4" type="video/mp4">
 </video>
+Fruits Basket is a series that I hold very close to my heart, particularly for the drama and romance aspects. In the final season, it is clear that all the various characters are moving beyond their insecurities into the outside world, forging new relations. In the quest to lend meaning to his life, Yuki finds a kindred broken soul in **Machi Kuragi**. 
 
-<h2><li>Code Geass: Lelouch of the Rebellion</li></h2>
-<h3>"And that... Yes. is the Zero requiem."</h3>
-<video style="width:100%;" controls>
-  <source src="/assets/videos/requiem.mp4" type="video/mp4">
-</video>
-
-<h2><li>Clannad After Story</li></h2>
-<h3>"It's the one you chose and bought for me."</h3>
-<video style="width:100%;" controls>
-  <source src="/assets/videos/ushio-father.mp4" type="video/mp4">
-</video>
-
-<h2><li>Kaguya Sama: Love is War!</li></h2>
-<h3>"A once-in-a-lifetime wish from me to you."</h3>
+### Kaguya Sama: Love is War!
+_"A once-in-a-lifetime wish from me to you."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/stanford.mp4" type="video/mp4">
 </video>
 
-<h2><li>Steins Gate</li></h2>
-<h3> "You are about to begin... the longest and most imporant ... 3 weeks of your life"</h3>
-<video style="width:100%;" controls>
-  <source src="/assets/videos/weeks.mp4" type="video/mp4">
-</video>
-
-<h2><li>Fruits Basket</li></h2>
-<h3> "Lets make footprints in the snow together."</h3>
-<video style="width:100%;" controls>
-  <source src="/assets/videos/machi.mp4" type="video/mp4">
-</video>
-
-<h2><li>Naruto Shippuden</li></h2>
-<h3>"I, Madara, declare you the strongest."</h3>
-<video style="width:100%;" controls>
-  <source src="/assets/videos/predicted.mp4" type="video/mp4">
-</video>
-
-<h2><li>Hunter x Hunter</li></h2>
-<h3>"Komugi, are you there?"</h3>
+### Hunter x Hunter
+_"Komugi, are you there?"_
 <video style="width:100%;" controls>
   <source src="/assets/videos/name.mp4" type="video/mp4">
 </video>
 
-<h2><li>Attack on Titan</li></h2>
-<h3>"I keep moving forward..."</h3>
+### Clannad After Story
+_"It's the one you chose and bought for me."_
 <video style="width:100%;" controls>
-  <source src="/assets/videos/forward.mp4" type="video/mp4">
+  <source src="/assets/videos/ushio-father.mp4" type="video/mp4">
 </video>
 
-</ol>
+### Steins Gate
+_ "You are about to begin... the longest and most imporant ... 3 weeks of your life"_
+<video style="width:100%;" controls>
+  <source src="/assets/videos/weeks.mp4" type="video/mp4">
+</video>
+
+### Naruto Shippuden
+_"I, Madara, declare you the strongest."_
+<video style="width:100%;" controls>
+  <source src="/assets/videos/predicted.mp4" type="video/mp4">
+</video>
+
+### Code Geass: Lelouch of the Rebellion 2
+_"And that... Yes. is the Zero requiem."_
+<video style="width:100%;" controls>
+  <source src="/assets/videos/requiem.mp4" type="video/mp4">
+</video>
+
+
+### Attack on Titan Season 3 Part 2
+_"I keep moving forward..."_
+<video style="width:100%;" controls>
+  <source src="/assets/videos/kruger.mp4" type="video/mp4">
+</video>
