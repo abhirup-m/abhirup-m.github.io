@@ -8,7 +8,7 @@ permalink: /research/
 
 ## Ongoing Projects
 
-- **Luttinger volume as a function of the flux-resolved mutual information**
+- **Holographic entanglement in free fermionic quantum matter: hierarchy & topology**
 
 <details>
 <summary> <i>Expand</i> </summary>
