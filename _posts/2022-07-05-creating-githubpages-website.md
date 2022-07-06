@@ -13,13 +13,15 @@ I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~sla
 {: style="text-align: justify"}
 
 ## Ruby, gems and Jekyll
-[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) is an interpreted, high-level programming language. Libraries in ruby are referred to as **gems**. [RubyGems](https://en.wikipedia.org/wiki/RubyGems) is a package manager for ruby that makes installing and maintaining gems easier. [Bundler](https://github.com/rubygems/bundler) is a gem whose job is to create consistent environments for running ruby. It does this by managing the gems that the application depends on. Given a list of gems, it can automatically download and install those gems, as well as any other gems needed by the gems that are listed, all at the appropriate versions.
+[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) is an interpreted, high-level programming language. Libraries in `ruby` are referred to as `gems`. [RubyGems](https://en.wikipedia.org/wiki/RubyGems) is a package manager for `ruby` that makes installing and maintaining `gems` easier. [Bundler](https://github.com/rubygems/bundler) is a `gem` whose job is to create consistent environments for running `ruby`. It does this by managing the `gems` that the application depends on. Given a list of `gems`, it can automatically download and install those `gems`, as well as any other `gems` needed by the `gems` that are listed, _all at the appropriate versions_.
 
-Finally, [Jekyll](https://jekyllrb.com/) is a static site generator written in Ruby. It is in fact a Ruby library that takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more. Such a website can then be hosted on any server. Github-pages is a free and open-source option. Jekyll was in fact developed by [Tom Preston-Werner](https://en.wikipedia.org/wiki/Tom_Preston-Werner), GitHub's co-founder.
+Finally, [Jekyll](https://jekyllrb.com/) is a static site generator written in `ruby`. It is in fact a `gem` that takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more. Such a website can then be hosted on any server. [Github Pages](https://jekyllrb.com/docs/github-pages/) is a free option, where you can host the website on GitHub’s `github.io` domain or on a custom domain name of your choice. `Jekyll` was developed by [Tom Preston-Werner](https://en.wikipedia.org/wiki/Tom_Preston-Werner), GitHub's co-founder.
 
 In summary
-- gems are libraries in the language Ruby, managed by the RubyGems package manager
-- Bundler creates environments from specified libraries and their versions
-- Jekyll is a Ruby library that  generates a static website from the provided content
+- `gems` are libraries in the language Ruby, managed by the RubyGems package manager
+
+- `bundler` creates environments from specified libraries and their versions
+
+- `Jekyll` is a ruby library that  generates a static website from the provided content
 
 With these definitions out of the way, we can now start creating the website.
