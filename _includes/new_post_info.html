@@ -1,0 +1,19 @@
+{% for work in site.data.publications %}
+{% if work["journal doi"] == blank %}
+{% assign link = work["arxiv doi"] %}
+{% else %}
+{% assign link = work["journal doi"] %}
+{% endif %}
+{% if work["permalink"] == page.permalink %}
+<a href="{{ link }}">{{ work["title"] }}</a>
+<br>
+
+<span class="fas fa-user" style="margin-right:0.5em"></span>  {{ work["authors"] }}
+<div style="display:inline;margin-right:3em"><span class="far fa-calendar-alt" style="margin-right:0.5em"></span> {{ work["date"] }}</div>
+{% if work["journal doi"] != blank %}
+<div style="display:inline;margin-right:3em"><span class="fa-light fa-rss" style="margin-right:0.5em"></span> <a href="{{ work["journal doi"] }}">{{ work["journal"] }}</a></div>
+{% endif %}
+<div style="display:inline;margin-right:3em"><span class="fa-light fa-upload" style="margin-right:0.5em"></span> <a href="{{ work["arxiv doi"] }}">{{ work["arxiv"] }}</a></div>
+{% endif %}
+{% endfor %}
+<br>

@@ -105,7 +105,9 @@ html,
 
 .has-aside {
   .col-aside {
-    position: relative;
+    // position: relative;
+    position: absolute; 
+    left: 0;
     display: block;
     width: map-get($layout, aside-width);
     & > aside {
