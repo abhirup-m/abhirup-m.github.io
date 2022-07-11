@@ -46,26 +46,7 @@ permalink: /research/
 
 ## Completed Projects
 
-<ol>
 {% for work in site.data.publications %}
-{% if work["journal doi"] == blank %}
-{% assign link = work["arxiv doi"] %}
-{% else %}
-{% assign link = work["journal doi"] %}
-{% endif %}
-<li><a href="{{ link }}"><p style="font-size:1.1em;">{{ work["title"] }}</p></a></li>
-<span class="fas fa-user" style="margin-right:0.5em"></span>  {{ work["authors"] }}
-<br>
-<div style="display:inline;margin-right:5em;float:left;"><span class="far fa-clock" style="margin-right:0.5em"></span> {{ work["date"] }}</div>
-{% if work["journal doi"] != blank %}
-<div style="display:inline;margin-right:5em;float:left;"><span class="fas fa-highlighter" style="margin-right:0.5em"></span> <a href="{{ work["journal doi"] }}">{{ work["journal"] }}</a></div>
-{% endif %}
-<div style="display:inline;margin-right:5em;float:left;"><span class="fas fa-lock-open" style="margin-right:0.5em"></span> <a href="{{ work["arxiv doi"] }}">{{ work["arxiv"] }}</a></div>
-{% if work["permalink"] != blank %}
-<div style="display:inline;"><span class="fas fa-comment" style="margin-right:0.5em"></span><a href="{{ work["permalink"] }}">More details</a></div>
-{% endif %}
-
-<br>
+{% include publication_info.html %}
 <br>
 {% endfor %}
-</ol>
