@@ -13,4 +13,5 @@ permalink: /interests/
 - **Quantum hall systems** and other topologically states of matter
 
 To get a more detailed idea of the topics I am interested in, please take a look at my [research work](/research/).
-<img src="/assets/images/xkcd-sand.jpg" style="display: block; margin: 2em auto;" width="500"/>
+
+<img src="/assets/images/xkcd-sand.jpg" style="display: block; margin: auto;" width="500"/>

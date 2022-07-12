@@ -2,15 +2,12 @@
 layout: home
 permalink: /home/
 cover: /docs/assets/images/axure/page-article-header-overlay-background-image-header-background.jpg
-header:
-  theme: light
-  background: 'linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(242, 242, 242, 1))'
 article_header:
   type: overlay
   theme: dark
-  background_color: '#000000'
+  background_color: '#0b6bd7'
   background_image:
-    gradient: 'linear-gradient(45deg, rgba(0, 139, 0, .3), rgba(139, 0, 139, .3))'
+    gradient: 'linear-gradient(45deg, rgba(255, 255, 255, .3), rgba(0, 0, 0, .3))'
     src: /assets/images/research_header.svg
 ---
 
