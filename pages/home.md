@@ -1,14 +1,13 @@
 ---
 layout: home
 permalink: /home/
-cover: /docs/assets/images/axure/page-article-header-overlay-background-image-header-background.jpg
 article_header:
   type: overlay
-  theme: dark
-  background_color: '#0b6bd7'
+  theme: light
+  background_color: '#f1f8ff'
   background_image:
-    gradient: 'linear-gradient(45deg, rgba(255, 255, 255, .3), rgba(0, 0, 0, .3))'
-    src: /assets/images/research_header.svg
+    src: /assets/images/header.svg
+
 ---
 
 <h1>Hey there!</h1>

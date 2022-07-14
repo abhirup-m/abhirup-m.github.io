@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "New work on the arxiv: On the Multi-channel Kondo problem"
+title: "New work: On the Multi-channel Kondo problem"
 permalink: /mckondo/
 tags:
   - work
