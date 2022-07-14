@@ -7,10 +7,11 @@
 {% assign authors = work["authors"] | split:"," %}
 {% assign authors_str = blank %}
 {% for author in authors %}
+{% assign author_nospace = author | strip %}
 {% if author == "Abhirup Mukherjee" %}
-{% assign authors_str = authors_str | append: "<b>" | append: author | append: "</b>" %}
+{% assign authors_str = authors_str | append: "<b>" | append: author_nospace | append: "</b>" %}
 {% else %}
-{% assign authors_str = authors_str | append: author %}
+{% assign authors_str = authors_str | append: author_nospace %}
 {% endif %}
 {% unless forloop.last %}
 {% assign authors_str = authors_str | append:",&emsp;" %}
