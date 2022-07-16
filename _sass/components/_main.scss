@@ -3,8 +3,10 @@
   max-width: map-get($layout, content-max-width);
   padding: 0 map-get($spacers, 5);
   margin: 0 auto;
+  margin-right: 3%;
   @include media-breakpoint-down(lg) {
     padding: 0 map-get($spacers, 4);
+    margin: 0 auto;
   }
   @include media-breakpoint-down(md) {
     padding: 0 map-get($spacers, 3);
