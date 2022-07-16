@@ -9,12 +9,6 @@ aside: False
 
 ---
 
-<div style="position: fixed;left:0;margin:2em;" markdown=1>
-**Table of contents**
-* 
-{:toc}
-</div>
-
 <img src="/assets/images/octojekyll.png" width=400 style="float:right;margin-left:2em;">
 I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case.
 {: style="text-align: justify"}

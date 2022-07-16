@@ -4,7 +4,7 @@ permalink: /home/
 article_header:
   type: overlay
   theme: light
-  background_color: '#f1f8ff'
+  background_color: '#ffffff'
   background_image:
     src: /assets/images/header.svg
 
