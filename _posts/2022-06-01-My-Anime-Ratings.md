@@ -2,6 +2,7 @@
 layout: article
 title: My Anime Ratings
 permalink: /myanimelist/
+has-aside: false
 tags:
   - anime
   - ratings
