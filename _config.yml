@@ -5,7 +5,7 @@ text_skin: ocean # "default" (default), "dark", "forest", "ocean", "chocolate", 
 highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : "https://abhirup-m.github.io/"
 baseurl : # does not include hostname
-title   : Abhirup's website
+title   : Home
 description: Abhirup's website
 remote-theme: kitian616/jekyll-TeXt-theme
 show_copyright: false
