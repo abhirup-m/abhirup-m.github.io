@@ -14,51 +14,51 @@ Here are some moments in various anime series that have become iconic over the y
 
 **Needless to say, there will be huge spoilers. You have been warned.**
 
-### Fruits Basket 2019: The Final
+## Fruits Basket 2019: The Final
 _"Lets make footprints in the snow together."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/machi.mp4" type="video/mp4">
 </video>
 Fruits Basket is a series that I hold very close to my heart, particularly for the drama and romance aspects. In the final season, it is clear that all the various characters are moving beyond their insecurities into the outside world, forging new relations. In the quest to lend meaning to his life, Yuki finds a kindred broken soul in **Machi Kuragi**. 
 
-### Kaguya Sama: Love is War!
+## Kaguya Sama: Love is War!
 _"A once-in-a-lifetime wish from me to you."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/stanford.mp4" type="video/mp4">
 </video>
 
-### Hunter x Hunter
+## Hunter x Hunter
 _"Komugi, are you there?"_
 <video style="width:100%;" controls>
   <source src="/assets/videos/name.mp4" type="video/mp4">
 </video>
 
-### Clannad After Story
+## Clannad After Story
 _"It's the one you chose and bought for me."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/ushio-father.mp4" type="video/mp4">
 </video>
 
-### Steins Gate
+## Steins Gate
 _ "You are about to begin... the longest and most imporant ... 3 weeks of your life"_
 <video style="width:100%;" controls>
   <source src="/assets/videos/weeks.mp4" type="video/mp4">
 </video>
 
-### Naruto Shippuden
+## Naruto Shippuden
 _"I, Madara, declare you the strongest."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/predicted.mp4" type="video/mp4">
 </video>
 
-### Code Geass: Lelouch of the Rebellion 2
+## Code Geass: Lelouch of the Rebellion 2
 _"And that... Yes. is the Zero requiem."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/requiem.mp4" type="video/mp4">
 </video>
 
 
-### Attack on Titan Season 3 Part 2
+## Attack on Titan Season 3 Part 2
 _"I keep moving forward..."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/kruger.mp4" type="video/mp4">

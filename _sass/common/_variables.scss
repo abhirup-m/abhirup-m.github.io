@@ -79,12 +79,12 @@ $z-indexes: (
 );
 
 $layout: (
-  header-height:          3rem,
+  header-height:          5rem,
   header-height-sm:       3rem,
-  content-max-width:      900px,
-  sidebar-width:          350px,
+  content-max-width:      950px,
+  sidebar-width:          250px,
   sidebar-header-height:  3rem,
-  aside-width:            350px
+  aside-width:            220px
 );
 
 //     sm       md       lg
@@ -94,7 +94,7 @@ $layout: (
 $responsive: (
   sm:                      0,
   md:                      500px,
-  lg:                      1600px
+  lg:                      1024px
 );
 
 $animation: (

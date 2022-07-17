@@ -54,15 +54,10 @@
         </ul>
       {%- endif -%}
 
-      {%- if page.author != blank or _show_date or _pageview -%}
+      {%- if _show_author or _show_date or _pageview -%}
         <ul class="right-col menu">
-          {%- if page.author != blank -%}
-
-	    {% if page.author != "1" %}
-              <li><i class="fas fa-user"></i> <span>{{ page.author.name }}</span></li>
-	    {% else %}
-              <li><i class="fas fa-user"></i> <span>{{ site.author.name }}</span></li>
-            {%- endif -%}
+          {%- if _show_author  -%}
+            <li><i class="fas fa-user"></i> <span>{{ _author.name }}</span></li>
           {%- endif -%}
 
           {%- if _show_date -%}

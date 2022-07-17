@@ -7,6 +7,7 @@ url     : "https://abhirup-m.github.io/"
 baseurl : # does not include hostname
 title   : Abhirup's website
 description: Abhirup's website
+remote-theme: kitian616/jekyll-TeXt-theme
 
 
 ## => Author and Social

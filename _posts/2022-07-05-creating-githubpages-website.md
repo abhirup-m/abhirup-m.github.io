@@ -5,7 +5,6 @@ permalink: /website/
 tags:
   - technology
   - guide
-aside: False
 
 ---
 

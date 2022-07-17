@@ -34,9 +34,13 @@
       }
     }
   }
+  h1,
+  h2 {
+    @include split-line(bottom);
+  }
   hr {
     border: none;
-    // @include horizontal-rules();
+    @include horizontal-rules();
   }
   blockquote {
     padding-left: map-get($spacers, 3);
@@ -198,28 +202,20 @@
       margin-left: map-get($spacers, 4);
     }
   }
-table {
+  table {
+    display: block;
     width: 100%;
     border-collapse: collapse;
     @include overflow(auto);
-    // border-left: 3px solid #FFFFFF;
-    // border-right: 3px solid #FFFFFF;
     thead, tfoot {
-      // background-color: $text-background-color;
-	border: 3px solid #aaa;
-	padding: 0.5em;
+      background-color: $text-background-color;
     }
     th, td {
-      padding-left: 2em;
-      padding-right: 2em;
-      padding-top: 0.4em;
-      padding-bottom: 0.4em;
+      padding: map-get($spacers, 2);
+      border: 1px solid $border-color-l;
     }
     th {
       font-weight: map-get($base, font-weight-bold);
     }
-tr:nth-child(even) {
-      background-color: #ddd;
-}
   }
 }
