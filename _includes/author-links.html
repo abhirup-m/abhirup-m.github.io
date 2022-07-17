@@ -116,5 +116,13 @@
       </li>
     {%- endif -%}
 
+    {%- if _author.researchgate -%}
+      <li title="{{ _locale_string_follow | replace: '[NAME]', 'ResearchGate' }}">
+        <a href="https://www.researchgate.net/profile/{{ _author.researchgate }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/researchgate.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+
   </ul>
 </div>
