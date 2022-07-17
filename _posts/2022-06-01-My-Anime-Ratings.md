@@ -71,9 +71,6 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 </tr>
 {% endfor %}
 </table>
-
-<div style="float:left;width:700px;border: 4px solid #fff">
-<img src="{{ image_paths[i] }}">
-</div>
+<img src="{{ image_paths[i] }}" width=700>
 
 {% endfor %}
