@@ -12,17 +12,18 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 {: style="text-align: justify"}
 
 {% assign meanings = "legendary, outstanding, wonderful, enjoyable, average, watchable, boring, repulsive, unwatchable, blasphemous" | split: ',' %}
-<div style="display:inline;float:left;margin-right:50px;margin-bottom:50px;">
-<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png" width="700"></a>
+
+<div style="float:left;margin:1em;">
+<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png" width="600"></a>
 </div>
-<div style="display:inline;float:left;margin-bottom:50px;border:3px solid black;">
+<div style="float:left;margin:1em;">
 <table>
 {% for i in (0..4) %}
 {% assign n1 = i | times:2 %}
 {% assign n2 = n1 | plus:1 %}
 <tr >
-<td style="padding-right: 1em;padding-left: 1em;"><b>{{ 10 | minus:n1 }}</b>: <i>{{ meanings[n1] }}</i></td>
-<td style="padding-right: 1em;padding-left: 1em;"><b>{{ 10 | minus:n2 }}</b>: <i>{{ meanings[n2] }}</i></td>
+<td><b>{{ 10 | minus:n1 }}</b>: <i>{{ meanings[n1] }}</i></td>
+<td><b>{{ 10 | minus:n2 }}</b>: <i>{{ meanings[n2] }}</i></td>
 </tr>
 {% endfor %}
 </table>
