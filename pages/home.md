@@ -23,8 +23,3 @@ From time to time, I also pick up crime novels. Whenever I get some time, I dabb
 I used to love watching and playing football during my school days.
 I am part of an organisation named <a href="https://projectyl.github.io/">Projectyl</a> that helps undergraduate and graduate students in finding and applying for short projects and internships in India, with the goal of making it easier for them to transition into their research programs. My contact information is available <a href="/contact/">here</a>.
 {: style="margin-top:2em; font-size: 1.2em; text-align: justify;"}
-
-<br>
-<img src="/assets/images/self2.jpg" style="float:center;display:block;margin: 0 auto;margin-top:1em;" width=250/>
-<br>
-
