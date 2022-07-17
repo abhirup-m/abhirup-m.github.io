@@ -6,7 +6,7 @@ article_header:
   theme: light
   background_color: '#ffffff'
   background_image:
-    src: /assets/images/header.svg
+    src: /assets/images/home-header.svg
 
 ---
 
