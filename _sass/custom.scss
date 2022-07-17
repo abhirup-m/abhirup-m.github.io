@@ -44,6 +44,9 @@
 
 .navigation__item {
     margin-left: 2em;
+    @include media-breakpoint-down(lg) {
+      margin-left: 0em;
+    }
     a {
 	    font-weight: bold;
     }
