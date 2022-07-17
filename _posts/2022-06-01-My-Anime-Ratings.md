@@ -16,6 +16,9 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 
 <div style="float:left;margin:1em;">
 <a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png" width="600"></a>
+
+<br>
+<br>
 </div>
 <div style="float:left;margin:1em;">
 <table>
@@ -28,6 +31,9 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 </tr>
 {% endfor %}
 </table>
+
+<br>
+<br>
 </div>
 
 {% assign len = site.data.myanimelist.size %}

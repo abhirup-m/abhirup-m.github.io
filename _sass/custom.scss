@@ -42,5 +42,18 @@
   }
 }
 
+.navigation__item {
+    margin-left: 2em;
+    a {
+	    font-weight: bold;
+    }
+}
+
+.header__brand {
+    a {
+	    font-weight: bold;
+    }
+}
+
 
 /* end custom scss snippet */
