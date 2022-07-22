@@ -40,6 +40,9 @@
     min-width:130px;
     }
   }
+h2 {
+  border-bottom-width: 0px;
+}
 }
 
 .navigation__item {
@@ -57,5 +60,6 @@
 	    font-weight: bold;
     }
 }
+
 
 /* end custom scss snippet */
