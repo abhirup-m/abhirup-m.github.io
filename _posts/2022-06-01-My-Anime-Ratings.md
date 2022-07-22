@@ -15,7 +15,7 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 {% assign meanings = "legendary, outstanding, wonderful, enjoyable, average, watchable, boring, repulsive, unwatchable, blasphemous" | split: ',' %}
 
 <div style="float:left;margin:1em;">
-<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/love-chunibyo.png" width="600"></a>
+<a href="https://myanimelist.net/anime/14741/Chuunibyou_demo_Koi_ga_Shitai"><img title="Love, Chunibyo & Other Delusions!" src="/assets/images/anime-ratings/love-chunibyo.png" width="600"></a>
 
 <br>
 <br>
@@ -42,7 +42,7 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 
 {% assign image_paths = "" %}
 {% for image in site.static_files %}
-{% if image.path contains 'assets/images/anime_shots' %}
+{% if image.path contains 'assets/images/anime-ratings/anime_shots' %}
 {% assign image_paths = image_paths | append: image.path | append: "," %}
 {% endif %}
 {% endfor %}
@@ -79,6 +79,6 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 </tr>
 {% endfor %}
 </table>
-<img src="{{ image_paths[i] }}" width=700>
+<img src="{{ image_paths[i] }}" width=1000>
 
 {% endfor %}
