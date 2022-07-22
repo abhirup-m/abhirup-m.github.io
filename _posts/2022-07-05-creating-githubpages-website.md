@@ -33,4 +33,4 @@ With these definitions out of the way, we can now start creating the website.
 ## Starting with a base theme
 
 There are innumerable Jekyll themes on Github. Each such theme consists of a set of templates, layouts, stylesheets and so on. They represent standalone complete websites, and you can add content to it as well modify the existing colors, designs and so on. We will use the famous [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme created by [Michael Rose](https://github.com/mmistakes). It has a modern and attractive style, and allows for sufficient customisation. In order to start using the theme, we go to the [Github repository](https://github.com/mmistakes/minimal-mistakes) for the theme, and fork the repository. This means we will create a copy of the repository in our own account, such that we can now add changes on top of it. To create a fork, we click the fork button at the top right of the webpage.
-![](/assets/images/fork.svg)
+![](/assets/images/jekyll/fork.svg)
