@@ -27,7 +27,6 @@ layout: base
   source0=layout.comment source1=page.comment -%}
 {%- assign _comment = __return -%}
 
-
 {%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 
 {%- if page.sidebar -%}
@@ -83,8 +82,8 @@ layout: base
 
 
         <div class="page__content">
-	<img class="mobile-header" src="/assets/images/home/header-small.svg"/>
         {%- if _article_header_type == 'overlay' or _article_header_type == 'cover' -%}
+	<img class="mobile-header" src="/assets/images/home/header-small.svg"/>
 
           {%- if _article_header_type == 'overlay' -%}
 
