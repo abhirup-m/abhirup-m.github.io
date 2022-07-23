@@ -95,4 +95,36 @@ h2 {
     }
 }
 
+.img__post {
+	border: 0.15em solid black;
+	display: block;
+	margin: 0 auto;
+	width: 800px;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+    	}
+}
+
+.img__post__left, 
+.img__post__right {
+	display: block-inline;
+	width: 400px;
+	@include media-breakpoint-down(md) {
+		display: block;
+		width: 100%;
+    	}
+}
+.img__post__left {
+	float: left;
+	margin-right:1em;
+}
+.img__post__right {
+	float: right;
+	margin-left:1em;
+}
+
+img {
+	min-width: 100%;
+}
+
 /* end custom scss snippet */

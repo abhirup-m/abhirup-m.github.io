@@ -13,6 +13,6 @@ permalink: /contact/
 
 - Feel free to check out our work at [Projectyl](https://projectyl.github.io/) if you are interested in landing a summer or winter project in physics. Hit me up if you want to be a part of the group.
 
-<div style="text-align:center;">
-<img src="/assets/images/contact/contact.jpg" width=600/>
+<div class="img__post">
+<img src="/assets/images/contact/preferred_chat_system.png"/>
 </div>
