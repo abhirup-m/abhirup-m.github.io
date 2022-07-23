@@ -84,7 +84,14 @@ h2 {
 
 .header__title {
     @include media-breakpoint-down(md) {
-	margin-right: 0;
+      display: none;
+    }
+}
+
+.navigation__inverse {
+    font-weight: bold;
+    @include media-breakpoint-up(md) {
+      display: none;
     }
 }
 

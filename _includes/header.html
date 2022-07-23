@@ -22,6 +22,7 @@
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
         <ul>
+		<li class="navigation__inverse" style="margin-right: auto;"><a style="font-weight: bold;color: black;" href="/"><i class="fa fa-home"></i>  Home</a></li>
           {%- for _item in site.data.navigation.header -%}
             {%- include snippets/get-nav-url.html path=_item.url -%}
             {%- assign _nav_url = __return -%}
