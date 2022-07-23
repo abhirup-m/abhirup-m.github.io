@@ -22,9 +22,9 @@
         {%- include author-links.html author=_site_author -%}
       </div>
     </div>
+    {%- if site.show_copyright == true -%}
     {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
     {%- assign _locale_copyright_dates = __return -%}
-    {%- if site.show_copyright == true -%}
     <div class="site-info mt-2">
       <div>
         {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
