@@ -3,10 +3,9 @@ layout: home
 permalink: /home/
 article_header:
   type: overlay
-  theme: light
-  background_color: '#ffffff'
+  background_color: '#e1f1ff'
   background_image:
-    src: /assets/images/home/home-header.svg
+    src: /assets/images/home/header.svg
 
 ---
 
