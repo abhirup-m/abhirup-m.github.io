@@ -66,4 +66,11 @@ h2 {
   padding: 1rem;
 }
 
+.article__header--overlay {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+}
+
+
 /* end custom scss snippet */
