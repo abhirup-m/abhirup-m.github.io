@@ -72,5 +72,15 @@ h2 {
     }
 }
 
+.mobile-header {
+    height: 300px;
+    width: 100%;
+    align: center;
+    background-color: $main-color-3;
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+}
+
 
 /* end custom scss snippet */
