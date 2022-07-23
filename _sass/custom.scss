@@ -82,5 +82,10 @@ h2 {
     }
 }
 
+.header__title {
+    @include media-breakpoint-down(md) {
+	margin-right: 0;
+    }
+}
 
 /* end custom scss snippet */
