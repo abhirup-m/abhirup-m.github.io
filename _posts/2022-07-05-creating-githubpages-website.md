@@ -38,14 +38,30 @@ With these definitions out of the way, we can now start creating the website.
 
 There are innumerable Jekyll themes on Github. Each such theme consists of a set of templates, layouts, stylesheets and so on. They represent standalone complete websites, and you can add content to it as well modify the existing colors, designs and so on. We will use the famous [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme created by [Michael Rose](https://github.com/mmistakes). It has a modern and attractive style, and allows for sufficient customisation. The simplest way to use the theme is to create a copy of it, and then add content on top of it or make modifications wherever necessary. There are a couple of ways of creating a copy of the theme, and both these methods involve its [GitHub repository](https://github.com/mmistakes/minimal-mistakes). A GitHub repository is simply a cloud storage location for the contents of the theme. In order to create a copy of this theme, we can either _download_ the theme or _fork_ it. Downloading the repository simply downloads the files, while forking the repository creates a copy of the repository under our own GitHub account. Since we would have to ultimately create a repository anyway, it is more efficient to just fork the theme repository. _A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project_. Once we fork the repository, the new forked repository becomes our base website which we can then tweak. 
 
-All the steps will be performed from the account of **epqm**, my research group. To fork the repository, go to the [Minimal Mistakes GitHub repository](https://github.com/mmistakes/minimal-mistakes) and click the fork button at the top right of the webpage.
+All the steps will be performed from the account of **epqm**, my research group. To fork the repository, go to the [Minimal Mistakes GitHub repository](https://github.com/mmistakes/minimal-mistakes) and click the `Fork` button at the top right of the webpage.
 
 <div class="img__post">
 <img src="/assets/images/jekyll/fork.svg"/>
 </div>
 
-The fork button is encircled in the screenshot above. Alternatively, you can just go to [this link](https://github.com/mmistakes/minimal-mistakes/fork). Either way, you will end up on the page shown in the screenshot below. 
+The fork button is encircled in the screenshot above. Alternatively, you can just go to [this link](https://github.com/mmistakes/minimal-mistakes/fork). Either way, you will end up on the page shown in the screenshot below. In order to finish creating the forked repository, you need to insert a name for the new repository, in the space provided under **Repository name**. In order to act as a GitHub Pages website, the name of the repository has to be of the form <code><i>username</i>.github.io</code>, where _username_ has to be replaced by the name of the GitHub user account, which in this case in `epqm`. Choosing any other name will create a repository but it will not be usable as a website. Once a suitable name has been entered (a green tick should appear adjacent to the name), click the `Create fork` button.
 
 <div class="img__post">
 <img src="/assets/images/jekyll/fork2.svg"/>
 </div>
+
+The repository for containing our website has now been created, but the website itself is not active yet. In order to activate it, click on the `Settings` button at the right end of the top menu.
+<div class="img__post">
+<img src="/assets/images/jekyll/settings.svg"/>
+</div>
+Inside the settings, click on the `Pages` option in the left sidebar menu.
+<div class="img__post">
+<img src="/assets/images/jekyll/pages.svg"/>
+</div>
+We are now in the GitHub Pages part of the settings for our repository. Within these settings, you will have set the `Source` by clicking on the `Branch` menu and choosing the `master` branch. Branches are essentially views of a repository. If we want to, the files in the repository can be kept in multiple states, each state representing a branch. Any of these branches can be used to deploy a website. By default, there is only branch, which is called the _master branch_. By selecting _master_ from the drop-down menu, we are choosing that branch as our website. After selecting _master_, click on the `Save` button adjacent to the `Branch` menu to make the change permanent.
+<div class="img__post">
+<img src="/assets/images/jekyll/master.svg"/>
+</div>
+The website has now been deployed. After about 5 minutes, it should be possible to access the website at <code>https://<i>username</i>.github.io</code>.
+
+
