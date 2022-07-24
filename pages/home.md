@@ -24,5 +24,5 @@ I am part of an organisation named <a href="https://projectyl.github.io/">Projec
 {: style="margin-top:2em; font-size: 1.2em; text-align: justify;"}
 
 <div class="img__post">
-<img src="/assets/images/home/phd.gif"/>
+<img src="/assets/images/home/phd.svg"/>
 </div>

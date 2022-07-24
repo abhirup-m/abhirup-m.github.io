@@ -1717,9 +1717,9 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(1.1258,0,0,1.1258,-99.379833,38.864277)"><tspan
          x="339.20772"
          y="43.220462"
-         id="tspan3984"><tspan
+         id="tspan4059"><tspan
            style="fill:#000008"
-           id="tspan3982">Areas of Physics by difficulty</tspan></tspan></text>
+           id="tspan4057">Areas of Physics by difficulty</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1158-6"
@@ -1729,9 +1729,9 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(1.1258,0,0,1.1258,148.15618,112.74482)"><tspan
          x="244.76367"
          y="43.220462"
-         id="tspan3988"><tspan
+         id="tspan4063"><tspan
            style="fill:#000000"
-           id="tspan3986">Harder</tspan></tspan></text>
+           id="tspan4061">Harder</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text1158-6-5"
@@ -1741,15 +1741,15 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(0.87741396,0,0,0.87741396,-208.17363,544.3372)"><tspan
          x="246.91772"
          y="48.657588"
-         id="tspan3992"><tspan
+         id="tspan4067"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan3990">Newton's
+           id="tspan4065">Newton's
 </tspan></tspan><tspan
          x="302.75102"
          y="115.32421"
-         id="tspan3996"><tspan
+         id="tspan4071"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan3994">Laws</tspan></tspan></text>
+           id="tspan4069">Laws</tspan></tspan></text>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:8.05536;stroke-opacity:1;marker-end:url(#Arrow2)"
        d="m 630.03155,149.9052 h 236.5077"
@@ -1770,15 +1770,15 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(0.82311282,0,0,0.82311282,115.99992,548.4358)"><tspan
          x="273.92291"
          y="48.657588"
-         id="tspan4000"><tspan
+         id="tspan4075"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan3998">Special
+           id="tspan4073">Special
 </tspan></tspan><tspan
          x="245.00365"
          y="115.32421"
-         id="tspan4004"><tspan
+         id="tspan4079"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan4002">Relativity</tspan></tspan></text>
+           id="tspan4077">Relativity</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2847-5"
@@ -1788,9 +1788,9 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(0.82311282,0,0,0.82311282,948.72406,548.43581)"><tspan
          x="244.76367"
          y="48.657588"
-         id="tspan4008"><tspan
+         id="tspan4083"><tspan
            style="fill:#000000"
-           id="tspan4006">Sand</tspan></tspan></text>
+           id="tspan4081">Sand</tspan></tspan></text>
     <text
        xml:space="preserve"
        id="text2910"
@@ -1800,14 +1800,14 @@ ku+b5S577/yXfN8p80nvv/Jd83y8P//Z
        transform="matrix(0.76781242,0,0,0.76781242,446.29339,552.14619)"><tspan
          x="249.25017"
          y="48.657588"
-         id="tspan4012"><tspan
+         id="tspan4087"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan4010">Quantum Mechanics,
+           id="tspan4085">Quantum Mechanics,
 </tspan></tspan><tspan
          x="292.38816"
          y="115.32421"
-         id="tspan4016"><tspan
+         id="tspan4091"><tspan
            style="text-align:center;text-anchor:middle;fill:#000000"
-           id="tspan4014">General Relativity</tspan></tspan></text>
+           id="tspan4089">General Relativity</tspan></tspan></text>
   </g>
 </svg>
