@@ -36,6 +36,6 @@ I am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iis
 
 
 <div class="img__post">
-<img src="/assets/images/work/xkcd-sand.jpg"/>
+<img src="/assets/images/work/xkcd-sand.png"/>
 </div>
 
