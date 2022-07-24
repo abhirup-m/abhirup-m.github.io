@@ -9,9 +9,9 @@ tags:
 ---
 
 <div class="img__post__right">
-<img src="/assets/images/jekyll/octojekyll.png">
+<img src="/assets/images/jekyll/octojekyll.svg">
 </div>
-I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case.
+I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.
 {: style="text-align: justify"}
 
 
@@ -74,16 +74,16 @@ We are now in the GitHub Pages part of the settings for our repository. Within t
 <img src="/assets/images/jekyll/master.svg"/>
 </div>
 The website has now been deployed. After about 5 minutes, it should be possible to access the website at <code>https://<i>username</i>.github.io</code>. We will have to modify the content in the repository in order to make this into a personalised website for our use. 
+{: style="text-align: justify"}
 
-### In short
+### Summing it all up
 
 We end this part by summarising the steps involved in creating and deploying the website.
-{: style="text-align: justify"}
 
 1. The first step is to choose a `Jekyll theme` on which to start creating the website.
 
 1. The next step is to fork the GitHub repository of this theme. While forking, the name of the forked repository has to be of the form <code><i>username</i>.github.io</code>.
 
-1. Once the repository is created, we need to go to `Settings > Pages` and choose `master` as the branch from which to deploy the website. This has to be confirmed by clicking on `Save`.
+1. Once the repository is created, we need to go to the repository and click on `Settings > Pages`, and choose `master` as the branch from which to deploy the website. This has to be confirmed by clicking on `Save`.
 
 

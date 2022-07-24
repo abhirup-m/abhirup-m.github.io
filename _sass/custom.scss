@@ -108,7 +108,9 @@ h2 {
 .img__post__left, 
 .img__post__right {
 	display: block-inline;
-	width: 400px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 500px;
 	@include media-breakpoint-down(md) {
 		display: block;
 		width: 100%;
@@ -116,11 +118,11 @@ h2 {
 }
 .img__post__left {
 	float: left;
-	margin-right:1em;
+	margin-right: 2em;
 }
 .img__post__right {
 	float: right;
-	margin-left:1em;
+	margin-left: 2em;
 }
 
 img {
