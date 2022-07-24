@@ -86,4 +86,6 @@ We end this part by summarising the steps involved in creating and deploying the
 
 1. Once the repository is created, we need to go to the repository and click on `Settings > Pages`, and choose `master` as the branch from which to deploy the website. This has to be confirmed by clicking on `Save`.
 
+## Compiling your website locally
 
+The minimal workflow of modifying the website now consists of making changes to the repository, up
