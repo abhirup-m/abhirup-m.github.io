@@ -3,7 +3,7 @@
 {% else %}
 {% assign link = work["journal doi"] %}
 {% endif %}
-<div><a href="{{ link }}">{{ work["title"] }}</a><div style="float:right;"><span class="far fa-clock" style="margin-left:5em;margin-right:0.5em"></span> {{ work["date"] | date: "%d/%m/%y" }}</div></div>
+<div><a href="{{ link }}">{{ work["title"] }}</a></div>
 {% assign authors = work["authors"] | split:"," %}
 {% assign authors_str = blank %}
 {% for author in authors %}
@@ -29,10 +29,11 @@
 {% endfor %}
 <div><span class="fas fa-feather" style="margin-right:0.5em;"></span>  {{ authors_str }}</div>
 <div style="display:block;">
+<span style="margin-right:2em;"><span class="far fa-clock" style="margin-right:0.5em"></span> {{ work["date"] | date: "%d/%m/%y" }}</span>
 {% if work["journal doi"] != blank %}
-<span style="margin-right:3em;"><span class="fas fa-highlighter" style="margin-right:0.5em"></span> <a href="{{ work["journal doi"] }}">{{ work["journal"] }}</a></span>
+<span style="margin-right:2em;"><span class="fas fa-highlighter" style="margin-right:0.5em"></span> <a href="{{ work["journal doi"] }}">{{ work["journal"] }}</a></span>
 {% endif %}
-<span style="margin-right:3em;"><span class="fas fa-lock-open" style="margin-right:0.5em"></span> <a href="{{ work["arxiv doi"] }}">{{ work["arxiv"] }}</a></span>
+<span style="margin-right:2em;"><span class="fas fa-lock-open" style="margin-right:0.5em"></span> <a href="{{ work["arxiv doi"] }}">{{ work["arxiv"] }}</a></span>
 {% if work["permalink"] != blank %}
 <span><span class="fas fa-comment" style="margin-right:0.5em"></span><a href="{{ work["permalink"] }}">More details</a></span>
 </div>
