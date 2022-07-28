@@ -3,7 +3,7 @@ layout: home
 permalink: /home/
 article_header:
   type: overlay
-  background_color: '#e1f1ff'
+  background_color: '#daeaff'
   background_image:
     src: /assets/images/home/header.svg
 
