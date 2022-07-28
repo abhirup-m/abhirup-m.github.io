@@ -11,7 +11,17 @@
 {% if author == "Abhirup Mukherjee" %}
 {% assign authors_str = authors_str | append: "<b>" | append: author_nospace | append: "</b>" %}
 {% else %}
-{% assign authors_str = authors_str | append: author_nospace %}
+{% assign author_words = author | split:" " %}
+{% assign author_short = "" %}
+{% for word in  author_words %}
+{% if forloop.last %}
+{% assign author_short = author_short | append:word  %}
+{% else %}
+{% assign letters = word | split: "" %}
+{% assign author_short = author_short | append:letters[0] | append:". "  %}
+{% endif %}
+{% endfor %}
+{% assign authors_str = authors_str | append: author_short %}
 {% endif %}
 {% unless forloop.last %}
 {% assign authors_str = authors_str | append:",&emsp;" %}
