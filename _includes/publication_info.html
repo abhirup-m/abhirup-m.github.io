@@ -3,7 +3,7 @@
 {% else %}
 {% assign link = work["journal doi"] %}
 {% endif %}
-<a href="{{ link }}" style="font-size:large">{{ work["title"] }}</a>
+<div><a href="{{ link }}">{{ work["title"] }}</a></div>
 {% assign authors = work["authors"] | split:"," %}
 {% assign authors_str = blank %}
 {% for author in authors %}
@@ -17,7 +17,7 @@
 {% assign authors_str = authors_str | append:",&emsp;" %}
 {% endunless %}
 {% endfor %}
-<span class="fas fa-feather" style="margin-right:0.5em"></span>  {{ authors_str }}
+<div><span class="fas fa-feather" style="margin-right:0.5em;"></span>  {{ authors_str }}</div>
 <div style="display:block;">
 <span style="margin-right:5em;"><span class="far fa-clock" style="margin-right:0.5em"></span> {{ work["date"] }}</span>
 {% if work["journal doi"] != blank %}

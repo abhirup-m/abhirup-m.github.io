@@ -48,5 +48,5 @@ permalink: /research/
 
 {% for work in site.data.publications %}
 {% include publication_info.html %}
-<br>
+<div style="display:block;height:2em;"></div>
 {% endfor %}
