@@ -86,6 +86,116 @@ We end this part by summarising the steps involved in creating and deploying the
 
 1. Once the repository is created, we need to go to the repository and click on `Settings > Pages`, and choose `master` as the branch from which to deploy the website. This has to be confirmed by clicking on `Save`.
 
-## Compiling your website locally
+The repository looks like this:
+<div class="img__post">
+<img src="/assets/images/jekyll/repo.svg"/>
+</div>
 
-The minimal workflow of modifying the website now consists of making changes to the repository, up
+## Git and markdown cheatsheet
+
+Going forward, we will be making use of git and markdown, so its necessary to get familiar with the relevant aspects of them.
+
+### Git
+
+Git is a free version control system. It is used, at the very minimum, to track changes in software, allowing the possibility of rolling back changes, creating branches for working on multiple features simultaneously, and even removing specific changes among many others. We will need to know of a very small subset of the features of git for our purposes. A very basic workflow using git involves the following: (i) making some changes in a project, (ii) telling git to track the files, and hence note the changes made in the files, (iii) asking git to cement these changes by marking this state of the repository as a checkpoint, and (iv) uploading the changes to some cloud/online repository.
+The second step is referred to as **adding** the files. This is done using the command `git add <file>`. The simplest way is to just add all the files in the project. That is done through `git add .`. The third step is referred to as **committing** the changes, and each checkpoint is referred to as a **commit**. Each commit is (preferably) accompanied by a **commit message**. Commits are made using the command `git commit -m <commit message>`. The fourth step is referred to as **pushing** the commit, and is as simple as `git push`.
+
+There are some other actions that we might find useful. Creating a local copy of an online repository (say, from GitHub) is referred to as **cloning** the repository: `git clone <repository url>`. Fetching the latest version of a cloned repository from the online source is referred to as **pulling**: `git pull`. We will also often end up in the following scenario: after committing some changes, we realise that we have forgotten to add some small edit to the commit. This is rectified by making all the changes to the project, adding all the files, and then `ammending` the previous commit while keeping the commit message unchanged: `git commit --ammend --no-edit`. The option `--ammend` means we are rectifying the previous commit, while the option `--no-edit` means we are keeping the previous commit message unchanged. Note that you need to add the files before running the new commit command.
+
+### Summary of git commands
+
+This is a summary of the git commands that are relevant to us. Each command is a concrete example.
+- Cloning a repository: `git clone https://github.com/epqm/epqm.github.io`
+- Pulling the latest version of repository: `git pull`
+- Adding the changed files: `git add .`
+- Committing the changes: `git commit -m "modified README"`
+- Rectifying the latest commit: `git commit --ammend --no-edit`
+- Pushing the changes to the online repository: `git push`
+
+### Markdown
+
+Markdown is a markup language: it allows us to create a formatted and structured document by using certain predefined symbols. The markdown file itself is just a plain text file, but it can be converted to other formats like pdf, html, docx, odt and others using software like pandoc. For example, if you write `# This is heading` in a text file and passing this text file through a markdown-to-latex parser, that line will be replaced by `\section{This is a heading}`. This is an example to illustrate what I meant when I said that markdown allows us to add formatting by using only a few symbols. Jekyll allows us to create our webpages in markdown. This means that we can write our posts in markdown, and Jekyll will convert that to html. 
+
+### Summary of markdown rules
+
+The following is a list of the markdown rules that we will often use to format our documents. The version of markdown that is used by our theme is called Kramdown. Kramdown supports some extra features.
+
+- Create headers of decreasing levels by using increasing numbers of `#`: 
+
+~~~
+# Heading 1,
+## Heading 2,
+###### Heading 6
+~~~
+
+- Make text bold or italic by enclosing within `**` or `_`:
+
+~~~
+Normal text, **bold text**, _italic text_
+~~~
+
+- Create unnumbered list using `-`: 
+
+~~~
+ - item 1
+ - item 2
+ - item 3
+~~~
+
+- Write programming code by enclosing within `` ` `` :
+
+~~~
+`a += 1`
+~~~
+
+- Insert a horizontal rule using three dashes:
+
+~~~
+---
+~~~
+
+- Insert a hyperlink using the syntax `[text](link)`:
+
+~~~
+[link to repo](https://github.com/epqm/epqm.github.io)
+~~~
+
+- Insert a local image using the syntax `![title for image](path_to_image)`:
+
+~~~
+![this is an image](/assets/images/jekyll/edit-final.svg)
+
+~~~
+
+## Making changes to the website
+
+Modifying the website requires _pushing_ changes to the GitHub repository. Whenever we commit and push a change to the repository, GitHub will recompile the repository and update the website with the changes. There are two broad ways of pushing changes to the repository.
+
+### Using the browser interface of GitHub (✘)
+
+The first way is to use the browser interface of GitHub. By opening the repository in your browser, you can edit any file and immediately commit the changes, and this will also update the website. To demonstrate this, we will update the `README.md` file. The REAME file is present to provide information regarding the repository. It is only displayed in the GitHub repository web interface, and is not displayed on the website. For example, the current README provides information on the Minimal Mistakes theme, because that is the repository from which we forked our repository. In order to update this file, click on the file name in the list of files.
+<div class="img__post">
+<img src="/assets/images/jekyll/readme1.svg"/>
+</div>
+This displays the contents of the file in the browser. In order to start editing the file, click on the edit icon <i class="fas fa-pen"></i>:
+<div class="img__post">
+<img src="/assets/images/jekyll/edit_icon.svg"/>
+</div>
+This opens the file in the editor of GitHub. We can now update the contents of the README by deleting all the existing content and replacing it with something relevant and simple for the time being. The final form looks something like this:
+<div class="img__post">
+<img src="/assets/images/jekyll/edit-md.svg"/>
+</div>
+To save the changes, we need to `commit` them. This can be done by supplying a commit message in the box provided just under `Commit changes` near the bottom of the page, and then clicking on `Commit changes`.
+<div class="img__post">
+<img src="/assets/images/jekyll/edit-final.svg"/>
+</div>
+We have now added our first commit to the repository. Even though this does not affect the website (because the README is not displayed there), this exercise demonstrates how we can modify any file within the repository.
+
+There are, however, two issues with this approach:
+
+- You can edit only a single file in each commit. You _cannot_ edit multiple files and then combine all those changes into a single commit.
+
+- You cannot preview the edit before you commit them. The only way to find out how the website will be affected by your edit is to check the website _after_ you have committed the edits.
+
+### Making changes locally, and then pushing to GitHub (🗸)
+The more superior approach is to clone the repository (create a local clone in your machine), make changes in your local copy, commit those changes and then push the commits to the GitHub repository. This allows us to make multiple changes within a single commit. We can also preview the changes we have made, by building the repository using `Jekyll`. While it is true that this requires us to setup `git` and `Jekyll` in our local machines, it is only a one-time effort, and is not too tricky.
