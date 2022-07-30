@@ -19,6 +19,7 @@ _"Lets make footprints in the snow together."_
 <video style="width:100%;" controls>
   <source src="/assets/videos/machi.mp4" type="video/mp4">
 </video>
+
 Fruits Basket is a series that I hold very close to my heart, particularly for the drama and romance aspects. In the final season, it is clear that all the various characters are moving beyond their insecurities into the outside world, forging new relations. In the quest to lend meaning to his life, Yuki finds a kindred broken soul in **Machi Kuragi**. 
 
 ## Kaguya Sama: Love is War!

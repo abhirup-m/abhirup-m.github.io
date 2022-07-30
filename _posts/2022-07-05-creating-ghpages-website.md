@@ -8,22 +8,17 @@ tags:
 
 ---
 
-<div class="img__post__right">
-<img src="/assets/images/jekyll/octojekyll.svg">
-</div>
-I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.
-{: style="text-align: justify"}
+![](/assets/images/jekyll/octojekyll.svg){: class="img__post"}
 
+I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.
 
 ## Ruby, gems and Jekyll
 [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) is an interpreted, high-level programming language. Libraries in `ruby` are referred to as `gems`. [RubyGems](https://en.wikipedia.org/wiki/RubyGems) is a package manager for `ruby` that makes installing and maintaining `gems` easier. [Bundler](https://github.com/rubygems/bundler) is a `gem` whose job is to create consistent environments for running `ruby`. It does this by managing the `gems` that the application depends on. Given a list of `gems`, it can automatically download and install those `gems`, as well as any other `gems` needed by the `gems` that are listed, _all at the appropriate versions_.
-{: style="text-align: justify"}
 
-<div class="img__post__left">
-<img src="/assets/images/jekyll/jekyll.svg">
-</div>
+![](/assets/images/jekyll/jekyll.svg){: class="img__post"}
+
 Finally, [Jekyll](https://jekyllrb.com/) is a static site generator written in `ruby`. It is in fact a `gem` that takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more. Such a website can then be hosted on any server. [Github Pages](https://jekyllrb.com/docs/github-pages/) is a free option, where you can host the website on GitHub’s `github.io` domain or on a custom domain name of your choice. `Jekyll` was developed by [Tom Preston-Werner](https://en.wikipedia.org/wiki/Tom_Preston-Werner), GitHub's co-founder.
-{: style="text-align: justify"}
+
 
 In summary
 - `gems` are libraries in the language Ruby, managed by the RubyGems package manager
@@ -39,42 +34,41 @@ With these definitions out of the way, we can now start creating the website.
 ### Choosing a Jekyll theme
 
 There are innumerable Jekyll themes on Github. Each such theme consists of a set of templates, layouts, stylesheets and so on. They represent standalone complete websites, and you can add content to it as well modify the existing colors, designs and so on. We will use the famous [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme created by [Michael Rose](https://github.com/mmistakes). It has a modern and attractive style, and allows for sufficient customisation. The simplest way to use the theme is to create a copy of it, and then add content on top of it or make modifications wherever necessary. There are a couple of ways of creating a copy of the theme, and both these methods involve its [GitHub repository](https://github.com/mmistakes/minimal-mistakes). A GitHub repository is simply a cloud storage location for the contents of the theme. In order to create a copy of this theme, we can either _download_ the theme or _fork_ it. Downloading the repository simply downloads the files, while forking the repository creates a copy of the repository under our own GitHub account. Since we would have to ultimately create a repository anyway, it is more efficient to just fork the theme repository. _A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project_. Once we fork the repository, the new forked repository becomes our base website which we can then tweak. 
-{: style="text-align: justify"}
+
 
 ### Forking the theme repository
 
 All the steps will be performed from the account of **epqm**, my research group. To fork the repository, go to the [Minimal Mistakes GitHub repository](https://github.com/mmistakes/minimal-mistakes) and click the `Fork` button at the top right of the webpage.
-{: style="text-align: justify"}
 
-<div class="img__post">
-<img src="/assets/images/jekyll/fork.svg"/>
-</div>
+
+![](/assets/images/jekyll/fork.svg){: class="img__post"}
+
 
 The fork button is encircled in the screenshot above. Alternatively, you can just go to [this link](https://github.com/mmistakes/minimal-mistakes/fork). Either way, you will end up on the page shown in the screenshot below. In order to finish creating the forked repository, you need to insert a name for the new repository, in the space provided under **Repository name**. In order to act as a GitHub Pages website, the name of the repository has to be of the form <code><i>username</i>.github.io</code>, where _username_ has to be replaced with the name of the GitHub user account, which in this case is `epqm`. Choosing any other name will not allow the repository to be used as a website. Once a suitable name has been entered (a green tick should appear adjacent to the name), click the `Create fork` button.
-{: style="text-align: justify"}
 
-<div class="img__post">
-<img src="/assets/images/jekyll/fork2.svg"/>
-</div>
+
+
+![](/assets/images/jekyll/fork2.svg){: class="img__post"}
+
 
 ### Deploying the website
 
 The repository for containing our website has now been created, but the website itself is not active yet. In order to activate it, click on the `Settings` button at the right end of the top menu.
-{: style="text-align: justify"}
-<div class="img__post">
-<img src="/assets/images/jekyll/settings.svg"/>
-</div>
+
+
+![](/assets/images/jekyll/settings.svg){: class="img__post"}
+
 Inside the settings, click on the `Pages` option in the left sidebar menu.
-<div class="img__post">
-<img src="/assets/images/jekyll/pages.svg"/>
-</div>
+
+![](/assets/images/jekyll/pages.svg){: class="img__post"}
+
 We are now in the GitHub Pages part of the settings for our repository. Within these settings, you will have to set the `Source` by clicking on the `Branch` menu and choosing the `master` branch. Branches are essentially views of a repository. If we so desire, the files in the repository can be kept in multiple states, each state representing a branch. Any of these branches can be used to deploy a website. By default, there is only one branch, which is called the _master_ branch. By selecting _master_ from the drop-down menu, we are choosing that branch as our website. After selecting _master_, click on the `Save` button adjacent to the `Branch` menu to make the change permanent.
-{: style="text-align: justify"}
-<div class="img__post">
-<img src="/assets/images/jekyll/master.svg"/>
-</div>
+
+
+![](/assets/images/jekyll/master.svg){: class="img__post"}
+
 The website has now been deployed. After about 5 minutes, it should be possible to access the website at <code>https://<i>username</i>.github.io</code>. We will have to modify the content in the repository in order to make this into a personalised website for our use. 
-{: style="text-align: justify"}
+
 
 ### Summing it all up
 
@@ -87,9 +81,9 @@ We end this part by summarising the steps involved in creating and deploying the
 1. Once the repository is created, we need to go to the repository and click on `Settings > Pages`, and choose `master` as the branch from which to deploy the website. This has to be confirmed by clicking on `Save`.
 
 The repository looks like this:
-<div class="img__post">
-<img src="/assets/images/jekyll/repo.svg"/>
-</div>
+
+![](/assets/images/jekyll/repo.svg){: class="img__post"}
+
 
 ## Git and markdown cheatsheet
 
@@ -123,8 +117,8 @@ The following is a list of the markdown rules that we will often use to format o
 - Create headers of decreasing levels by using increasing numbers of `#`: 
 
 ~~~
-# Heading 1,
-## Heading 2,
+# Heading 1
+## Heading 2
 ###### Heading 6
 ~~~
 
@@ -174,21 +168,14 @@ Modifying the website requires _pushing_ changes to the GitHub repository. Whene
 ### Using the browser interface of GitHub (✘)
 
 The first way is to use the browser interface of GitHub. By opening the repository in your browser, you can edit any file and immediately commit the changes, and this will also update the website. To demonstrate this, we will update the `README.md` file. The REAME file is present to provide information regarding the repository. It is only displayed in the GitHub repository web interface, and is not displayed on the website. For example, the current README provides information on the Minimal Mistakes theme, because that is the repository from which we forked our repository. In order to update this file, click on the file name in the list of files.
-<div class="img__post">
-<img src="/assets/images/jekyll/readme1.svg"/>
-</div>
+![](/assets/images/jekyll/readme1.svg){: class="img__post"}
 This displays the contents of the file in the browser. In order to start editing the file, click on the edit icon <i class="fas fa-pen"></i>:
-<div class="img__post">
-<img src="/assets/images/jekyll/edit_icon.svg"/>
-</div>
+![](/assets/images/jekyll/edit_icon.svg){: class="img__post"}
 This opens the file in the editor of GitHub. We can now update the contents of the README by deleting all the existing content and replacing it with something relevant and simple for the time being. The final form looks something like this:
-<div class="img__post">
-<img src="/assets/images/jekyll/edit-md.svg"/>
-</div>
+![](/assets/images/jekyll/edit-md.svg){: class="img__post"}
 To save the changes, we need to `commit` them. This can be done by supplying a commit message in the box provided just under `Commit changes` near the bottom of the page, and then clicking on `Commit changes`.
-<div class="img__post">
-<img src="/assets/images/jekyll/edit-final.svg"/>
-</div>
+![](/assets/images/jekyll/edit-final.svg){: class="img__post"}
+
 We have now added our first commit to the repository. Even though this does not affect the website (because the README is not displayed there), this exercise demonstrates how we can modify any file within the repository.
 
 There are, however, two issues with this approach:
