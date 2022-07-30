@@ -87,11 +87,11 @@ The repository looks like this:
 ![](/assets/images/jekyll/repo.svg){: class="img__post"}
 
 
-## Git and markdown cheatsheet
+## Git & markdown cheatsheet
 
 Going forward, we will be making use of git and markdown, so its necessary to get familiar with the relevant aspects of them.
 
-### Git
+### What is git?
 
 Git is a free version control system. It is used, at the very minimum, to track changes in software, allowing the possibility of rolling back changes, creating branches for working on multiple features simultaneously, and even removing specific changes among many others. We will need to know of a very small subset of the features of git for our purposes. A very basic workflow using git involves the following: (i) making some changes in a project, (ii) telling git to track the files, and hence note the changes made in the files, (iii) asking git to cement these changes by marking this state of the repository as a checkpoint, and (iv) uploading the changes to some cloud/online repository.
 The second step is referred to as **adding** the files. This is done using the command `git add <file>`. The simplest way is to just add all the files in the project. That is done through `git add .`. The third step is referred to as **committing** the changes, and each checkpoint is referred to as a **commit**. Each commit is (preferably) accompanied by a **commit message**. Commits are made using the command `git commit -m <commit message>`. The fourth step is referred to as **pushing** the commit, and is as simple as `git push`.
@@ -101,16 +101,34 @@ There are some other actions that we might find useful. Creating a local copy of
 ### Summary of git commands
 
 This is a summary of the git commands that are relevant to us. Each command is a concrete example.
-- Cloning a repository: `git clone https://github.com/epqm/epqm.github.io`
-- Pulling the latest version of repository: `git pull`
-- Adding the changed files: `git add .`
-- Committing the changes: `git commit -m "modified README"`
-- Rectifying the latest commit: `git commit --ammend --no-edit`
-- Pushing the changes to the online repository: `git push`
+- Cloning a repository:
+```
+git clone https://github.com/epqm/epqm.github.io
+```
+- Pulling the latest version of repository: 
+```
+git pull
+```
+- Adding the changed files: 
+```
+git add .
+```
+- Committing the changes:
+```
+git commit -m "modified README"
+```
+- Rectifying the latest commit: 
+```
+git commit --ammend --no-edit
+```
+- Pushing the changes to the online repository: 
+```
+git push
+```
 
-### Markdown
+### What is markdown?
 
-Markdown is a markup language: it allows us to create a formatted and structured document by using certain predefined symbols. The markdown file itself is just a plain text file, but it can be converted to other formats like pdf, html, docx, odt and others using software like pandoc. For example, if you write `# This is heading` in a text file and passing this text file through a markdown-to-latex parser, that line will be replaced by `\section{This is a heading}`. This is an example to illustrate what I meant when I said that markdown allows us to add formatting by using only a few symbols. Jekyll allows us to create our webpages in markdown. This means that we can write our posts in markdown, and Jekyll will convert that to html. 
+Markdown is a markup language: it allows us to create a formatted and structured document by using certain predefined symbols. The markdown file itself is just a plain text file, but it can be converted to other formats like pdf, html, docx, odt and others using software like pandoc. For example, if you write `# This is heading` in a text file and pass this text file through a markdown-to-latex parser, that line will be replaced by `\section{This is a heading}`. This is an example to illustrate what I meant when I said that markdown allows us to add formatting by using only a few symbols. Jekyll allows us to create our webpages in markdown. This means that we can write our posts in markdown, and Jekyll will convert that to html. 
 
 ### Summary of markdown rules
 
@@ -160,14 +178,13 @@ Normal text, **bold text**, _italic text_
 
 ~~~
 ![this is an image](/assets/images/jekyll/edit-final.svg)
-
 ~~~
 
-## Making changes to the website
+## Modifying the website
 
 Modifying the website requires _pushing_ changes to the GitHub repository. Whenever we commit and push a change to the repository, GitHub will recompile the repository and update the website with the changes. There are two broad ways of pushing changes to the repository.
 
-### Using the browser interface of GitHub (✘)
+### Using GitHub's web interface (✘)
 
 The first way is to use the browser interface of GitHub. By opening the repository in your browser, you can edit any file and immediately commit the changes, and this will also update the website. To demonstrate this, we will update the `README.md` file. The REAME file is present to provide information regarding the repository. It is only displayed in the GitHub repository web interface, and is not displayed on the website. For example, the current README provides information on the Minimal Mistakes theme, because that is the repository from which we forked our repository. In order to update this file, click on the file name in the list of files.
 ![](/assets/images/jekyll/readme1.svg){: class="img__post"}
@@ -186,5 +203,47 @@ There are, however, two issues with this approach:
 
 - You cannot preview the edit before you commit them. The only way to find out how the website will be affected by your edit is to check the website _after_ you have committed the edits.
 
-### Making changes locally, and then pushing to GitHub (🗸)
-The more superior approach is to clone the repository (create a local clone in your machine), make changes in your local copy, commit those changes and then push the commits to the GitHub repository. This allows us to make multiple changes within a single commit. We can also preview the changes we have made, by building the repository using `Jekyll`. While it is true that this requires us to setup `git` and `Jekyll` in our local machines, it is only a one-time effort, and is not too tricky.
+### Working with a local copy (✔)
+The more superior approach is to clone the repository (create a local clone in your machine), make changes in your local copy, commit those changes and then push the commits to the GitHub repository. This allows us to make multiple changes within a single commit. We can also preview the changes we have made, by building the repository using `Jekyll`. While it is true that this requires us to setup `git` and `Jekyll` in our local machines, it is only a one-time effort, and is not too tricky. This subsection is a bit long, so we summarise the steps here:
+
+1. [Install git on your machine and download the repository](#installing-git)
+1. [Install Ruby and relevant gems](#setting-up-ruby-and-gems)
+1. [Make required changes to files](#editing-files)
+1. [Build website locally using Jekyll to preview changes](#building-the-website-locally)
+1. [Commit and push changes to upstream when satisfied with changes](#committing-and-pushing-changes)
+
+We will now elaborate on each of these steps. Note that steps 1-2 need to be performed only once.
+
+#### Installing git and downloading the repository
+
+The basics of git has been summarised in the [relevant section](#git--markdown-cheatsheet). We start by discussing how to install it. On a Linux machine, run one of the following commands in the terminal, depending on the particular distribution you are using:
+```
+$ sudo pacman -S git # Arch-based distributions
+$ sudo apt install git # Debian-based distributions
+```
+If you are using macOS, run the following command in the terminal:
+```
+$ brew install git
+```
+If you are using Windows, go [here](https://git-scm.com/download/win) and click on the link that says **64-bit Git for Windows Setup**. This will download the git installer for windows. Once the download has finished, click on the installer and go through all the steps, choosing the default option whenever you are prompted to make a choice.
+
+Now that we have installed git, we need to be able to run git commands. _Note that all commands must be run within the folder of the project_. On Linux or macOS, you can just open a terminal in the folder of the project and run git commands in that folder. For example, in order to pull the latest version of a research project, we first change into that folder (using cd) and then run `git pull`.
+![](/assets/images/jekyll/git_linux.svg){: class="img__post"}
+On a Windows machine, we need to change into the folder of the project, right click inside the folder to reveal the drop-down menu, and select **Git Bash Here** from the menu. This starts a terminal in the folder, where we can now run the same git commands.
+
+Having installed git on your machine, the next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is `https://github.com/epqm/epqm.github.io`. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:
+```
+git clone https://github.com/epqm/epqm.github.io
+```
+This will download the repository to your machine, into its own folder. By looking at the list of folders, you should be able to tell the name of the folder the repository was downloaded into. Assuming the name of the folder is `epqm.github.io`, we move into this folder by running `cd`:
+```
+cd epqm.github.io
+```
+
+#### Setting up Ruby and gems
+
+#### Editing files
+
+#### Compiling the website locally
+
+#### Committing and pushing changes
