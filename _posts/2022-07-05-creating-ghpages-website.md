@@ -2,6 +2,8 @@
 layout: article
 title: Getting yourself a Jekyll website
 permalink: /website/
+aside:
+  toc: true
 tags:
   - technology
   - guide

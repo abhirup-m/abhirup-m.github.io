@@ -59,7 +59,7 @@ layout: base
     {%- if _footer == false -%}
       {%- assign _page_main_class = _page_main_class | append: ' hide-footer' -%}
     {%- endif -%}
-    {%- if page.aside -%}
+    {%- if page.aside.toc == true -%}
       {%- assign _page_main_class = _page_main_class | append: ' has-aside' -%}
     {%- elsif _full_width -%}
       {%- assign _page_main_class = _page_main_class | append: ' full-width' -%}
@@ -184,11 +184,11 @@ layout: base
             <div class="grid grid--reverse">
 
               <div class="col-aside d-print-none js-col-aside">
-                {%- if page.aside -%}
+              {%- if page.aside -%}
                   <aside class="page__aside js-page-aside">
                     {%- include aside/toc.html -%}
                   </aside>
-                {%- endif -%}
+              {%- endif -%}
               </div>
 
               <div class="col-main cell cell--auto">

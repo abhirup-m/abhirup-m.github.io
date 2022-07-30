@@ -14,6 +14,7 @@
 .has-aside {
   .main {
     max-width: map-get($layout, content-max-width) + map-get($layout, aside-width);
+    margin-right: 10em;
     @include media-breakpoint-down(lg) {
       max-width: map-get($layout, content-max-width);
     }

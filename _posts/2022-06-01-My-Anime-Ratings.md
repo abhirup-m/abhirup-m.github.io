@@ -39,10 +39,9 @@ Anime refers to a specific form of media - hand-drawn or computer-generated anim
 {% assign start = lim | times:i %}
 {% assign array = site.data.myanimelist | sort_natural: "My Rating" %}
 | {{ headers[0] }} | {{ headers[1] }} | {{ headers[2] }} |
-|:---|:---:|---:|
+|:---|:---:|:---:|
 {% for row in array offset:start limit:lim -%}
 | [{{ row["Anime Title"] }}]({{ row["Link"] }}) | {{ row["My Rating"] }} | {{ row["MAL Rating"] }} |
 {% endfor %}
 ![]({{ image_paths[i] }}){: class="img__post"}
 {% endfor %}
-
