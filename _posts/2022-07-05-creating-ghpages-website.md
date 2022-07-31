@@ -196,15 +196,14 @@ There are, however, two issues with this approach:
 ### Working with a local copy ✔
 The more superior approach is to clone the repository (create a local clone in your machine), make changes in your local copy, commit those changes and then push the commits to the GitHub repository. This allows us to make multiple changes within a single commit. We can also preview the changes we have made, by building the repository using `Jekyll`. While it is true that this requires us to setup `git` and `Jekyll` in our local machines, it is only a one-time effort, and is not too tricky. This subsection is a bit long, so we summarise the steps here:
 
-1. [Install git on your machine and download the repository](#installing-git)
-1. [Install Ruby and relevant gems](#setting-up-ruby-and-gems)
-1. [Make required changes to files](#editing-files)
-1. [Build website locally using Jekyll to preview changes](#building-the-website-locally)
-1. [Commit and push changes to upstream when satisfied with changes](#committing-and-pushing-changes)
+{% assign subsections = "Install git on your machine and download the repository,Install Ruby and relevant gems,Make required changes to files,Build website locally using Jekyll to preview changes,Commit and push changes to upstream when satisfied with changes" | split: ',' %}
+{% for subsection in subsections -%}
+1. [{{ subsection }}](#{{ subsection | downcase | replace: " ","-" }})
+{% endfor %}
 
-We will now elaborate on each of these steps. Note that steps 1-2 need to be performed only once.
+We will now elaborate on each of these steps. Note that steps 1 and 2 need to be performed only once.
 
-#### Installing git and downloading the repository
+#### 1. {{ subsections[0] }}
 
 The basics of git has been summarised in the [relevant section](#git--markdown-cheatsheet). We start by discussing how to install it. On a Linux machine, run one of the following commands in the terminal, depending on the particular distribution you are using:
 ```
@@ -236,10 +235,56 @@ This will download the repository to your machine, into its own folder. By looki
 cd epqm.github.io
 ```
 
-#### Setting up Ruby and gems
+#### 2. {{ subsections[1] }}
+The next step is to install Ruby and its gems. This is required in order to be able to compile the website locally and see what the website actually looks after the changes we made, before we commit and push the changes. _Note also that Ruby2.7 is the version that works best with Jekyll, so that is the version we will install_. To install Ruby on a Linux machine, run one of the following commands, depending on your distribution:
+```
+$ sudo pacman -S ruby2.7 # Arch-based distributions
+$ sudo apt install ruby2.7 # Debian-based distributions
+```
+On macOS, run the following command:
+```
+$ brew install ruby@2.7
+```
+These commands need not be run within the repository folder. On Windows, you will need to first go to [this download page](https://rubyinstaller.org/downloads/) and click on the link that says **Ruby 2.7.6-1 (x64)**. This downloads the Windows installer for the appropriate Ruby version. Once downloaded, click on the installer and go through the steps to install it, choosing the default option whenever asked to make a choice.
 
-#### Editing files
+Now that we have installed Ruby 2.7, we have to get into gems. As mentioned before, RubyGems is the library-manager for ruby. It is used to install and remove Ruby libraries, which are also referred to as gems (hence the name RubyGems). The first step is to update RubyGems, and this is done through the commad:
+```
+$ sudo gem-2.7 update --system # on Linux
+$ sudo gem update --system # on macOS
+$ gem update --system # on Windows
+```
+This commands must be run in a Linux/macOS/Windows terminal. The Windows terminal can be accessed from the drop down menu that appears by holding down Shift and then clicking the right mouse button.
 
-#### Compiling the website locally
+Having updated RubyGems, we now need to install the specific gems that are necessary for our website. The list of the necessary gems along with their versions is already provided in the repository in the form of Gemfile(s) which can be read by a gem named bundler. **Bundler** makes it easy to install a specific set of gems. Note that the following two commands have to be run _inside_ the folder of the repository. You can either use your graphical file explorer to navigate into this folder and open a terminal there, or you can just `cd` into the folder from a terminal that was opened elsewhere. At any rate, ensure you are in a terminal and inside the repository folder. Then, run the following two commands:
+```
+$ bundle config set --local path 'vendor/bundle' # set the location for installing gems
+$ bundle-2.7 install # install the required gems 
+``` 
+The first command sets the location where the gems will be installed. The second command installs the required gems, into the location specified earlier. As mentioned before, the part after the '#` acts as a comment which is ignored by the terminal and which has been provided just for your information. 
 
-#### Committing and pushing changes
+#### 3. {{ subsections[2] }}
+Just to demonstrate the workflow of making changes to the website, previewing it and pushing the changes, we will make a simple edit. Open the `_pages/about.md` file in a text editor. There should be some text between two `---` at the top of the page - do not edit that. Instead, remove all the text _below_ the bottom `---`, and replace it with something else, like "Welcome to EPQM!". Save the changes in the text editor and close it. The below images show the state of the file before and after the edit.
+
+![](/assets/images/jekyll/file-edit.svg){: class="img__post"}
+
+#### 4. {{ subsections[3] }}
+Having made some changes, it is time to compile the website using jekyll to preview the changes. In order to compile the website, _make sure that you are just inside the repository folder, and not inside anny of the subfolders within the repository_. Having ensured this, start a terminal in the folder and run the following command:
+```
+$ bundle-2.7 exec jekyll serve -lIw
+```
+An explanation of this command is due. The first part `bundle-2.7 exec` means that we will be running the later part of the command inside the environment created by the gems listed in the Gemfile. This ensures that the correct versions of the libraries are used. The latter part `jekyll serve` instructs jekyll to compile the website and make it available to be viewed. You can view the website by opening the browser and going to the url [http://localhost:4000/](http://localhost:4000/). The final part `-lIw` is a set of options that we have passed to jekyll. 
+- The option `w` stands for watch; it makes sure that if we keep this command running, jekyll automatically recompiles the website whenever we make and save any changes.
+- The option `l` stands for livereload; it refreshes the browser whenever we make and save any changes, in order to reflect the modified website.
+- The option `I` means incremental build; it allows faster compiling of the website.
+
+To see the effect our change in the about.md file, open the browser and go to [http://localhost:4000/](http://localhost:4000/). This will show the home page of the website. At the right end of the top bar, click on the **About** tab, and this opens the about page of the website. In this page, we should be able to see the message we typed in earlier in the `about.md` file.
+
+![](/assets/images/jekyll/about.svg){: class="img__post"}
+
+#### 5. {{ subsections[4] }}
+Once we are happy with the changes, we need to commit and push them to GitHub, so that they are reflected on the actual website that can be viewed at `https://<username>.github.io`, which for us is `https://epqm.github.io/`. As discussed above, the final steps are adding the files, committing the change and then pushing the changes to GitHub.
+```
+$ git add .
+$ git commit -m "modified about"
+$ git push
+```
