@@ -34,12 +34,10 @@ With these definitions out of the way, we can now start creating the website.
 ## Starting with a base theme
 
 ### Choosing a Jekyll theme
-
 There are innumerable Jekyll themes on Github. Each such theme consists of a set of templates, layouts, stylesheets and so on. They represent standalone complete websites, and you can add content to it as well modify the existing colors, designs and so on. We will use the famous [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme created by [Michael Rose](https://github.com/mmistakes). It has a modern and attractive style, and allows for sufficient customisation. The simplest way to use the theme is to create a copy of it, and then add content on top of it or make modifications wherever necessary. There are a couple of ways of creating a copy of the theme, and both these methods involve its [GitHub repository](https://github.com/mmistakes/minimal-mistakes). A GitHub repository is simply a cloud storage location for the contents of the theme. In order to create a copy of this theme, we can either _download_ the theme or _fork_ it. Downloading the repository simply downloads the files, while forking the repository creates a copy of the repository under our own GitHub account. Since we would have to ultimately create a repository anyway, it is more efficient to just fork the theme repository. _A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project_. Once we fork the repository, the new forked repository becomes our base website which we can then tweak. 
 
 
 ### Forking the theme repository
-
 All the steps will be performed from the account of **epqm**, my research group. To fork the repository, go to the [Minimal Mistakes GitHub repository](https://github.com/mmistakes/minimal-mistakes) and click the `Fork` button at the top right of the webpage.
 
 
@@ -73,7 +71,6 @@ The website has now been deployed. After about 5 minutes, it should be possible 
 
 
 ### Summing it all up
-
 We end this part by summarising the steps involved in creating and deploying the website.
 
 1. The first step is to choose a `Jekyll theme` on which to start creating the website.
@@ -86,20 +83,16 @@ The repository looks like this:
 
 ![](/assets/images/jekyll/repo.svg){: class="img__post"}
 
-
 ## Git & markdown cheatsheet
-
 Going forward, we will be making use of git and markdown, so its necessary to get familiar with the relevant aspects of them.
 
 ### What is git?
-
 Git is a free version control system. It is used, at the very minimum, to track changes in software, allowing the possibility of rolling back changes, creating branches for working on multiple features simultaneously, and even removing specific changes among many others. We will need to know of a very small subset of the features of git for our purposes. A very basic workflow using git involves the following: (i) making some changes in a project, (ii) telling git to track the files, and hence note the changes made in the files, (iii) asking git to cement these changes by marking this state of the repository as a checkpoint, and (iv) uploading the changes to some cloud/online repository.
 The second step is referred to as **adding** the files. This is done using the command `git add <file>`. The simplest way is to just add all the files in the project. That is done through `git add .`. The third step is referred to as **committing** the changes, and each checkpoint is referred to as a **commit**. Each commit is (preferably) accompanied by a **commit message**. Commits are made using the command `git commit -m <commit message>`. The fourth step is referred to as **pushing** the commit, and is as simple as `git push`.
 
 There are some other actions that we might find useful. Creating a local copy of an online repository (say, from GitHub) is referred to as **cloning** the repository: `git clone <repository url>`. Fetching the latest version of a cloned repository from the online source is referred to as **pulling**: `git pull`. We will also often end up in the following scenario: after committing some changes, we realise that we have forgotten to add some small edit to the commit. This is rectified by making all the changes to the project, adding all the files, and then `ammending` the previous commit while keeping the commit message unchanged: `git commit --ammend --no-edit`. The option `--ammend` means we are rectifying the previous commit, while the option `--no-edit` means we are keeping the previous commit message unchanged. Note that you need to add the files before running the new commit command.
 
 ### Summary of git commands
-
 This is a summary of the git commands that are relevant to us. Each command is a concrete example.
 - Cloning a repository:
 ```
@@ -127,11 +120,9 @@ git push
 ```
 
 ### What is markdown?
-
 Markdown is a markup language: it allows us to create a formatted and structured document by using certain predefined symbols. The markdown file itself is just a plain text file, but it can be converted to other formats like pdf, html, docx, odt and others using software like pandoc. For example, if you write `# This is heading` in a text file and pass this text file through a markdown-to-latex parser, that line will be replaced by `\section{This is a heading}`. This is an example to illustrate what I meant when I said that markdown allows us to add formatting by using only a few symbols. Jekyll allows us to create our webpages in markdown. This means that we can write our posts in markdown, and Jekyll will convert that to html. 
 
 ### Summary of markdown rules
-
 The following is a list of the markdown rules that we will often use to format our documents. The version of markdown that is used by our theme is called Kramdown. Kramdown supports some extra features.
 
 - Create headers of decreasing levels by using increasing numbers of `#`: 
@@ -181,11 +172,9 @@ Normal text, **bold text**, _italic text_
 ~~~
 
 ## Modifying the website
-
 Modifying the website requires _pushing_ changes to the GitHub repository. Whenever we commit and push a change to the repository, GitHub will recompile the repository and update the website with the changes. There are two broad ways of pushing changes to the repository.
 
 ### Using GitHub's web interface (✘)
-
 The first way is to use the browser interface of GitHub. By opening the repository in your browser, you can edit any file and immediately commit the changes, and this will also update the website. To demonstrate this, we will update the `README.md` file. The REAME file is present to provide information regarding the repository. It is only displayed in the GitHub repository web interface, and is not displayed on the website. For example, the current README provides information on the Minimal Mistakes theme, because that is the repository from which we forked our repository. In order to update this file, click on the file name in the list of files.
 ![](/assets/images/jekyll/readme1.svg){: class="img__post"}
 This displays the contents of the file in the browser. In order to start editing the file, click on the edit icon <i class="fas fa-pen"></i>:
@@ -228,7 +217,13 @@ $ brew install git
 If you are using Windows, go [here](https://git-scm.com/download/win) and click on the link that says **64-bit Git for Windows Setup**. This will download the git installer for windows. Once the download has finished, click on the installer and go through all the steps, choosing the default option whenever you are prompted to make a choice.
 
 Now that we have installed git, we need to be able to run git commands. _Note that all commands must be run within the folder of the project_. On Linux or macOS, you can just open a terminal in the folder of the project and run git commands in that folder. For example, in order to pull the latest version of a research project, we first change into that folder (using cd) and then run `git pull`.
-![](/assets/images/jekyll/git_linux.svg){: class="img__post"}
+```
+$ ( ~ ) 
+$ ( ~ ) cd "/home/kirito/storage/work/local MIT"
+$ ( local MIT ) git pull
+Already up to date.
+$ ( local MIT )
+```
 On a Windows machine, we need to change into the folder of the project, right click inside the folder to reveal the drop-down menu, and select **Git Bash Here** from the menu. This starts a terminal in the folder, where we can now run the same git commands.
 
 Having installed git on your machine, the next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is `https://github.com/epqm/epqm.github.io`. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:
