@@ -219,20 +219,43 @@ If you are using Windows, go [here](https://git-scm.com/download/win) and click 
 Now that we have installed git, we need to be able to run git commands. _Note that all commands must be run within the folder of the project_. On Linux or macOS, you can just open a terminal in the folder of the project and run git commands in that folder. For example, in order to pull the latest version of a research project, we first change into that folder (using cd) and then run `git pull`.
 ```
 $ ( ~ ) 
-$ ( ~ ) cd "/home/kirito/storage/work/local MIT"
+$ ( ~ ) cd "/home/historia/storage/work/local MIT"
 $ ( local MIT ) git pull
 Already up to date.
 $ ( local MIT )
 ```
 On a Windows machine, we need to change into the folder of the project, right click inside the folder to reveal the drop-down menu, and select **Git Bash Here** from the menu. This starts a terminal in the folder, where we can now run the same git commands.
 
-Having installed git on your machine, the next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is `https://github.com/epqm/epqm.github.io`. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:
+Having installed git on your machine, the next step is to provide some details regarding the user account and authentication. Run the following commands in a terminal:
 ```
-git clone https://github.com/epqm/epqm.github.io
+$ git config --global user.name <username>
+$ git config --global user.email <email id>
+```
+The `<username>` and `<email id>` are replaced with the username and email-id of your GitHub account. In order to push changes to the GitHub repository, one more step is necessary. In order to authenticate yourself, you need to generate a pair of public-private SSH keys, and add the public key to GitHub. To generate the key, run the following in a terminal:
+```
+$ ssh-keygen -t ed25519 -C "<email id>"
+```
+After running this command, you might be presented with a number of prompts. Press enter at all of them. The final output should display, among other things, the location of the public key. For example, a typical output on Linux reads
+```
+$ ssh-keygen -t ed25519 -C "historia@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/historia/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/historia/.ssh/id_ed25519
+Your public key has been saved in /home/historia/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:0w4qTixw3jGOsNObS/5SN2/vkCAA5sjuXp8mjVH7Tek historia@gmail.com
+```
+As is apparent, the second line gives the location of the public key. In order to add the public key to GitHub, follow the steps laid out in [this GitHub docs page](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). This concludes setting up git.
+
+The next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is `https://github.com/epqm/epqm.github.io`. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:
+```
+$ git clone https://github.com/epqm/epqm.github.io
 ```
 This will download the repository to your machine, into its own folder. By looking at the list of folders, you should be able to tell the name of the folder the repository was downloaded into. Assuming the name of the folder is `epqm.github.io`, we move into this folder by running `cd`:
 ```
-cd epqm.github.io
+$ cd epqm.github.io
 ```
 
 #### 2. {{ subsections[1] }}
