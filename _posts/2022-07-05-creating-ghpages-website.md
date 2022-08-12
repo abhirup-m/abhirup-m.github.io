@@ -201,9 +201,11 @@ The more superior approach is to clone the repository (create a local clone in y
 1. [{{ subsection }}](#{{ subsection | downcase | replace: " ","-" }})
 {% endfor %}
 
-We will now elaborate on each of these steps. Note that steps 1 and 2 need to be performed only once.
+We will now elaborate on each of these steps. Note that steps 1 and 2 are preparatory steps and need to be performed only once per website. They are performed only for setting up the environment. Steps 3-5 constitute the workflow that we follow in order to make regular changes to our website.
 
-#### 1. {{ subsections[0] }}
+## Setting up the local environment
+
+### {{ subsections[0] }}
 
 The basics of git has been summarised in the [relevant section](#git--markdown-cheatsheet). We start by discussing how to install it. On a Linux machine, run one of the following commands in the terminal, depending on the particular distribution you are using:
 ```
@@ -247,7 +249,11 @@ Your public key has been saved in /home/historia/.ssh/id_ed25519.pub
 The key fingerprint is:
 SHA256:0w4qTixw3jGOsNObS/5SN2/vkCAA5sjuXp8mjVH7Tek historia@gmail.com
 ```
-As is apparent, the second line gives the location of the public key. In order to add the public key to GitHub, follow the steps laid out in [this GitHub docs page](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). This concludes setting up git.
+As is apparent, the second line gives the location of the public key. In order to add the public key to GitHub, follow the steps laid out in [this GitHub docs page](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). There is one final step before we are done with setting up git. Whenever we want to push changes for the first time from our local repository to a GitHub repository, we need to specify the branch to which we want to push. In order to avoid doing this for every repository, we run
+```
+$ git config --global --add --bool push.autoSetupRemote true
+```
+This informs git that any push action will happen between branches of the same name between the local and remote repositories. This concludes setting up git.
 
 The next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is `https://github.com/epqm/epqm.github.io`. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:
 ```
@@ -258,7 +264,7 @@ This will download the repository to your machine, into its own folder. By looki
 $ cd epqm.github.io
 ```
 
-#### 2. {{ subsections[1] }}
+### {{ subsections[1] }}
 The next step is to install Ruby and its gems. This is required in order to be able to compile the website locally and see what the website actually looks after the changes we made, before we commit and push the changes. _Note also that Ruby2.7 is the version that works best with Jekyll, so that is the version we will install_. To install Ruby on a Linux machine, run one of the following commands, depending on your distribution:
 ```
 $ sudo pacman -S ruby2.7 # Arch-based distributions
@@ -283,14 +289,16 @@ Having updated RubyGems, we now need to install the specific gems that are neces
 $ bundle config set --local path 'vendor/bundle' # set the location for installing gems
 $ bundle-2.7 install # install the required gems 
 ``` 
-The first command sets the location where the gems will be installed. The second command installs the required gems, into the location specified earlier. As mentioned before, the part after the '#` acts as a comment which is ignored by the terminal and which has been provided just for your information. 
+The first command sets the location where the gems will be installed. The second command installs the required gems, into the location specified earlier. As mentioned before, the part after the '#' acts as a comment which is ignored by the terminal and which has been provided just for your information. 
 
-#### 3. {{ subsections[2] }}
+## General workflow for making changes
+
+### {{ subsections[2] }}
 Just to demonstrate the workflow of making changes to the website, previewing it and pushing the changes, we will make a simple edit. Open the `_pages/about.md` file in a text editor. There should be some text between two `---` at the top of the page - do not edit that. Instead, remove all the text _below_ the bottom `---`, and replace it with something else, like "Welcome to EPQM!". Save the changes in the text editor and close it. The below images show the state of the file before and after the edit.
 
 ![](/assets/images/jekyll/file-edit.svg){: class="img__post"}
 
-#### 4. {{ subsections[3] }}
+### {{ subsections[3] }}
 Having made some changes, it is time to compile the website using jekyll to preview the changes. In order to compile the website, _make sure that you are just inside the repository folder, and not inside anny of the subfolders within the repository_. Having ensured this, start a terminal in the folder and run the following command:
 ```
 $ bundle-2.7 exec jekyll serve -lIw
@@ -304,10 +312,15 @@ To see the effect our change in the about.md file, open the browser and go to [h
 
 ![](/assets/images/jekyll/about.svg){: class="img__post"}
 
-#### 5. {{ subsections[4] }}
+### {{ subsections[4] }}
 Once we are happy with the changes, we need to commit and push them to GitHub, so that they are reflected on the actual website that can be viewed at `https://<username>.github.io`, which for us is `https://epqm.github.io/`. As discussed above, the final steps are adding the files, committing the change and then pushing the changes to GitHub.
 ```
 $ git add .
 $ git commit -m "modified about"
 $ git push
 ```
+
+### Important point about editing `_config.yml`
+As mentioned in the [Jekyll subsection](#build-website-locally-using-jekyll-to-preview-changes), whenever we edit and save a file within the repository, the change is immediately reflected in the browser, as long as the Jekyll process is running in the background. This is true for editing all files except the `_config.yml` file at the root of the repository. Whenever you edit that file, the effect of this edit is not immediately visible. You need to stop the running Jekyll process (by pressing `CTRL+c` in the terminal) and start a new Jekyll build process (using exactly the same command as before). If you now refresh the browser tab, the change will be visible.
+
+
