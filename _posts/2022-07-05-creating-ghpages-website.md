@@ -203,7 +203,7 @@ The more superior approach is to clone the repository (create a local clone in y
 
 We will now elaborate on each of these steps. Note that steps 1 and 2 are preparatory steps and need to be performed only once per website. They are performed only for setting up the environment. Steps 3-5 constitute the workflow that we follow in order to make regular changes to our website.
 
-## Setting up the local environment
+## Creating a local environment
 
 ### {{ subsections[0] }}
 
@@ -291,7 +291,7 @@ $ bundle-2.7 install # install the required gems
 ``` 
 The first command sets the location where the gems will be installed. The second command installs the required gems, into the location specified earlier. As mentioned before, the part after the '#' acts as a comment which is ignored by the terminal and which has been provided just for your information. 
 
-## General workflow for making changes
+## Broad workflow for making changes
 
 ### {{ subsections[2] }}
 Just to demonstrate the workflow of making changes to the website, previewing it and pushing the changes, we will make a simple edit. Open the `_pages/about.md` file in a text editor. There should be some text between two `---` at the top of the page - do not edit that. Instead, remove all the text _below_ the bottom `---`, and replace it with something else, like "Welcome to EPQM!". Save the changes in the text editor and close it. The below images show the state of the file before and after the edit.
@@ -320,7 +320,39 @@ $ git commit -m "modified about"
 $ git push
 ```
 
-### Important point about editing `_config.yml`
-As mentioned in the [Jekyll subsection](#build-website-locally-using-jekyll-to-preview-changes), whenever we edit and save a file within the repository, the change is immediately reflected in the browser, as long as the Jekyll process is running in the background. This is true for editing all files except the `_config.yml` file at the root of the repository. Whenever you edit that file, the effect of this edit is not immediately visible. You need to stop the running Jekyll process (by pressing `CTRL+c` in the terminal) and start a new Jekyll build process (using exactly the same command as before). If you now refresh the browser tab, the change will be visible.
+### Important point about editing _config.yml
+As mentioned in the [Jekyll subsection](#build-website-locally-using-jekyll-to-preview-changes), whenever we edit and save a file within the repository, the change is immediately reflected in the browser, as long as the Jekyll process is running in the background. This is true for editing all files except the `_config.yml` file at the root of the repository. Whenever you edit that file, the effect of this edit is not immediately visible. You need to stop the currently-running Jekyll process (by pressing `CTRL+c` in the terminal) and start a new Jekyll build process (using exactly the same command as before). If you now refresh the browser tab, the change will be visible.
 
+## Directory structure of repository
 
+Next, we need to get an idea of what the various folders and files in the repository mean. If you open the repository in any file manager, you should see the following items. Each listed item is followed by a very brief description. For more details, please check out the [appropriate page on the official website](https://jekyllrb.com/docs/structure/).
+
+- **assets/**: This folder is used to store various binary files like images and video that we might want to show on the website
+
+- **.bundle/**: This folder is created by bundler to store files that it uses, for example configuration files.
+
+- **_data/**: As the name suggests, this is the folder where you can store data files, like your list of publications or the names of books you have read. This data can be accessed using the *liquid* variable `{{ site.data.<filename> }}`.
+
+- **.git/**: This folder is created by git and is used by git to do all its work. This should not be touched under normal circumstances.
+
+- **_pages/**: This folder is used to store all the pages of the website. By pages, I mean content that is more of the blog kind, as compared to notifications and timely posts. Any file of the correct syntax and file name placed in this folder will be interpreted by Jekyll to be a webpage and will be rendered accordingly into the website.
+
+- **_posts/**: This folder stores all the posts of the website. While the pages can be used to represent timeless content like tutorials, essays and blogs, *posts* usually report notifications, updates and other timely content.
+
+- **_site/**: This is where the final rendered website is created and stored, by Jekyll. GitHub pages looks into this folder and displays its content as the website. We don't need to touch this.
+
+- **vendor/**: This is the folder that we had provided to bundler as the location for installing the gems. As such, this is where you can find all the installed gems for this repository. We don't need to touch this either.
+
+- **_config.yml**: This file can be used to define a large number of configuration settings for the website, including the title and description, color theme, social media links, website logo. We need to go through this file carefully and set appropriate values for the fields. Also note that while modifications to all other files will automatically be reflected in the browser if Jekyll has been run with the `-lIw` flags, modifications to the `_config.yml` file will not be automatically reflected; after saving the changes, you would need to restart the Jekyll process and then refresh the webpages.
+
+- **Gemfile**: This file is used to codify which gems (along with approximate versions) are required by the repository to function properly. It is used by bundler to create the required environment for compiling the website.
+
+- **Gemfile.lock**: This file additionally specifies exactly which versions of the gems mentioned in the Gemfile actually work. This exact version in Gemfile.lock is in contrast to the approximate versioning provided in the Gemfile. We should not need to touch this file.
+
+- **.gitignore**: This is a file used by git; whichever file/path we list in this file will not be tracked (backed up or version-controlled) by git. For example, the vendor folder should be included in this file because we do not want to backup the installed gems - we can always install them anyway.
+
+- **index.html**: This is the home page of the website.
+
+- **.jekyll-metadata**: This helps Jekyll keep track of which files have not been modified since the site was last built, and which files will need to be regenerated on the next build. It is only created when using incremental regeneration. This file will not be included in the generated site.
+
+- **README.md**: This file is not rendered by Jekyll; it is instead rendered on the GitHub repository front page, and can be used to furnish information there.
