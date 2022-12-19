@@ -1,5 +1,4 @@
 ---
-layout: article
 title: Getting yourself a Jekyll website
 permalink: /website/
 aside:
@@ -7,6 +6,8 @@ aside:
 tags:
   - technology
   - guide
+categories:
+  - blog
 
 ---
 
@@ -331,7 +332,7 @@ Next, we need to get an idea of what the various folders and files in the reposi
 
 - **.bundle/**: This folder is created by bundler to store files that it uses, for example configuration files.
 
-- **_data/**: As the name suggests, this is the folder where you can store data files, like your list of publications or the names of books you have read. This data can be accessed using the *liquid* variable `{{ site.data.<filename> }}`.
+- **_data/**: As the name suggests, this is the folder where you can store data files, like your list of publications or the names of books you have read. This data can be accessed using the *liquid* variable {% raw %}`{{ site.data.<filename> }}`{% endraw %}.
 
 - **.git/**: This folder is created by git and is used by git to do all its work. This should not be touched under normal circumstances.
 
@@ -356,3 +357,5 @@ Next, we need to get an idea of what the various folders and files in the reposi
 - **.jekyll-metadata**: This helps Jekyll keep track of which files have not been modified since the site was last built, and which files will need to be regenerated on the next build. It is only created when using incremental regeneration. This file will not be included in the generated site.
 
 - **README.md**: This file is not rendered by Jekyll; it is instead rendered on the GitHub repository front page, and can be used to furnish information there.
+
+## Getting started - Basic settings

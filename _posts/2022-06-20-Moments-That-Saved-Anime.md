@@ -1,10 +1,11 @@
 ---
-layout: article
 title: Moments that Saved Anime
 permalink: /moments/
 tags:
   - anime
   - rankings
+categories:
+  - blog
 
 ---
 

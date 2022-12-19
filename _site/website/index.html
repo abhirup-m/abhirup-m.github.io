@@ -1,0 +1,918 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Getting yourself a Jekyll website - Abhirup’s website</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Abhirup">
+  
+  <meta property="article:author" content="Abhirup">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Abhirup's website">
+<meta property="og:title" content="Getting yourself a Jekyll website">
+<meta property="og:url" content="http://localhost:4000/website/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-07-05T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/website/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Abhirup Mukherjee",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Abhirup's website Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="The Basement"></a>
+        
+        <a class="site-title" href="/">
+          The Basement
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/work/">Work</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blogs/">Blogs</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/avatar.svg" alt="Abhirup" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Abhirup</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Graduate student in physics, IISER Kolkata</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">West Bengal, India</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Getting yourself a Jekyll website">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2022-07-05T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/website/" class="u-url" itemprop="url">Getting yourself a Jekyll website
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p><img src="/assets/images/jekyll/octojekyll.svg" alt="" class="img__post" /></p>
+
+<p>I work in a theoretical physics <a href="https://www.iiserkol.ac.in/~slal/">research group</a>, and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, <a href="https://jekyllrb.com/docs/">this</a>, <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages">this</a> or <a href="https://opensource.com/article/17/4/getting-started-jekyll">this</a>), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.</p>
+
+<h2 id="ruby-gems-and-jekyll">Ruby, gems and Jekyll</h2>
+<p><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a> is an interpreted, high-level programming language. Libraries in <code class="language-plaintext highlighter-rouge">ruby</code> are referred to as <code class="language-plaintext highlighter-rouge">gems</code>. <a href="https://en.wikipedia.org/wiki/RubyGems">RubyGems</a> is a package manager for <code class="language-plaintext highlighter-rouge">ruby</code> that makes installing and maintaining <code class="language-plaintext highlighter-rouge">gems</code> easier. <a href="https://github.com/rubygems/bundler">Bundler</a> is a <code class="language-plaintext highlighter-rouge">gem</code> whose job is to create consistent environments for running <code class="language-plaintext highlighter-rouge">ruby</code>. It does this by managing the <code class="language-plaintext highlighter-rouge">gems</code> that the application depends on. Given a list of <code class="language-plaintext highlighter-rouge">gems</code>, it can automatically download and install those <code class="language-plaintext highlighter-rouge">gems</code>, as well as any other <code class="language-plaintext highlighter-rouge">gems</code> needed by the <code class="language-plaintext highlighter-rouge">gems</code> that are listed, <em>all at the appropriate versions</em>.</p>
+
+<p><img src="/assets/images/jekyll/jekyll.svg" alt="" class="img__post" /></p>
+
+<p>Finally, <a href="https://jekyllrb.com/">Jekyll</a> is a static site generator written in <code class="language-plaintext highlighter-rouge">ruby</code>. It is in fact a <code class="language-plaintext highlighter-rouge">gem</code> that takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site’s look and feel, URLs, the data displayed on the page, and more. Such a website can then be hosted on any server. <a href="https://jekyllrb.com/docs/github-pages/">Github Pages</a> is a free option, where you can host the website on GitHub’s <code class="language-plaintext highlighter-rouge">github.io</code> domain or on a custom domain name of your choice. <code class="language-plaintext highlighter-rouge">Jekyll</code> was developed by <a href="https://en.wikipedia.org/wiki/Tom_Preston-Werner">Tom Preston-Werner</a>, GitHub’s co-founder.</p>
+
+<p>In summary</p>
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">gems</code> are libraries in the language Ruby, managed by the RubyGems package manager</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">bundler</code> creates environments from specified libraries and their versions</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Jekyll</code> is a ruby library that  generates a static website from the provided content</p>
+  </li>
+</ul>
+
+<p>With these definitions out of the way, we can now start creating the website.</p>
+
+<h2 id="starting-with-a-base-theme">Starting with a base theme</h2>
+
+<h3 id="choosing-a-jekyll-theme">Choosing a Jekyll theme</h3>
+<p>There are innumerable Jekyll themes on Github. Each such theme consists of a set of templates, layouts, stylesheets and so on. They represent standalone complete websites, and you can add content to it as well modify the existing colors, designs and so on. We will use the famous <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes</a> theme created by <a href="https://github.com/mmistakes">Michael Rose</a>. It has a modern and attractive style, and allows for sufficient customisation. The simplest way to use the theme is to create a copy of it, and then add content on top of it or make modifications wherever necessary. There are a couple of ways of creating a copy of the theme, and both these methods involve its <a href="https://github.com/mmistakes/minimal-mistakes">GitHub repository</a>. A GitHub repository is simply a cloud storage location for the contents of the theme. In order to create a copy of this theme, we can either <em>download</em> the theme or <em>fork</em> it. Downloading the repository simply downloads the files, while forking the repository creates a copy of the repository under our own GitHub account. Since we would have to ultimately create a repository anyway, it is more efficient to just fork the theme repository. <em>A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project</em>. Once we fork the repository, the new forked repository becomes our base website which we can then tweak.</p>
+
+<h3 id="forking-the-theme-repository">Forking the theme repository</h3>
+<p>All the steps will be performed from the account of <strong>epqm</strong>, my research group. To fork the repository, go to the <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes GitHub repository</a> and click the <code class="language-plaintext highlighter-rouge">Fork</code> button at the top right of the webpage.</p>
+
+<p><img src="/assets/images/jekyll/fork.svg" alt="" class="img__post" /></p>
+
+<p>The fork button is encircled in the screenshot above. Alternatively, you can just go to <a href="https://github.com/mmistakes/minimal-mistakes/fork">this link</a>. Either way, you will end up on the page shown in the screenshot below. In order to finish creating the forked repository, you need to insert a name for the new repository, in the space provided under <strong>Repository name</strong>. In order to act as a GitHub Pages website, the name of the repository has to be of the form <code><i>username</i>.github.io</code>, where <em>username</em> has to be replaced with the name of the GitHub user account, which in this case is <code class="language-plaintext highlighter-rouge">epqm</code>. Choosing any other name will not allow the repository to be used as a website. Once a suitable name has been entered (a green tick should appear adjacent to the name), click the <code class="language-plaintext highlighter-rouge">Create fork</code> button.</p>
+
+<p><img src="/assets/images/jekyll/fork2.svg" alt="" class="img__post" /></p>
+
+<h3 id="deploying-the-website">Deploying the website</h3>
+
+<p>The repository for containing our website has now been created, but the website itself is not active yet. In order to activate it, click on the <code class="language-plaintext highlighter-rouge">Settings</code> button at the right end of the top menu.</p>
+
+<p><img src="/assets/images/jekyll/settings.svg" alt="" class="img__post" /></p>
+
+<p>Inside the settings, click on the <code class="language-plaintext highlighter-rouge">Pages</code> option in the left sidebar menu.</p>
+
+<p><img src="/assets/images/jekyll/pages.svg" alt="" class="img__post" /></p>
+
+<p>We are now in the GitHub Pages part of the settings for our repository. Within these settings, you will have to set the <code class="language-plaintext highlighter-rouge">Source</code> by clicking on the <code class="language-plaintext highlighter-rouge">Branch</code> menu and choosing the <code class="language-plaintext highlighter-rouge">master</code> branch. Branches are essentially views of a repository. If we so desire, the files in the repository can be kept in multiple states, each state representing a branch. Any of these branches can be used to deploy a website. By default, there is only one branch, which is called the <em>master</em> branch. By selecting <em>master</em> from the drop-down menu, we are choosing that branch as our website. After selecting <em>master</em>, click on the <code class="language-plaintext highlighter-rouge">Save</code> button adjacent to the <code class="language-plaintext highlighter-rouge">Branch</code> menu to make the change permanent.</p>
+
+<p><img src="/assets/images/jekyll/master.svg" alt="" class="img__post" /></p>
+
+<p>The website has now been deployed. After about 5 minutes, it should be possible to access the website at <code>https://<i>username</i>.github.io</code>. We will have to modify the content in the repository in order to make this into a personalised website for our use.</p>
+
+<h3 id="summing-it-all-up">Summing it all up</h3>
+<p>We end this part by summarising the steps involved in creating and deploying the website.</p>
+
+<ol>
+  <li>
+    <p>The first step is to choose a <code class="language-plaintext highlighter-rouge">Jekyll theme</code> on which to start creating the website.</p>
+  </li>
+  <li>
+    <p>The next step is to fork the GitHub repository of this theme. While forking, the name of the forked repository has to be of the form <code><i>username</i>.github.io</code>.</p>
+  </li>
+  <li>
+    <p>Once the repository is created, we need to go to the repository and click on <code class="language-plaintext highlighter-rouge">Settings &gt; Pages</code>, and choose <code class="language-plaintext highlighter-rouge">master</code> as the branch from which to deploy the website. This has to be confirmed by clicking on <code class="language-plaintext highlighter-rouge">Save</code>.</p>
+  </li>
+</ol>
+
+<p>The repository looks like this:</p>
+
+<p><img src="/assets/images/jekyll/repo.svg" alt="" class="img__post" /></p>
+
+<h2 id="git--markdown-cheatsheet">Git &amp; markdown cheatsheet</h2>
+<p>Going forward, we will be making use of git and markdown, so its necessary to get familiar with the relevant aspects of them.</p>
+
+<h3 id="what-is-git">What is git?</h3>
+<p>Git is a free version control system. It is used, at the very minimum, to track changes in software, allowing the possibility of rolling back changes, creating branches for working on multiple features simultaneously, and even removing specific changes among many others. We will need to know of a very small subset of the features of git for our purposes. A very basic workflow using git involves the following: (i) making some changes in a project, (ii) telling git to track the files, and hence note the changes made in the files, (iii) asking git to cement these changes by marking this state of the repository as a checkpoint, and (iv) uploading the changes to some cloud/online repository.
+The second step is referred to as <strong>adding</strong> the files. This is done using the command <code class="language-plaintext highlighter-rouge">git add &lt;file&gt;</code>. The simplest way is to just add all the files in the project. That is done through <code class="language-plaintext highlighter-rouge">git add .</code>. The third step is referred to as <strong>committing</strong> the changes, and each checkpoint is referred to as a <strong>commit</strong>. Each commit is (preferably) accompanied by a <strong>commit message</strong>. Commits are made using the command <code class="language-plaintext highlighter-rouge">git commit -m &lt;commit message&gt;</code>. The fourth step is referred to as <strong>pushing</strong> the commit, and is as simple as <code class="language-plaintext highlighter-rouge">git push</code>.</p>
+
+<p>There are some other actions that we might find useful. Creating a local copy of an online repository (say, from GitHub) is referred to as <strong>cloning</strong> the repository: <code class="language-plaintext highlighter-rouge">git clone &lt;repository url&gt;</code>. Fetching the latest version of a cloned repository from the online source is referred to as <strong>pulling</strong>: <code class="language-plaintext highlighter-rouge">git pull</code>. We will also often end up in the following scenario: after committing some changes, we realise that we have forgotten to add some small edit to the commit. This is rectified by making all the changes to the project, adding all the files, and then <code class="language-plaintext highlighter-rouge">ammending</code> the previous commit while keeping the commit message unchanged: <code class="language-plaintext highlighter-rouge">git commit --ammend --no-edit</code>. The option <code class="language-plaintext highlighter-rouge">--ammend</code> means we are rectifying the previous commit, while the option <code class="language-plaintext highlighter-rouge">--no-edit</code> means we are keeping the previous commit message unchanged. Note that you need to add the files before running the new commit command. If you had also pushed the previous incomplete commit, you need to add a <code class="language-plaintext highlighter-rouge">-f</code> flag when you now push the new amended commit.</p>
+
+<h3 id="summary-of-git-commands">Summary of git commands</h3>
+<p>This is a summary of the git commands that are relevant to us. Each command is a concrete example.</p>
+<ul>
+  <li>Cloning a repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/epqm/epqm.github.io
+</code></pre></div>    </div>
+  </li>
+  <li>Pulling the latest version of repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull
+</code></pre></div>    </div>
+  </li>
+  <li>Adding and committing the changed files, then push online:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add file1 file2 # EITHER add specific files
+git add . # OR add all files, just to be sure
+git commit -m "modified this and this" # commit the changes
+git push # push changes online
+</code></pre></div>    </div>
+  </li>
+  <li>Workflow for rectifying the latest commit:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add file1 file 2
+git commit -m "this is a commit"
+git push
+# realise you forgot to add a file to the commit
+git add file1 file2 file3 # add the remaining file
+git commit --ammend --no-edit # make the ammending commit
+git push -f # force push the new commit to replace the old one
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="what-is-markdown">What is markdown?</h3>
+<p>Markdown is a markup language: it allows us to create a formatted and structured document by using certain predefined symbols. The markdown file itself is just a plain text file, but it can be converted to other formats like pdf, html, docx, odt and others using software like pandoc. For example, if you write <code class="language-plaintext highlighter-rouge"># This is heading</code> in a text file and pass this text file through a markdown-to-latex parser, that line will be replaced by <code class="language-plaintext highlighter-rouge">\section{This is a heading}</code>. This is an example to illustrate what I meant when I said that markdown allows us to add formatting by using only a few symbols. Jekyll allows us to create our webpages in markdown. This means that we can write our posts in markdown, and Jekyll will convert that to html.</p>
+
+<h3 id="summary-of-markdown-rules">Summary of markdown rules</h3>
+<p>The following is a list of the markdown rules that we will often use to format our documents. The version of markdown that is used by our theme is called Kramdown. Kramdown supports some extra features.</p>
+
+<ul>
+  <li>Create headers of decreasing levels by using increasing numbers of <code class="language-plaintext highlighter-rouge">#</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Heading 1
+## Heading 2
+###### Heading 6
+</code></pre></div></div>
+
+<ul>
+  <li>Make text bold or italic by enclosing within <code class="language-plaintext highlighter-rouge">**</code> or <code class="language-plaintext highlighter-rouge">_</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Normal text, **bold text**, _italic text_
+</code></pre></div></div>
+
+<ul>
+  <li>Create unnumbered list using <code class="language-plaintext highlighter-rouge">-</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> - item 1
+ - item 2
+ - item 3
+</code></pre></div></div>
+
+<ul>
+  <li>Write programming code by enclosing within <code class="language-plaintext highlighter-rouge">`</code> :</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`a += 1`
+</code></pre></div></div>
+
+<ul>
+  <li>Insert a horizontal rule using three dashes:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre></div></div>
+
+<ul>
+  <li>Insert a hyperlink using the syntax <code class="language-plaintext highlighter-rouge">[text](link)</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link to repo](https://github.com/epqm/epqm.github.io)
+</code></pre></div></div>
+
+<ul>
+  <li>Insert a local image using the syntax <code class="language-plaintext highlighter-rouge">![title for image](path_to_image)</code>:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![this is an image](/assets/images/jekyll/edit-final.svg)
+</code></pre></div></div>
+
+<h2 id="modifying-the-website">Modifying the website</h2>
+<p>Modifying the website requires <em>pushing</em> changes to the GitHub repository. Whenever we commit and push a change to the repository, GitHub will recompile the repository and update the website with the changes. There are two broad ways of pushing changes to the repository.</p>
+
+<h3 id="using-githubs-web-interface-">Using GitHub’s web interface ✘</h3>
+<p>The first way is to use the browser interface of GitHub. By opening the repository in your browser, you can edit any file and immediately commit the changes, and this will also update the website. To demonstrate this, we will update the <code class="language-plaintext highlighter-rouge">README.md</code> file. The REAME file is present to provide information regarding the repository. It is only displayed in the GitHub repository web interface, and is not displayed on the website. For example, the current README provides information on the Minimal Mistakes theme, because that is the repository from which we forked our repository. In order to update this file, click on the file name in the list of files.
+<img src="/assets/images/jekyll/readme1.svg" alt="" class="img__post" />
+This displays the contents of the file in the browser. In order to start editing the file, click on the edit icon <i class="fas fa-pen"></i>:
+<img src="/assets/images/jekyll/edit_icon.svg" alt="" class="img__post" />
+This opens the file in the editor of GitHub. We can now update the contents of the README by deleting all the existing content and replacing it with something relevant and simple for the time being. The final form looks something like this:
+<img src="/assets/images/jekyll/edit-md.svg" alt="" class="img__post" />
+To save the changes, we need to <code class="language-plaintext highlighter-rouge">commit</code> them. This can be done by supplying a commit message in the box provided just under <code class="language-plaintext highlighter-rouge">Commit changes</code> near the bottom of the page, and then clicking on <code class="language-plaintext highlighter-rouge">Commit changes</code>.
+<img src="/assets/images/jekyll/edit-final.svg" alt="" class="img__post" /></p>
+
+<p>We have now added our first commit to the repository. Even though this does not affect the website (because the README is not displayed there), this exercise demonstrates how we can modify any file within the repository.</p>
+
+<p>There are, however, two issues with this approach:</p>
+
+<ul>
+  <li>
+    <p>You can edit only a single file in each commit. You <em>cannot</em> edit multiple files and then combine all those changes into a single commit.</p>
+  </li>
+  <li>
+    <p>You cannot preview the edit before you commit them. The only way to find out how the website will be affected by your edit is to check the website <em>after</em> you have committed the edits.</p>
+  </li>
+</ul>
+
+<h3 id="working-with-a-local-copy-">Working with a local copy ✔</h3>
+<p>The more superior approach is to clone the repository (create a local clone in your machine), make changes in your local copy, commit those changes and then push the commits to the GitHub repository. This allows us to make multiple changes within a single commit. We can also preview the changes we have made, by building the repository using <code class="language-plaintext highlighter-rouge">Jekyll</code>. While it is true that this requires us to setup <code class="language-plaintext highlighter-rouge">git</code> and <code class="language-plaintext highlighter-rouge">Jekyll</code> in our local machines, it is only a one-time effort, and is not too tricky. This subsection is a bit long, so we summarise the steps here:</p>
+
+<ol>
+  <li><a href="#install-git-on-your-machine-and-download-the-repository">Install git on your machine and download the repository</a></li>
+  <li><a href="#install-ruby-and-relevant-gems">Install Ruby and relevant gems</a></li>
+  <li><a href="#make-required-changes-to-files">Make required changes to files</a></li>
+  <li><a href="#build-website-locally-using-jekyll-to-preview-changes">Build website locally using Jekyll to preview changes</a></li>
+  <li><a href="#commit-and-push-changes-to-upstream-when-satisfied-with-changes">Commit and push changes to upstream when satisfied with changes</a></li>
+</ol>
+
+<p>We will now elaborate on each of these steps. Note that steps 1 and 2 are preparatory steps and need to be performed only once per website. They are performed only for setting up the environment. Steps 3-5 constitute the workflow that we follow in order to make regular changes to our website.</p>
+
+<h2 id="creating-a-local-environment">Creating a local environment</h2>
+
+<h3 id="install-git-on-your-machine-and-download-the-repository">Install git on your machine and download the repository</h3>
+
+<p>The basics of git has been summarised in the <a href="#git--markdown-cheatsheet">relevant section</a>. We start by discussing how to install it. On a Linux machine, run one of the following commands in the terminal, depending on the particular distribution you are using:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo pacman -S git # Arch-based distributions
+$ sudo apt install git # Debian-based distributions
+</code></pre></div></div>
+<p>If you are using macOS, run the following command in the terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install git
+</code></pre></div></div>
+<p>If you are using Windows, go <a href="https://git-scm.com/download/win">here</a> and click on the link that says <strong>64-bit Git for Windows Setup</strong>. This will download the git installer for windows. Once the download has finished, click on the installer and go through all the steps, choosing the default option whenever you are prompted to make a choice.</p>
+
+<p>Now that we have installed git, we need to be able to run git commands. <em>Note that all commands must be run within the folder of the project</em>. On Linux or macOS, you can just open a terminal in the folder of the project and run git commands in that folder. For example, in order to pull the latest version of a research project, we first change into that folder (using cd) and then run <code class="language-plaintext highlighter-rouge">git pull</code>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ( ~ ) 
+$ ( ~ ) cd "/home/historia/storage/work/local MIT"
+$ ( local MIT ) git pull
+Already up to date.
+$ ( local MIT )
+</code></pre></div></div>
+<p>On a Windows machine, we need to change into the folder of the project, right click inside the folder to reveal the drop-down menu, and select <strong>Git Bash Here</strong> from the menu. This starts a terminal in the folder, where we can now run the same git commands.</p>
+
+<p>Having installed git on your machine, the next step is to provide some details regarding the user account and authentication. Run the following commands in a terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global user.name &lt;username&gt;
+$ git config --global user.email &lt;email id&gt;
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">&lt;username&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;email id&gt;</code> are replaced with the username and email-id of your GitHub account. In order to push changes to the GitHub repository, one more step is necessary. In order to authenticate yourself, you need to generate a pair of public-private SSH keys, and add the public key to GitHub. To generate the key, run the following in a terminal:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh-keygen -t ed25519 -C "&lt;email id&gt;"
+</code></pre></div></div>
+<p>After running this command, you might be presented with a number of prompts. Press enter at all of them. The final output should display, among other things, the location of the public key. For example, a typical output on Linux reads</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh-keygen -t ed25519 -C "historia@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/historia/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/historia/.ssh/id_ed25519
+Your public key has been saved in /home/historia/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:0w4qTixw3jGOsNObS/5SN2/vkCAA5sjuXp8mjVH7Tek historia@gmail.com
+</code></pre></div></div>
+<p>As is apparent, the second line gives the location of the public key. In order to add the public key to GitHub, follow the steps laid out in <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">this GitHub docs page</a>. There is one final step before we are done with setting up git. Whenever we want to push changes for the first time from our local repository to a GitHub repository, we need to specify the branch to which we want to push. In order to avoid doing this for every repository, we run</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global --add --bool push.autoSetupRemote true
+</code></pre></div></div>
+<p>This informs git that any push action will happen between branches of the same name between the local and remote repositories. This concludes setting up git.</p>
+
+<p>The next step is to download the repository. The repository has a url, which can be obtained by opening the GitHub repository in the browser and looking at the navigation bar. For this example, we assume that this url is <code class="language-plaintext highlighter-rouge">https://github.com/epqm/epqm.github.io</code>. Copy this url from the browser, and run the following command in either the Linux/macOS terminal or in the Git Bash terminal on Windows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone https://github.com/epqm/epqm.github.io
+</code></pre></div></div>
+<p>This will download the repository to your machine, into its own folder. By looking at the list of folders, you should be able to tell the name of the folder the repository was downloaded into. Assuming the name of the folder is <code class="language-plaintext highlighter-rouge">epqm.github.io</code>, we move into this folder by running <code class="language-plaintext highlighter-rouge">cd</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd epqm.github.io
+</code></pre></div></div>
+
+<h3 id="install-ruby-and-relevant-gems">Install Ruby and relevant gems</h3>
+<p>The next step is to install Ruby and its gems. This is required in order to be able to compile the website locally and see what the website actually looks after the changes we made, before we commit and push the changes. <em>Note also that Ruby2.7 is the version that works best with Jekyll, so that is the version we will install</em>. To install Ruby on a Linux machine, run one of the following commands, depending on your distribution:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo pacman -S ruby2.7 # Arch-based distributions
+$ sudo apt install ruby2.7 # Debian-based distributions
+</code></pre></div></div>
+<p>On macOS, run the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ brew install ruby@2.7
+</code></pre></div></div>
+<p>These commands need not be run within the repository folder. On Windows, you will need to first go to <a href="https://rubyinstaller.org/downloads/">this download page</a> and click on the link that says <strong>Ruby 2.7.6-1 (x64)</strong>. This downloads the Windows installer for the appropriate Ruby version. Once downloaded, click on the installer and go through the steps to install it, choosing the default option whenever asked to make a choice.</p>
+
+<p>Now that we have installed Ruby 2.7, we have to get into gems. As mentioned before, RubyGems is the library-manager for ruby. It is used to install and remove Ruby libraries, which are also referred to as gems (hence the name RubyGems). The first step is to update RubyGems, and this is done through the commad:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo gem-2.7 update --system # on Linux
+$ sudo gem update --system # on macOS
+$ gem update --system # on Windows
+</code></pre></div></div>
+<p>This commands must be run in a Linux/macOS/Windows terminal. The Windows terminal can be accessed from the drop down menu that appears by holding down Shift and then clicking the right mouse button.</p>
+
+<p>Having updated RubyGems, we now need to install the specific gems that are necessary for our website. The list of the necessary gems along with their versions is already provided in the repository in the form of Gemfile(s) which can be read by a gem named bundler. <strong>Bundler</strong> makes it easy to install a specific set of gems. Note that the following two commands have to be run <em>inside</em> the folder of the repository. You can either use your graphical file explorer to navigate into this folder and open a terminal there, or you can just <code class="language-plaintext highlighter-rouge">cd</code> into the folder from a terminal that was opened elsewhere. At any rate, ensure you are in a terminal and inside the repository folder. Then, run the following two commands:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle config set --local path 'vendor/bundle' # set the location for installing gems
+$ bundle-2.7 install # install the required gems 
+</code></pre></div></div>
+<p>The first command sets the location where the gems will be installed. The second command installs the required gems, into the location specified earlier. As mentioned before, the part after the ‘#’ acts as a comment which is ignored by the terminal and which has been provided just for your information.</p>
+
+<h2 id="broad-workflow-for-making-changes">Broad workflow for making changes</h2>
+
+<h3 id="make-required-changes-to-files">Make required changes to files</h3>
+<p>Just to demonstrate the workflow of making changes to the website, previewing it and pushing the changes, we will make a simple edit. Open the <code class="language-plaintext highlighter-rouge">_pages/about.md</code> file in a text editor. There should be some text between two <code class="language-plaintext highlighter-rouge">---</code> at the top of the page - do not edit that. Instead, remove all the text <em>below</em> the bottom <code class="language-plaintext highlighter-rouge">---</code>, and replace it with something else, like “Welcome to EPQM!”. Save the changes in the text editor and close it. The below images show the state of the file before and after the edit.</p>
+
+<p><img src="/assets/images/jekyll/file-edit.svg" alt="" class="img__post" /></p>
+
+<h3 id="build-website-locally-using-jekyll-to-preview-changes">Build website locally using Jekyll to preview changes</h3>
+<p>Having made some changes, it is time to compile the website using jekyll to preview the changes. In order to compile the website, <em>make sure that you are just inside the repository folder, and not inside anny of the subfolders within the repository</em>. Having ensured this, start a terminal in the folder and run the following command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle-2.7 exec jekyll serve -lIw
+</code></pre></div></div>
+<p>An explanation of this command is due. The first part <code class="language-plaintext highlighter-rouge">bundle-2.7 exec</code> means that we will be running the later part of the command inside the environment created by the gems listed in the Gemfile. This ensures that the correct versions of the libraries are used. The latter part <code class="language-plaintext highlighter-rouge">jekyll serve</code> instructs jekyll to compile the website and make it available to be viewed. You can view the website by opening the browser and going to the url <a href="http://localhost:4000/">http://localhost:4000/</a>. The final part <code class="language-plaintext highlighter-rouge">-lIw</code> is a set of options that we have passed to jekyll.</p>
+<ul>
+  <li>The option <code class="language-plaintext highlighter-rouge">w</code> stands for watch; it makes sure that if we keep this command running, jekyll automatically recompiles the website whenever we make and save any changes.</li>
+  <li>The option <code class="language-plaintext highlighter-rouge">l</code> stands for livereload; it refreshes the browser whenever we make and save any changes, in order to reflect the modified website.</li>
+  <li>The option <code class="language-plaintext highlighter-rouge">I</code> means incremental build; it allows faster compiling of the website.</li>
+</ul>
+
+<p>To see the effect our change in the about.md file, open the browser and go to <a href="http://localhost:4000/">http://localhost:4000/</a>. This will show the home page of the website. At the right end of the top bar, click on the <strong>About</strong> tab, and this opens the about page of the website. In this page, we should be able to see the message we typed in earlier in the <code class="language-plaintext highlighter-rouge">about.md</code> file.</p>
+
+<p><img src="/assets/images/jekyll/about.svg" alt="" class="img__post" /></p>
+
+<h3 id="commit-and-push-changes-to-upstream-when-satisfied-with-changes">Commit and push changes to upstream when satisfied with changes</h3>
+<p>Once we are happy with the changes, we need to commit and push them to GitHub, so that they are reflected on the actual website that can be viewed at <code class="language-plaintext highlighter-rouge">https://&lt;username&gt;.github.io</code>, which for us is <code class="language-plaintext highlighter-rouge">https://epqm.github.io/</code>. As discussed above, the final steps are adding the files, committing the change and then pushing the changes to GitHub.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add .
+$ git commit -m "modified about"
+$ git push
+</code></pre></div></div>
+
+<h3 id="important-point-about-editing-_configyml">Important point about editing _config.yml</h3>
+<p>As mentioned in the <a href="#build-website-locally-using-jekyll-to-preview-changes">Jekyll subsection</a>, whenever we edit and save a file within the repository, the change is immediately reflected in the browser, as long as the Jekyll process is running in the background. This is true for editing all files except the <code class="language-plaintext highlighter-rouge">_config.yml</code> file at the root of the repository. Whenever you edit that file, the effect of this edit is not immediately visible. You need to stop the currently-running Jekyll process (by pressing <code class="language-plaintext highlighter-rouge">CTRL+c</code> in the terminal) and start a new Jekyll build process (using exactly the same command as before). If you now refresh the browser tab, the change will be visible.</p>
+
+<h2 id="directory-structure-of-repository">Directory structure of repository</h2>
+
+<p>Next, we need to get an idea of what the various folders and files in the repository mean. If you open the repository in any file manager, you should see the following items. Each listed item is followed by a very brief description. For more details, please check out the <a href="https://jekyllrb.com/docs/structure/">appropriate page on the official website</a>.</p>
+
+<ul>
+  <li>
+    <p><strong>assets/</strong>: This folder is used to store various binary files like images and video that we might want to show on the website</p>
+  </li>
+  <li>
+    <p><strong>.bundle/</strong>: This folder is created by bundler to store files that it uses, for example configuration files.</p>
+  </li>
+  <li>
+    <p><strong>_data/</strong>: As the name suggests, this is the folder where you can store data files, like your list of publications or the names of books you have read. This data can be accessed using the <em>liquid</em> variable <code class="language-plaintext highlighter-rouge">{{ site.data.&lt;filename&gt; }}</code>.</p>
+  </li>
+  <li>
+    <p><strong>.git/</strong>: This folder is created by git and is used by git to do all its work. This should not be touched under normal circumstances.</p>
+  </li>
+  <li>
+    <p><strong>_pages/</strong>: This folder is used to store all the pages of the website. By pages, I mean content that is more of the blog kind, as compared to notifications and timely posts. Any file of the correct syntax and file name placed in this folder will be interpreted by Jekyll to be a webpage and will be rendered accordingly into the website.</p>
+  </li>
+  <li>
+    <p><strong>_posts/</strong>: This folder stores all the posts of the website. While the pages can be used to represent timeless content like tutorials, essays and blogs, <em>posts</em> usually report notifications, updates and other timely content.</p>
+  </li>
+  <li>
+    <p><strong>_site/</strong>: This is where the final rendered website is created and stored, by Jekyll. GitHub pages looks into this folder and displays its content as the website. We don’t need to touch this.</p>
+  </li>
+  <li>
+    <p><strong>vendor/</strong>: This is the folder that we had provided to bundler as the location for installing the gems. As such, this is where you can find all the installed gems for this repository. We don’t need to touch this either.</p>
+  </li>
+  <li>
+    <p><strong>_config.yml</strong>: This file can be used to define a large number of configuration settings for the website, including the title and description, color theme, social media links, website logo. We need to go through this file carefully and set appropriate values for the fields. Also note that while modifications to all other files will automatically be reflected in the browser if Jekyll has been run with the <code class="language-plaintext highlighter-rouge">-lIw</code> flags, modifications to the <code class="language-plaintext highlighter-rouge">_config.yml</code> file will not be automatically reflected; after saving the changes, you would need to restart the Jekyll process and then refresh the webpages.</p>
+  </li>
+  <li>
+    <p><strong>Gemfile</strong>: This file is used to codify which gems (along with approximate versions) are required by the repository to function properly. It is used by bundler to create the required environment for compiling the website.</p>
+  </li>
+  <li>
+    <p><strong>Gemfile.lock</strong>: This file additionally specifies exactly which versions of the gems mentioned in the Gemfile actually work. This exact version in Gemfile.lock is in contrast to the approximate versioning provided in the Gemfile. We should not need to touch this file.</p>
+  </li>
+  <li>
+    <p><strong>.gitignore</strong>: This is a file used by git; whichever file/path we list in this file will not be tracked (backed up or version-controlled) by git. For example, the vendor folder should be included in this file because we do not want to backup the installed gems - we can always install them anyway.</p>
+  </li>
+  <li>
+    <p><strong>index.html</strong>: This is the home page of the website.</p>
+  </li>
+  <li>
+    <p><strong>.jekyll-metadata</strong>: This helps Jekyll keep track of which files have not been modified since the site was last built, and which files will need to be regenerated on the next build. It is only created when using incremental regeneration. This file will not be included in the generated site.</p>
+  </li>
+  <li>
+    <p><strong>README.md</strong>: This file is not rendered by Jekyll; it is instead rendered on the GitHub repository front page, and can be used to furnish information there.</p>
+  </li>
+</ul>
+
+<h2 id="getting-started---basic-settings">Getting started - Basic settings</h2>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#guide" class="page__taxonomy-item p-category" rel="tag">guide</a><span class="sep">, </span>
+    
+      <a href="/tags/#technology" class="page__taxonomy-item p-category" rel="tag">technology</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-07-05T00:00:00+05:30">July 5, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Getting+yourself+a+Jekyll+website%20http%3A%2F%2Flocalhost%3A4000%2Fwebsite%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fwebsite%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fwebsite%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/moments/" class="pagination--pager" title="Moments that Saved Anime
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/moments/" rel="permalink">Moments that Saved Anime
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Anime refers to a specific form of media - hand-drawn or computer-generated animated shows that originate from Japan. Anime differ from western animation pro...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myanimelist/" rel="permalink">My Anime Ratings
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/mckondo/" rel="permalink">[New work] On the Multi-channel Kondo problem
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+Frustration shapes multi-channel Kondo physics: a star graph perspective
+
+  S. Patra,&emsp;Abhirup Mukherjee,&emsp;A. Mukherjee,&emsp;N. S. Vidhyadhiraja,&e...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/kondo/" rel="permalink">[New work] On the Single-channel Kondo problem
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+Unveiling the Kondo cloud: Unitary renormalization-group study of the Kondo model
+
+  A. Mukherjee,&emsp;Abhirup Mukherjee,&emsp;N. S. Vidhyadhiraja,&emsp;A....</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Abhirup Mukherjee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,19 +1,9 @@
-header:
-
-  - titles:
-      # @start locale config
-      en      : &EN       Work
-      # @end locale config
+main:
+  - title: "About"
+    url: /about/
+  - title: "Work"
     url: /work/
-
-  - titles:
-      # @start locale config
-      en      : &EN       Posts
-      # @end locale config
-    url: /posts/
-
-  - titles:
-      # @start locale config
-      en      : &EN       Contact
-      # @end locale config
-    url: /contact/
+  - title: "Research"
+    url: /research/
+  - title: "Blogs"
+    url: /blogs/
