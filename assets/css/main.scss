@@ -8,7 +8,19 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// added to remove the footer
+// remove the footer
 .page__footer {
 	display: none;
+}
+
+
+// remove permanent underline on links, 
+// now underline only shows on hover
+a {
+	text-decoration: none;
+}
+
+object {
+	width: 1200;
+	height: 1600;
 }

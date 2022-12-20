@@ -1,6 +1,6 @@
 ---
 title: "Lightning-quick introduction to single site dynamical mean field theory"
-permalink: /phys_note4/
+permalink: /phys_note_dmft/
 layout: splash
 ---
 
