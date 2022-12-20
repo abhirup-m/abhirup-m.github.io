@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -29,6 +29,7 @@ logo                     : "/assets/images/logo.svg"
 masthead_title           : "The Basement"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+github                   : [metadata]
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:

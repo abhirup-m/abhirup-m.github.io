@@ -1,7 +1,7 @@
 ---
 title: Getting yourself a Jekyll website
 excerpt: "![](/assets/images/jekyll/octojekyll.svg)"
-permalink: /website/
+permalink: /jekyll/
 aside:
   toc: true
 tags:

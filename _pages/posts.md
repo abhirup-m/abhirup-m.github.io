@@ -6,7 +6,7 @@ author_profile: false
 ---
 
 {% for post in site.posts %}
-- [**{{ post.title }}**](post.url)
+- [**{{ post.title }}**]({{ post.url }})
 <br>
 {{ post.date | date: "%-d %B, %Y"}}
 {% endfor %}

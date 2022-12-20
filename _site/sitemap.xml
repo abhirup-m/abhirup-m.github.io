@@ -17,7 +17,7 @@
 <lastmod>2022-06-20T00:00:00+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/website/</loc>
+<loc>http://localhost:4000/jekyll/</loc>
 <lastmod>2022-07-05T00:00:00+05:30</lastmod>
 </url>
 <url>
@@ -25,9 +25,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/blogs/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
