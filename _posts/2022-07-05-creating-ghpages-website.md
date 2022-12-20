@@ -1,6 +1,6 @@
 ---
 title: Getting yourself a Jekyll website
-excerpt: "![](/assets/images/jekyll/octojekyll.svg)"
+excerpt: "![](/assets/images/jekyll/octojekyll.png)"
 permalink: /jekyll/
 aside:
   toc: true
@@ -15,6 +15,8 @@ header:
 ---
 
 I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.
+
+![](/assets/images/jekyll/octojekyll.svg)
 
 ## Ruby, gems and Jekyll
 [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) is an interpreted, high-level programming language. Libraries in `ruby` are referred to as `gems`. [RubyGems](https://en.wikipedia.org/wiki/RubyGems) is a package manager for `ruby` that makes installing and maintaining `gems` easier. [Bundler](https://github.com/rubygems/bundler) is a `gem` whose job is to create consistent environments for running `ruby`. It does this by managing the `gems` that the application depends on. Given a list of `gems`, it can automatically download and install those `gems`, as well as any other `gems` needed by the `gems` that are listed, _all at the appropriate versions_.
