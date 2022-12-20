@@ -57,6 +57,9 @@
 <loc>http://localhost:4000/work/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/write-ups/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/assets/pdfs/RG_Shankar.pdf</loc>
 <lastmod>2022-12-20T09:15:02+05:30</lastmod>
 </url>

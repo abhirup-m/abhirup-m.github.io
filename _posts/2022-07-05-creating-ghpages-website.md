@@ -1,5 +1,6 @@
 ---
 title: Getting yourself a Jekyll website
+excerpt: "![](/assets/images/jekyll/octojekyll.svg)"
 permalink: /website/
 aside:
   toc: true
@@ -8,10 +9,10 @@ tags:
   - guide
 categories:
   - blog
+header:
+  overlay_image: /assets/images/jekyll/header.svg
 
 ---
-
-![](/assets/images/jekyll/octojekyll.svg){: class="img__post"}
 
 I work in a theoretical physics [research group](https://www.iiserkol.ac.in/~slal/), and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, [this](https://jekyllrb.com/docs/), [this](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) or [this](https://opensource.com/article/17/4/getting-started-jekyll)), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.
 

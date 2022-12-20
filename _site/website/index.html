@@ -30,6 +30,8 @@
 
 
 
+  <meta property="og:image" content="http://localhost:4000/assets/images/jekyll/header.svg">
+
 
 
 
@@ -146,6 +148,40 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/jekyll/header.svg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Getting yourself a Jekyll website
+
+        
+      </h1>
+      
+        <p class="page__lead"><img src="/assets/images/jekyll/octojekyll.svg" alt="" />
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
@@ -280,22 +316,10 @@
 
     <div class="page__inner-wrap">
       
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/website/" class="u-url" itemprop="url">Getting yourself a Jekyll website
-</a>
-          </h1>
-          
-
-
-        </header>
-      
 
       <section class="page__content e-content" itemprop="text">
         
-        <p><img src="/assets/images/jekyll/octojekyll.svg" alt="" class="img__post" /></p>
-
-<p>I work in a theoretical physics <a href="https://www.iiserkol.ac.in/~slal/">research group</a>, and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, <a href="https://jekyllrb.com/docs/">this</a>, <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages">this</a> or <a href="https://opensource.com/article/17/4/getting-started-jekyll">this</a>), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.</p>
+        <p>I work in a theoretical physics <a href="https://www.iiserkol.ac.in/~slal/">research group</a>, and we recently decided to create a new website for the group. Since I had already worked on two websites, I wanted to take this up. For the benefit of myself as well as the others who will come after me and might have to handle the website, I decided to document the entire process, in as much detail as possible. I believe there are too many general-purpose blog posts on creating Jekyll websites in the wild (see, for example, <a href="https://jekyllrb.com/docs/">this</a>, <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages">this</a> or <a href="https://opensource.com/article/17/4/getting-started-jekyll">this</a>), so this will instead be an elaborate wiki for a very specific use case. The website will have a home page that gives an overview of the research of the group, a dedicated page for the list of publications, a gallery for the present and past members of the group, a page for a more detailed exposition on the topics of our research, as well as other miscellaneous content.</p>
 
 <h2 id="ruby-gems-and-jekyll">Ruby, gems and Jekyll</h2>
 <p><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a> is an interpreted, high-level programming language. Libraries in <code class="language-plaintext highlighter-rouge">ruby</code> are referred to as <code class="language-plaintext highlighter-rouge">gems</code>. <a href="https://en.wikipedia.org/wiki/RubyGems">RubyGems</a> is a package manager for <code class="language-plaintext highlighter-rouge">ruby</code> that makes installing and maintaining <code class="language-plaintext highlighter-rouge">gems</code> easier. <a href="https://github.com/rubygems/bundler">Bundler</a> is a <code class="language-plaintext highlighter-rouge">gem</code> whose job is to create consistent environments for running <code class="language-plaintext highlighter-rouge">ruby</code>. It does this by managing the <code class="language-plaintext highlighter-rouge">gems</code> that the application depends on. Given a list of <code class="language-plaintext highlighter-rouge">gems</code>, it can automatically download and install those <code class="language-plaintext highlighter-rouge">gems</code>, as well as any other <code class="language-plaintext highlighter-rouge">gems</code> needed by the <code class="language-plaintext highlighter-rouge">gems</code> that are listed, <em>all at the appropriate versions</em>.</p>
@@ -775,15 +799,14 @@ $ git push
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/myanimelist/" rel="permalink">My Anime Ratings
+        <a href="/myanimelist/" rel="permalink">My A-Z Anime Ratings
 </a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-
+    <p class="archive__item-excerpt" itemprop="description">Anime refers to a specific animated form of media that originates from Japan. These are my personal ratings of the anime that I have watched over the years.
 </p>
   </article>
 </div>

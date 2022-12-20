@@ -8,8 +8,10 @@ excerpt: "I am Abhirup Mukherjee, a graduate student at IISER Kolkata (India). I
 header:
   overlay_image: /assets/images/home/layered-waves-haikei.svg
   actions:
-      - label: "More about me"
+      - label: "More on me"
         url: /about/
+      - label: "Contact info"
+        url: /about/#contact-information
       - label: "Recent Posts"
         url: /posts/
 ---

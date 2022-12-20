@@ -18,8 +18,31 @@ search: false
 // now underline only shows on hover
 a {
 	font-weight: bold;
+	text-decoration: none;
 }
 
-// a {
-// 	text-decoration: none;
-// }
+.contact_icons {
+	text-align:center;
+a + a {
+	padding-left: 3%;
+}
+i:hover {
+  transform: scale(2);
+}
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+.tag__highlight {
+	margin-left: 3%;
+
+}
+
+.btn {
+	padding: 0.3em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
