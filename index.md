@@ -17,7 +17,7 @@ header:
 ---
 
 My name is Abhirup Mukherjee.
-I am a research scholar at the Indian Institute of Science Education and Research ([IISER](https://www.iiserkol.ac.in/)) Kolkata , living in Kalyani, West Bengal, India.
+I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
 I work in theoretical condensed matter physics, and am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group.
 I study various topics in the field of strongly correlated materials. 
 

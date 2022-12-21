@@ -26,4 +26,4 @@ I am part of an organisation named [Projectyl](https://projectyl.github.io/) tha
 
 
 
-![](/assets/images/contact/preferred_chat_system.png){: .full}
+![](/assets/images/contact/preferred_chat_system.png)
