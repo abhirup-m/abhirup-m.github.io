@@ -21,28 +21,48 @@ a {
 	text-decoration: none;
 }
 
+// added css class for the social media icons
+// at the top of contacts section of about page.
 .contact_icons {
+	// center align
 	text-align:center;
 a + a {
+	// add space between them
 	padding-left: 3%;
 }
 i:hover {
+	// make them larger when hovered on
   transform: scale(2);
 }
 }
 
+
+// center align all images
 img {
 	display: block;
 	margin: auto;
 }
 
+
+// add class for tag alert boxes
+// and add space between the boxes
 .tag__highlight {
 	margin-left: 3%;
 
 }
 
+
+// reduce padding inside the tag
+// alert boxes
 .btn {
 	padding: 0.3em;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
+}
+
+
+// remove the translucent feature
+// of the author profile
+.sidebar {
+	opacity: 1;
 }
