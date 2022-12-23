@@ -5,13 +5,13 @@
    inkscape:export-ydpi="200"
    inkscape:export-xdpi="200"
    inkscape:export-filename="kondo2.png"
-   sodipodi:docname="kondo2.svg"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="kondo_highT.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    id="svg5"
    version="1.1"
-   viewBox="0 0 848.37746 477.21231"
-   height="477.21231mm"
-   width="848.37744mm"
+   viewBox="0 0 847.43471 392.43912"
+   height="392.43912mm"
+   width="847.43469mm"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -30,12 +30,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.25291616"
-     inkscape:cx="1963.1011"
+     inkscape:cx="1690.2835"
      inkscape:cy="1221.7487"
-     inkscape:window-width="1920"
-     inkscape:window-height="1019"
-     inkscape:window-x="1920"
-     inkscape:window-y="151"
+     inkscape:window-width="1916"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -355,7 +355,7 @@
        inkscape:collect="always"
        xlink:href="#linearGradient44492"
        id="linearGradient44494"
-       x1="-78.904407"
+       x1="-78.904404"
        y1="-6.3831635"
        x2="763.19501"
        y2="-6.3831635"
@@ -379,20 +379,47 @@
        id="linearGradient56279"
        x1="235.75394"
        y1="134.73502"
-       x2="459.59339"
+       x2="459.59338"
        y2="134.73502"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient56277"
+       id="linearGradient2105"
+       gradientUnits="userSpaceOnUse"
+       x1="235.75394"
+       y1="134.73502"
+       x2="459.59338"
+       y2="134.73502" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient56277"
+       id="linearGradient2107"
+       gradientUnits="userSpaceOnUse"
+       x1="235.75394"
+       y1="134.73502"
+       x2="459.59338"
+       y2="134.73502" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient56277"
+       id="linearGradient2109"
+       gradientUnits="userSpaceOnUse"
+       x1="235.75394"
+       y1="134.73502"
+       x2="459.59338"
+       y2="134.73502" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(82.2934, 225.825)">
+     transform="translate(81.822014,225.35321)">
     <rect
-       style="opacity:1;fill:#e0f0f0;fill-opacity:1;stroke:none;stroke-width:0.942756;stroke-miterlimit:4.5;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#e0f0f0;fill-opacity:1;stroke:none;stroke-width:0.855774;stroke-miterlimit:4.5;stroke-dasharray:none;stroke-opacity:1"
        id="rect18116"
        width="847.43469"
-       height="476.26956"
+       height="392.43912"
        x="-81.822014"
        y="-225.35321" />
     <rect
@@ -675,22 +702,22 @@
        inkscape:original-d="m 371.63222,-39.228096 c 2.6e-4,14.09183 2.6e-4,28.183391 0,42.2747246" />
     <g
        id="path19390"
-       style="stroke:none;fill:url(#linearGradient56279);fill-opacity:1">
+       style="fill:url(#linearGradient56279);fill-opacity:1;stroke:none">
       <path
-         style="color:#000000;fill:url(#linearGradient56279);stroke-miterlimit:4.5;-inkscape-stroke:none;stroke:none;fill-opacity:1"
+         style="color:#000000;fill:url(#linearGradient2105);fill-opacity:1;stroke:none;stroke-miterlimit:4.5;-inkscape-stroke:none"
          d="m 235.77344,131.14258 -0.0195,6 195.84765,0.61133 0.0195,-6 z"
          id="path56233" />
       <g
          id="g56227"
-         style="stroke:none;fill:url(#linearGradient56279);fill-opacity:1">
+         style="fill:url(#linearGradient2109);fill-opacity:1;stroke:none">
         <path
            d="m 425.43243,122.29871 34.16096,12.54319 -34.2387,12.32942 c 6.24079,-7.22471 6.27315,-17.57794 0.0777,-24.87261 z"
-           style="fill:url(#linearGradient56279);fill-rule:evenodd;stroke-width:3.10909;stroke:none;fill-opacity:1"
+           style="fill:url(#linearGradient2107);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.10909"
            id="path56229" />
       </g>
     </g>
     <g
-       transform="matrix(2.82222 0 0 2.82222 -45.1105 119.039)"
+       transform="matrix(2.82222,0,0,2.82222,-45.1105,119.039)"
        ns2:version="1.6.0"
        ns2:texconverter="xelatex"
        ns2:pdfconverter="inkscape"
@@ -802,10 +829,10 @@
       <g
          fill-opacity="1"
          id="id-ed843383-8ea6-40c6-b68b-08eb9c6fde6d"
-         transform="translate(-149.337, -126.687)"
+         transform="translate(-149.337,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(148.712, 134.765)"
+           transform="translate(148.712,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54403">
           <path
@@ -814,7 +841,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(154.46, 134.765)"
+           transform="translate(154.46,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54406">
           <path
@@ -823,7 +850,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(157.27, 134.765)"
+           transform="translate(157.27,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54409">
           <path
@@ -832,7 +859,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(162.759, 134.765)"
+           transform="translate(162.759,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54412">
           <path
@@ -844,10 +871,10 @@
       <g
          fill-opacity="1"
          id="id-b2f8fab2-9fa2-4955-93d9-7869a9e859fe"
-         transform="translate(-149.337, -126.687)"
+         transform="translate(-149.337,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(170.869, 134.765)"
+           transform="translate(170.869,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54416">
           <path
@@ -859,10 +886,10 @@
       <g
          fill-opacity="1"
          id="id-cfa7d63e-35f3-4a79-b56e-0a9b6b53e768"
-         transform="translate(-149.337, -126.687)"
+         transform="translate(-149.337,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(174.545, 134.765)"
+           transform="translate(174.545,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54420">
           <path
@@ -871,7 +898,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(180.044, 134.765)"
+           transform="translate(180.044,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54423">
           <path
@@ -880,7 +907,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(188.463, 134.765)"
+           transform="translate(188.463,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54426">
           <path
@@ -889,7 +916,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(194.41, 134.765)"
+           transform="translate(194.41,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54429">
           <path
@@ -898,7 +925,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(199.91, 134.765)"
+           transform="translate(199.91,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54432">
           <path
@@ -910,10 +937,10 @@
       <g
          fill-opacity="1"
          id="id-c97d4e2f-cbd0-433f-b685-6944b163c3f7"
-         transform="translate(-149.337, -126.687)"
+         transform="translate(-149.337,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(203.556, 134.765)"
+           transform="translate(203.556,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54436">
           <path
@@ -922,7 +949,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(209.016, 134.765)"
+           transform="translate(209.016,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54439">
           <path
@@ -931,7 +958,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(212.861, 134.765)"
+           transform="translate(212.861,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54442">
           <path
@@ -940,7 +967,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(218.56, 134.765)"
+           transform="translate(218.56,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54445">
           <path
@@ -952,10 +979,10 @@
       <g
          fill-opacity="1"
          id="id-e1a4478d-e692-4067-9c6c-28f2ea04f355"
-         transform="translate(-149.337, -126.687)"
+         transform="translate(-149.337,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(222.256, 134.765)"
+           transform="translate(222.256,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g54449">
           <path
@@ -966,7 +993,7 @@
       </g>
     </g>
     <g
-       transform="matrix(2.11667 0 0 2.11667 76.3719 -192.33)"
+       transform="matrix(2.11667,0,0,2.11667,76.3719,-192.33)"
        ns2:version="1.6.0"
        ns2:texconverter="xelatex"
        ns2:pdfconverter="inkscape"
@@ -1254,10 +1281,10 @@
       <g
          fill-opacity="1"
          id="id-2b609359-b739-40f3-9dce-257290e5eb69"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(175.148, 134.765)"
+           transform="translate(175.148,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85425">
           <path
@@ -1266,7 +1293,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(181.026, 134.765)"
+           transform="translate(181.026,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85428">
           <path
@@ -1278,10 +1305,10 @@
       <g
          fill-opacity="1"
          id="id-28de118f-36b7-404f-8e87-3cde548b3581"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(187.233, 134.765)"
+           transform="translate(187.233,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85432">
           <path
@@ -1290,7 +1317,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(192.981, 134.765)"
+           transform="translate(192.981,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85435">
           <path
@@ -1299,7 +1326,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(195.791, 134.765)"
+           transform="translate(195.791,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85438">
           <path
@@ -1308,7 +1335,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(201.28, 134.765)"
+           transform="translate(201.28,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85441">
           <path
@@ -1320,10 +1347,10 @@
       <g
          fill-opacity="1"
          id="id-507dcb48-ed56-4676-8068-3d3d16dc327b"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(209.389, 134.765)"
+           transform="translate(209.389,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85445">
           <path
@@ -1335,10 +1362,10 @@
       <g
          fill-opacity="1"
          id="id-c01c4899-7ff3-42f6-ad59-a0b4391e1bc4"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(213.066, 134.765)"
+           transform="translate(213.066,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85449">
           <path
@@ -1347,7 +1374,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(218.565, 134.765)"
+           transform="translate(218.565,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85452">
           <path
@@ -1356,7 +1383,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(226.983, 134.765)"
+           transform="translate(226.983,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85455">
           <path
@@ -1365,7 +1392,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(232.931, 134.765)"
+           transform="translate(232.931,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85458">
           <path
@@ -1374,7 +1401,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(238.43, 134.765)"
+           transform="translate(238.43,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85461">
           <path
@@ -1386,10 +1413,10 @@
       <g
          fill-opacity="1"
          id="id-1f2a186d-7472-4cfd-a732-b964854731ae"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(242.077, 134.765)"
+           transform="translate(242.077,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85465">
           <path
@@ -1398,7 +1425,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(247.536, 134.765)"
+           transform="translate(247.536,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85468">
           <path
@@ -1407,7 +1434,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(251.382, 134.765)"
+           transform="translate(251.382,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85471">
           <path
@@ -1416,7 +1443,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(257.08, 134.765)"
+           transform="translate(257.08,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85474">
           <path
@@ -1428,10 +1455,10 @@
       <g
          fill-opacity="1"
          id="id-1da9965c-9f6c-4af0-9e34-85fc92a57b91"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(260.777, 134.765)"
+           transform="translate(260.777,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85478">
           <path
@@ -1440,7 +1467,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(266.276, 134.765)"
+           transform="translate(266.276,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85481">
           <path
@@ -1449,7 +1476,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(271.088, 134.765)"
+           transform="translate(271.088,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85484">
           <path
@@ -1461,10 +1488,10 @@
       <g
          fill-opacity="1"
          id="id-154e9589-5f6f-484a-adb7-86d3451f7d6a"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(275.83, 134.765)"
+           transform="translate(275.83,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85488">
           <path
@@ -1473,7 +1500,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(278.639, 134.765)"
+           transform="translate(278.639,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85491">
           <path
@@ -1482,7 +1509,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(287.058, 134.765)"
+           transform="translate(287.058,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85494">
           <path
@@ -1491,7 +1518,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(293.006, 134.765)"
+           transform="translate(293.006,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85497">
           <path
@@ -1500,7 +1527,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(298.704, 134.765)"
+           transform="translate(298.704,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85500">
           <path
@@ -1509,7 +1536,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(302.699, 134.765)"
+           transform="translate(302.699,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85503">
           <path
@@ -1518,7 +1545,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(305.509, 134.765)"
+           transform="translate(305.509,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85506">
           <path
@@ -1530,10 +1557,10 @@
       <g
          fill-opacity="1"
          id="id-ca497293-bac1-4143-8682-ef8b2d1cc0f5"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(309.314, 134.765)"
+           transform="translate(309.314,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85510">
           <path
@@ -1545,10 +1572,10 @@
       <g
          fill-opacity="1"
          id="id-fb500954-d226-4296-8fca-0589f89eca95"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(316.826, 134.765)"
+           transform="translate(316.826,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85514">
           <path
@@ -1557,7 +1584,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(321.638, 134.765)"
+           transform="translate(321.638,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85517">
           <path
@@ -1566,7 +1593,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(327.586, 134.765)"
+           transform="translate(327.586,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85520">
           <path
@@ -1575,7 +1602,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(330.395, 134.765)"
+           transform="translate(330.395,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85523">
           <path
@@ -1584,7 +1611,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(336.144, 134.765)"
+           transform="translate(336.144,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85526">
           <path
@@ -1596,10 +1623,10 @@
       <g
          fill-opacity="1"
          id="id-418e5b60-8509-4185-a6f7-aeb59825576d"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(343.317, 134.765)"
+           transform="translate(343.317,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85530">
           <path
@@ -1608,7 +1635,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(348.129, 134.765)"
+           transform="translate(348.129,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85533">
           <path
@@ -1620,10 +1647,10 @@
       <g
          fill-opacity="1"
          id="id-3918b982-7cff-427d-8071-89181ba2c78e"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(352.811, 134.765)"
+           transform="translate(352.811,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85537">
           <path
@@ -1632,7 +1659,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(358.271, 134.765)"
+           transform="translate(358.271,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85540">
           <path
@@ -1641,7 +1668,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(362.116, 134.765)"
+           transform="translate(362.116,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85543">
           <path
@@ -1653,10 +1680,10 @@
       <g
          fill-opacity="1"
          id="id-8d64b3a7-6786-47f6-8f5c-226337b2bc25"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(365.782, 134.765)"
+           transform="translate(365.782,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85547">
           <path
@@ -1665,7 +1692,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(371.282, 134.765)"
+           transform="translate(371.282,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85550">
           <path
@@ -1677,10 +1704,10 @@
       <g
          fill-opacity="1"
          id="id-ccbe06ce-eac5-4b32-9ae8-224a8cd3b099"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(377.649, 134.765)"
+           transform="translate(377.649,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85554">
           <path
@@ -1689,7 +1716,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(380.409, 134.765)"
+           transform="translate(380.409,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85557">
           <path
@@ -1698,7 +1725,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(386.067, 134.765)"
+           transform="translate(386.067,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85560">
           <path
@@ -1710,10 +1737,10 @@
       <g
          fill-opacity="1"
          id="id-a7e17e99-fe0c-44d6-959b-95d6767d7be8"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(390.551, 134.765)"
+           transform="translate(390.551,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85564">
           <path
@@ -1722,7 +1749,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(396.269, 134.765)"
+           transform="translate(396.269,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85567">
           <path
@@ -1731,7 +1758,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(401.918, 134.765)"
+           transform="translate(401.918,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85570">
           <path
@@ -1740,7 +1767,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(407.228, 134.765)"
+           transform="translate(407.228,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85573">
           <path
@@ -1752,10 +1779,10 @@
       <g
          fill-opacity="1"
          id="id-2543d372-1734-42d7-8a6d-fc74695492b9"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(410.834, 134.765)"
+           transform="translate(410.834,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85577">
           <path
@@ -1764,7 +1791,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(416.144, 134.765)"
+           transform="translate(416.144,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85580">
           <path
@@ -1773,7 +1800,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(421.803, 134.765)"
+           transform="translate(421.803,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85583">
           <path
@@ -1785,10 +1812,10 @@
       <g
          fill-opacity="1"
          id="id-d8faab54-a53b-4ebb-89fa-22017510cef1"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(425.45, 134.765)"
+           transform="translate(425.45,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85587">
           <path
@@ -1800,10 +1827,10 @@
       <g
          fill-opacity="1"
          id="id-17af3e67-2324-403e-ad68-6003008982b6"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(428.219, 134.765)"
+           transform="translate(428.219,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85591">
           <path
@@ -1815,10 +1842,10 @@
       <g
          fill-opacity="1"
          id="id-49f42edf-86fa-4a3a-a785-bd2d22819cbc"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(433.709, 134.765)"
+           transform="translate(433.709,134.765)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85595">
           <path
@@ -1830,10 +1857,10 @@
       <g
          fill-opacity="1"
          id="id-7bfb9603-e1de-4754-8e87-d95dd1c133ce"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(213.923, 146.72)"
+           transform="translate(213.923,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85599">
           <path
@@ -1842,7 +1869,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(218.695, 146.72)"
+           transform="translate(218.695,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85602">
           <path
@@ -1854,10 +1881,10 @@
       <g
          fill-opacity="1"
          id="id-bbf94e1a-ec8b-4b7b-b0e3-972b68dbe04f"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(222.391, 146.72)"
+           transform="translate(222.391,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85606">
           <path
@@ -1869,10 +1896,10 @@
       <g
          fill-opacity="1"
          id="id-6f2cde2c-c32e-47a2-830d-7873d8ef1e2e"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(227.791, 146.72)"
+           transform="translate(227.791,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85610">
           <path
@@ -1881,7 +1908,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(233.25, 146.72)"
+           transform="translate(233.25,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85613">
           <path
@@ -1890,7 +1917,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(237.096, 146.72)"
+           transform="translate(237.096,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85616">
           <path
@@ -1899,7 +1926,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(239.905, 146.72)"
+           transform="translate(239.905,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85619">
           <path
@@ -1908,7 +1935,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(245.654, 146.72)"
+           transform="translate(245.654,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85622">
           <path
@@ -1920,10 +1947,10 @@
       <g
          fill-opacity="1"
          id="id-d3ead4d3-04b1-4113-8595-95481850fb82"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(253.494, 146.72)"
+           transform="translate(253.494,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85626">
           <path
@@ -1935,10 +1962,10 @@
       <g
          fill-opacity="1"
          id="id-a0b44dfb-e9b1-4e85-a8f6-2d86cc530801"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(261.315, 146.72)"
+           transform="translate(261.315,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85630">
           <path
@@ -1947,7 +1974,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(266.087, 146.72)"
+           transform="translate(266.087,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85633">
           <path
@@ -1959,10 +1986,10 @@
       <g
          fill-opacity="1"
          id="id-8f5f8aa4-53e5-4642-b433-1215d7651d8e"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(269.006, 146.72)"
+           transform="translate(269.006,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85637">
           <path
@@ -1974,10 +2001,10 @@
       <g
          fill-opacity="1"
          id="id-e44608dd-8f4c-4097-8a4a-3a273dc47192"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(274.366, 146.72)"
+           transform="translate(274.366,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85641">
           <path
@@ -1989,10 +2016,10 @@
       <g
          fill-opacity="1"
          id="id-c8b6c0d1-23ca-4579-92e3-5c0d348e8f8f"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(279.108, 146.72)"
+           transform="translate(279.108,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85645">
           <path
@@ -2001,7 +2028,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(283.92, 146.72)"
+           transform="translate(283.92,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85648">
           <path
@@ -2010,7 +2037,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(286.73, 146.72)"
+           transform="translate(286.73,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85651">
           <path
@@ -2022,10 +2049,10 @@
       <g
          fill-opacity="1"
          id="id-335ac5f5-5beb-4f25-b5a1-6438685b5143"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(291.402, 146.72)"
+           transform="translate(291.402,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85655">
           <path
@@ -2037,10 +2064,10 @@
       <g
          fill-opacity="1"
          id="id-dbf39528-bdfe-4663-aa7f-d5c011b90115"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(296.762, 146.72)"
+           transform="translate(296.762,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85659">
           <path
@@ -2052,10 +2079,10 @@
       <g
          fill-opacity="1"
          id="id-4af393c3-4e0a-4e5c-82ac-713343c1f51c"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(302.072, 146.72)"
+           transform="translate(302.072,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85663">
           <path
@@ -2064,7 +2091,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(307.82, 146.72)"
+           transform="translate(307.82,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85666">
           <path
@@ -2073,7 +2100,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(313.639, 146.72)"
+           transform="translate(313.639,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85669">
           <path
@@ -2082,7 +2109,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(319.387, 146.72)"
+           transform="translate(319.387,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85672">
           <path
@@ -2091,7 +2118,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(323.442, 146.72)"
+           transform="translate(323.442,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85675">
           <path
@@ -2100,7 +2127,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(328.941, 146.72)"
+           transform="translate(328.941,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85678">
           <path
@@ -2109,7 +2136,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(334.69, 146.72)"
+           transform="translate(334.69,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85681">
           <path
@@ -2121,10 +2148,10 @@
       <g
          fill-opacity="1"
          id="id-8cee232e-0e21-49cd-9914-628e92feccf0"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(338.426, 146.72)"
+           transform="translate(338.426,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85685">
           <path
@@ -2133,7 +2160,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(343.885, 146.72)"
+           transform="translate(343.885,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85688">
           <path
@@ -2142,7 +2169,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(349.634, 146.72)"
+           transform="translate(349.634,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85691">
           <path
@@ -2151,7 +2178,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(355.123, 146.72)"
+           transform="translate(355.123,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85694">
           <path
@@ -2163,10 +2190,10 @@
       <g
          fill-opacity="1"
          id="id-60f9aa28-02ac-4beb-a202-eefb5c778f79"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(358.042, 146.72)"
+           transform="translate(358.042,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85698">
           <path
@@ -2175,7 +2202,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(363.541, 146.72)"
+           transform="translate(363.541,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85701">
           <path
@@ -2187,10 +2214,10 @@
       <g
          fill-opacity="1"
          id="id-a72009b2-2480-4235-bd01-eeef57be360d"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(371.87, 146.72)"
+           transform="translate(371.87,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85705">
           <path
@@ -2199,7 +2226,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(376.682, 146.72)"
+           transform="translate(376.682,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85708">
           <path
@@ -2211,10 +2238,10 @@
       <g
          fill-opacity="1"
          id="id-b2e8d613-2fce-47f5-910a-0ef1fe86e8b5"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(380.418, 146.72)"
+           transform="translate(380.418,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85712">
           <path
@@ -2223,7 +2250,7 @@
              style="fill:#ff8460;fill-opacity:1;stroke-width:0" />
         </g>
         <g
-           transform="translate(385.877, 146.72)"
+           transform="translate(385.877,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85715">
           <path
@@ -2235,10 +2262,10 @@
       <g
          fill-opacity="1"
          id="id-d066de8b-4081-432d-b594-9aad8a05368d"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(389.544, 146.72)"
+           transform="translate(389.544,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85719">
           <path
@@ -2250,10 +2277,10 @@
       <g
          fill-opacity="1"
          id="id-21df54cd-724b-4e77-bd93-0d9705a05eae"
-         transform="translate(-175.023, -126.687)"
+         transform="translate(-175.023,-126.687)"
          style="fill:#ff8460;fill-opacity:1;stroke-width:0">
         <g
-           transform="translate(394.943, 146.72)"
+           transform="translate(394.943,146.72)"
            style="fill:#ff8460;fill-opacity:1;stroke-width:0"
            id="g85723">
           <path
