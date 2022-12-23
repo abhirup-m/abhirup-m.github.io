@@ -1,6 +1,6 @@
 ---
-title: Getting yourself a Jekyll website
-excerpt: "![](/assets/images/jekyll/octojekyll.png)"
+title: Getting Yourself a Beautiful Website Using Jekyll
+excerpt: "Use the power of markdown to design a static website. Host it for free on GitHub ![](/assets/images/jekyll/octojekyll.png)"
 permalink: /jekyll/
 aside:
   toc: true

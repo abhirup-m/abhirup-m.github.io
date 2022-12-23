@@ -1,10 +1,10 @@
 ---
-title: Work
+title: Research Interests
 permalink: /work/
 
 ---
 
-For more details, please check out the [projects](/research/) I have been involved in.
+For more details, please check out the [projects](/research/) I am/have been involved in.
 
 ## Overview
 

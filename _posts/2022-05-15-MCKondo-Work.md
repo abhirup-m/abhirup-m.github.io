@@ -2,11 +2,11 @@
 title: "[New work] On the Multi-channel Kondo problem"
 permalink: /mckondo/
 tags:
-  - arxiv-upload
-  - publication
-  - impurity model
+  - Arxiv uploads
+  - Publications
+  - Impurity models
 categories:
-  - update
+  - Updates
 
 ---
 

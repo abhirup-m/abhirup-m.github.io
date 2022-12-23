@@ -1,9 +1,11 @@
 main:
-  - title: "About"
-    url: /about/
-  - title: "Work"
+  - title: "Updates"
+    url: /updates/
+  - title: "Interests"
     url: /work/
   - title: "Research"
     url: /research/
   - title: "Blogs"
     url: /blogs/
+  - title: "About"
+    url: /about/

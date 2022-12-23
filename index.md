@@ -1,6 +1,5 @@
 ---
 layout: splash
-hidden: true
 permalink: /
 author_profile: false
 title: "Hello there!"
@@ -12,22 +11,24 @@ header:
         url: /about/
       - label: "Contact info"
         url: /about/#contact-information
-      - label: "Recent Posts"
-        url: /posts/
+      - label: "Updates"
+        url: /updates/
 ---
 
+![](/assets/images/abhirup.png){:.align-left}
 My name is Abhirup Mukherjee.
 I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
+
 I work in theoretical condensed matter physics, and am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group.
-I study various topics in the field of strongly correlated materials. 
+I study various topics in the field of strongly correlated materials. Feel free to check out my [research interests](/work/) and my [research work](/research/).
 
-Learn more about me [here](/about/).
+More information about me, and my contact details are available [here](/about/).
 
-## Updates
+## Recent Updates [(see all)](/updates/){:.btn}
 
 {% assign counter = 0 %}
 {% for post in site.posts %}
-{% if post.categories contains "update" %}
+{% if post.categories contains "Updates" %}
 - [**{{ post.title }}**]({{ post.url }})
 <br>
 {{ post.date | date: "%-d %B, %Y"}}
@@ -37,8 +38,6 @@ Learn more about me [here](/about/).
 {% endif %}
 {% endif %}
 {% endfor %}
-
-[See all](/posts/)
 
 ---
 
