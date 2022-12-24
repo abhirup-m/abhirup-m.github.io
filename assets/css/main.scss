@@ -75,3 +75,12 @@ img {
 	max-height: 250px;
 	}
 }
+
+// removes TOC on medium-sized
+// and smaller screens
+.toc {
+	display: none;
+	@include breakpoint($large) {
+		display: block;
+	}
+}
