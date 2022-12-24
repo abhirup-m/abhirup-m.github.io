@@ -15,7 +15,7 @@ header:
         url: /updates/
 ---
 
-![](/assets/images/abhirup.png){:.align-left}
+![](/assets/images/abhirup.png){:.align-right .small__image}
 My name is Abhirup Mukherjee.
 I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
 
@@ -38,7 +38,3 @@ More information about me, and my contact details are available [here](/about/).
 {% endif %}
 {% endif %}
 {% endfor %}
-
----
-
-![](/assets/images/home/phd.svg){: class="img__post"}

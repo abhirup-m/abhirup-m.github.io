@@ -66,3 +66,12 @@ img {
 .sidebar {
 	opacity: 1;
 }
+
+
+// new class for smaller images
+.small__image {
+	max-height: 200px;
+	@include breakpoint($small) {
+	max-height: 250px;
+	}
+}
