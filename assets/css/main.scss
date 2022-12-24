@@ -68,11 +68,28 @@ img {
 }
 
 
-// new class for smaller images
-.small__image {
+// new classes for profile picture
+// on the home page
+
+// this class is used for the picture
+// on the overlay image. It only displays
+// when the screen is large, and 
+// disappears otherwise
+.home__text__image {
 	max-height: 200px;
 	@include breakpoint($small) {
-	max-height: 250px;
+		display: none;
+	}
+}
+
+// this class is used for the picture
+// in the body. It only displays
+// when the screen is small, and 
+// disappears otherwise
+.home__excerpt__image {
+	display: none;
+	@include breakpoint($small) {
+		display: block;
 	}
 }
 
