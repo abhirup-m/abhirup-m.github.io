@@ -1,8 +1,7 @@
 ---
 layout: splash
 permalink: /
-author_profile: false
-title: "Hello there!"
+title: "Hello there!![](/assets/images/abhirup.png){:.align-right .home__header__image}"
 excerpt: "I am Abhirup Mukherjee, a graduate student at IISER Kolkata (India). I work in theoretical condensed matter physics."
 header:
   overlay_image: /assets/images/home/layered-waves-haikei.svg
@@ -14,8 +13,8 @@ header:
       - label: "Updates"
         url: /updates/
 ---
+![](/assets/images/abhirup.png){:.align-right .home__body__image}
 
-![](/assets/images/abhirup.png){:.align-right .home__text__image}
 My name is Abhirup Mukherjee.
 I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
 

@@ -75,7 +75,7 @@ img {
 // on the overlay image. It only displays
 // when the screen is large, and 
 // disappears otherwise
-.home__text__image {
+.home__body__image {
 	max-height: 200px;
 	@include breakpoint($small) {
 		display: none;
@@ -86,7 +86,7 @@ img {
 // in the body. It only displays
 // when the screen is small, and 
 // disappears otherwise
-.home__excerpt__image {
+.home__header__image {
 	display: none;
 	@include breakpoint($small) {
 		display: block;
