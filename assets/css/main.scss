@@ -101,3 +101,26 @@ img {
 		display: block;
 	}
 }
+
+.inline_svg {
+	text-align: center;
+	zoom: 40%;
+	@include breakpoint($small) {
+		text-align: center;
+		zoom: 60%;
+	}
+}
+
+.page__hero--overlay {
+	height: 30em;
+}
+
+.page__hero--overlay .wrapper .page__lead,.page__hero--overlay .wrapper .page__title{
+	font-weight: bold;
+}
+
+
+.page__hero--overlay .wrapper .page__title{
+	margin-bottom: 2em;
+	margin-top: 1em;
+}

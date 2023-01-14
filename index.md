@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 author_profile: false
 title: "Hello there!"
-excerpt: "![](/assets/images/abhirup.png){:.align-right .home__excerpt__image}I am Abhirup Mukherjee, a graduate student at IISER Kolkata (India). I work in theoretical condensed matter physics."
+excerpt: "I am Abhirup Mukherjee, a graduate student at IISER Kolkata (India). I work in theoretical condensed matter physics."
 header:
   overlay_image: /assets/images/home/layered-waves-haikei.svg
   actions:

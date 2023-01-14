@@ -1,6 +1,6 @@
 ---
-title: "My A-Z Anime Ratings"
-excerpt: "Anime refers to a specific animated form of media that originates from Japan. These are my personal ratings of the anime that I have watched over the years.![Love, Chunibyo & Other Delusions!](/assets/images/anime-ratings/love-chunibyo.png) "
+title: "My A-to-Z Anime Ratings: the best as well as the worst"
+excerpt: "These are my personal ratings of the anime that I have watched over the years."
 permalink: /myanimelist/
 tags:
   - anime
@@ -8,8 +8,8 @@ tags:
 categories:
   - blog
 header:
-  overlay_image: /assets/images/anime-ratings/header.svg
-  overlay_filter: 0.3
+  overlay_image: /assets/images/anime-ratings/rikka.jpg
+  overlay_filter: rgba(0,0,0,0.4)
 
 ---
 
