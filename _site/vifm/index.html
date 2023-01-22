@@ -1,0 +1,787 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to Turn VIFM into a Full-Fledged File Explorer - Abhirup’s website</title>
+<meta name="description" content="Tips and tricks for making VIFM more powerful and versatile">
+
+
+  <meta name="author" content="Abhirup">
+  
+  <meta property="article:author" content="Abhirup">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Abhirup's website">
+<meta property="og:title" content="How to Turn VIFM into a Full-Fledged File Explorer">
+<meta property="og:url" content="http://localhost:4000/vifm/">
+
+
+  <meta property="og:description" content="Tips and tricks for making VIFM more powerful and versatile">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/vifm/header.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2023-01-10T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/vifm/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Abhirup Mukherjee",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Abhirup's website Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="The Basement"></a>
+        
+        <a class="site-title" href="/">
+          The Basement
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/updates/">Updates</a>
+            </li><li class="masthead__menu-item">
+              <a href="/work/">Interests</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blogs/">Blogs</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(40,40,40,0.8), rgba(40,40,40,0.8)), url('/assets/images/vifm/header.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          How to Turn VIFM into a Full-Fledged File Explorer
+
+        
+      </h1>
+      
+        <p class="page__lead">Tips and tricks for making VIFM more powerful and versatile
+</p>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/avatar.svg" alt="Abhirup" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Abhirup</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Graduate student in physics, IISER Kolkata</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">West Bengal, India</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="How to Turn VIFM into a Full-Fledged File Explorer">
+    <meta itemprop="description" content="Tips and tricks for making VIFM more powerful and versatile">
+    <meta itemprop="datePublished" content="2023-01-10T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#coloured-filefolder-preview-and-suggestions">Coloured file/folder preview and suggestions</a></li><li><a href="#enabling-suggestions">Enabling suggestions</a></li><li><a href="#using-tabs-more-efficiently">Using tabs more efficiently</a></li><li><a href="#trash-folder-for-safer-deletion">Trash folder for safer deletion</a></li><li><a href="#customise-the-statusline">Customise the statusline</a></li><li><a href="#navigation-using-marks">Navigation using marks</a></li><li><a href="#fuzzy-search-using-fzf">Fuzzy search using fzf</a></li><li><a href="#miscellaneous-options">Miscellaneous options</a></li><li><a href="#keybindings-to-copy-file-name-etc">Keybindings to copy file name, etc</a></li><li><a href="#creating-new-files-and-folders">Creating new files and folders</a></li><li><a href="#starting-a-shell-or-a-terminal">Starting a shell or a terminal</a></li><li><a href="#keybindings-for-fast-rename">Keybindings for fast rename</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><a href="https://github.com/vifm/vifm">Vifm</a> is a terminal file manager for linux that relies heavily on vim-like keybindings. Overall it is quite fast and feature-full, making it a prominent choice among minimalist users. Below I mention some steps I have taken to make it more useful.</p>
+
+<p>Most of these require modifying only the VIFM config file. A good place to find/create such a file is <code class="language-plaintext highlighter-rouge">~/.config/vifm/vifmrc</code>. If this file already exists on your machine, create a backup of the file, because we will be editing it. Now delete all contents from the <em>original</em> file (not the backup), and start with an empty <code class="language-plaintext highlighter-rouge">vifmrc</code> file. If you do not have such a file at that location, create an empty file with that name.</p>
+
+<h3 id="coloured-filefolder-preview-and-suggestions">Coloured file/folder preview and suggestions</h3>
+
+<p>VIFM, by default, has a left pane and a right pane. 
+I have found that it is best to use the left pane as the standard file browser, and the right panel as a preview for the file/folder currently under the cursor.
+That is enable by the following command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" show file and directory preview in right pane
+view!
+" preview text files using "man"
+fileviewer {*.[1-8]},&lt;text/troff&gt; man ./%c | col -b
+</code></pre></div></div>
+
+<p>This runs at startup and forces VIFM to use the right panel for preview.
+The second command tells VIFM to use the <code class="language-plaintext highlighter-rouge">man</code> command for preview text files.
+We can improve this by introducing multiple colours in the folder preview.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" enable ls colors in folder preview
+fileviewer */ ls --color=always
+fileviewer .*/ ls --color=always
+</code></pre></div></div>
+
+<p>The two commands together instruct VIFM to use the shell command <code class="language-plaintext highlighter-rouge">ls --color=always</code> as a folder previewer. The resultant view is shown in the image below.</p>
+
+<p><img src="/assets/images/vifm/preview.png" alt="" /></p>
+
+<h3 id="enabling-suggestions">Enabling suggestions</h3>
+
+<p>The functionality of the right panel can be improved by enabling suggestions in the right panel.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" what to suggest on the right pane
+set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
+</code></pre></div></div>
+
+<p>You might have set the keybinding <code class="language-plaintext highlighter-rouge">dd</code> to delete a file, but you have forgotten whether it was <code class="language-plaintext highlighter-rouge">dd</code> or <code class="language-plaintext highlighter-rouge">dD</code>.
+The above setting makes it easy to recall these bindings: if you press ‘d’, the right panel will show all keybinding sequences that start with ‘d’, allowing the user to refresh their memory.
+Besides keybindings, it also shows all the marks that you have defined.
+For example, you might have forgotten whether you have marked your work folder to ‘w’ or ‘W’.
+On pressing <code class="language-plaintext highlighter-rouge">'</code>, the right panel will show all the marks that you have defined in the vifmrc, making it easy to use the marks. This is shown in the image below.</p>
+
+<p><img src="/assets/images/vifm/suggestions.png" alt="" /></p>
+
+<h3 id="using-tabs-more-efficiently">Using tabs more efficiently</h3>
+
+<p>We often find it convenient to work simultaneously with multiple directories/views. This is where <code class="language-plaintext highlighter-rouge">tabs</code> become useful; you can have your work folder open in one tab and your downloads folder open in another tab, and copy files easily from one to the other. In order to make this process easy, insert the following lines in your vimrc.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" create new tab
+nnoremap &lt;c-t&gt; :tabnew&lt;cr&gt;:view!&lt;cr&gt;
+
+" switch to tab to the left
+nnoremap H :tabprevious&lt;cr&gt;:view!&lt;cr&gt;
+
+" switch to tab to the left
+nnoremap L :tabnext&lt;cr&gt;:view!&lt;cr&gt;
+
+" switch to tab to the left
+nnoremap Q :q&lt;cr&gt;
+</code></pre></div></div>
+
+<p>The mappings, respectively, mean that you can use <code class="language-plaintext highlighter-rouge">CTRL+t</code> to create a new tab, <code class="language-plaintext highlighter-rouge">H</code> to switch to the tab on the left, <code class="language-plaintext highlighter-rouge">L</code> to switch to the tab on the right, and <code class="language-plaintext highlighter-rouge">Q</code> to close to the current tab.</p>
+
+<h3 id="trash-folder-for-safer-deletion">Trash folder for safer deletion</h3>
+
+<p>For safer delete operators, we enable the trash setting and set a trash folder.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" enable trash and set trash folder
+set trash
+set trashdir=~/.local/share/Trash/files
+</code></pre></div></div>
+
+<p>If the folder mentioned in the last setting does not exist, you have to create it. Once this is done, any file/folder that is deleted using the default <code class="language-plaintext highlighter-rouge">dd</code> keybinding actually goes into the trash folder, and can be restored later. Permanent deletion can be performed through the more distant keybinding <code class="language-plaintext highlighter-rouge">DD</code>, to ensure that it does not happen accidentally. We can also remove the confirmation dialog that appears whenever we want to trash/delete a file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" remove confirmation before trash/delete
+set confirm-=delete,permdelete
+</code></pre></div></div>
+
+<h3 id="customise-the-statusline">Customise the statusline</h3>
+
+<p>The bottom of the VIFM window shows a statusline where various pieces of information can be displayed. I prefer a simplistic status, where I show the filename at the left end (<code class="language-plaintext highlighter-rouge">%t</code>), the current file size (<code class="language-plaintext highlighter-rouge">%20s</code>) after that, then the file modification date (<code class="language-plaintext highlighter-rouge">%-30d</code>), and finally the remaining storage on the file-system (<code class="language-plaintext highlighter-rouge">%a</code>). The numbers represent the width of the blocks.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" set format of statusline
+set statusline="%t %20s %= %-30d %a"
+</code></pre></div></div>
+
+<p>The format of the modification date can be set in the following way:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" set format of file modification time
+set timefmt='%b %d, %Y @ %H:%M'
+</code></pre></div></div>
+
+<p>The resultant statusline is shown in the image below.</p>
+
+<p><img src="/assets/images/vifm/statusline.png" alt="" /></p>
+
+<h3 id="navigation-using-marks">Navigation using marks</h3>
+
+<p>Marks can be used as favourite folders to reach them quickly. They are defined in the following manner:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mark h ~/
+mark d ~/Downloads/
+mark c ~/.config/
+</code></pre></div></div>
+
+<p>Inserting these lines into the vifmrc defines three marks corresponding to the three specified folders. Upon starting vifm, you can now press, say, <code class="language-plaintext highlighter-rouge">'+d</code> to change into the <code class="language-plaintext highlighter-rouge">Downloads</code> folder. Same holds for the other marks. This provides a very fast method of accessing commonly used folders.</p>
+
+<h3 id="fuzzy-search-using-fzf">Fuzzy search using fzf</h3>
+
+<p>It is easier to search files using a fuzzy finder like <code class="language-plaintext highlighter-rouge">fzf</code>. After installing the <code class="language-plaintext highlighter-rouge">fzf</code> binary (look up how you can do this in your specific distribution), fuzzy finding can be integrated into VIFM using the following lines:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" use fzf to fuzzy search and run file
+command! FZFfind : set noquickview
+                \| let $FZF_PICK = term('find ./* | fzf --height 10 2&gt;/dev/tty')
+                \| if $FZF_PICK != ''
+                \|     execute 'goto' fnameescape($FZF_PICK)
+                \| endif
+nnoremap / :FZFfind&lt;cr&gt;
+</code></pre></div></div>
+
+<p>The above search is triggered by the keybinding <code class="language-plaintext highlighter-rouge">/</code>. It lists all files in the present directory and further down in the subdirectories and allows searching according to the provided prompt. The file that is selected (by pressing <code class="language-plaintext highlighter-rouge">Enter</code>) is executed.</p>
+
+<h3 id="miscellaneous-options">Miscellaneous options</h3>
+
+<p>There are several settings which also help to be enabled. These are listed below.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" useful options
+set syscalls dotfiles wildmenu wildstyle=popup
+set history=100 undolevels=100 followlinks norunexec
+set ignorecase smartcase nohlsearch incsearch
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">syscalls</code> instructs VIFM to use its internal methods for copy/paste operations rather than using utilities like <code class="language-plaintext highlighter-rouge">cp</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">dotfiles</code> makes the hidden files and folders visible in VIFM.</li>
+  <li><code class="language-plaintext highlighter-rouge">wildmenu</code> and <code class="language-plaintext highlighter-rouge">wildstyle</code> improve the way in which completion is shown for commands.</li>
+  <li><code class="language-plaintext highlighter-rouge">history</code> sets the maximum number of operations stored in history. <code class="language-plaintext highlighter-rouge">undolevels</code> sets the maximum number of actions that can be undone.</li>
+  <li><code class="language-plaintext highlighter-rouge">followlinks</code> means that clicking on a link directs you to the target. <code class="language-plaintext highlighter-rouge">norunexec</code> means clicking on executable files will not automatically execute them.</li>
+  <li><code class="language-plaintext highlighter-rouge">ignorecase</code> and <code class="language-plaintext highlighter-rouge">smartcase</code> mean that search operations are case-insensitive unless there is at least one uppercase character.</li>
+  <li><code class="language-plaintext highlighter-rouge">nohlsearch</code> and <code class="language-plaintext highlighter-rouge">incsearch</code> mean that the search will be incremental and search results will not be selected before enter is pressed.</li>
+</ul>
+
+<h3 id="keybindings-to-copy-file-name-etc">Keybindings to copy file name, etc</h3>
+
+<p>It is very useful to set keybindings for common operations like copying the path of the parent directory, name of the current file under the cursor, and the full path of the current file. Through the commands below, these can be done with the keybindings <code class="language-plaintext highlighter-rouge">yd</code>, <code class="language-plaintext highlighter-rouge">yn</code> and <code class="language-plaintext highlighter-rouge">yp</code> respectively.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" copy parent directory path to clipboard
+nnoremap yd :!echo %d %i | xclip -i -r -selection 'clipboard' -f 
+            \| xclip -i -r -selection 'primary'&lt;cr&gt;
+" copy current file name to clipboard
+nnoremap yn :!echo %c %i | xclip -i -r -selection 'clipboard' -f 
+            \| xclip -i -r -selection 'primary'&lt;cr&gt;
+" copy current file full path to clipboard
+nnoremap yp :!echo %c:p %i | xclip -i -r -selection 'clipboard' -f 
+            \| xclip -i -r -selection 'primary'&lt;cr&gt;
+</code></pre></div></div>
+
+<h3 id="creating-new-files-and-folders">Creating new files and folders</h3>
+
+<p>The first command below sets <code class="language-plaintext highlighter-rouge">t</code> as the key to wait for a filename, and then creates an empty file with the name on pressing enter. The second command similarly does the same for a new folder, but with the key <code class="language-plaintext highlighter-rouge">M</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" mapping to create new blank file
+nnoremap t :touch&lt;space&gt;
+
+" mapping to create new folder
+nnoremap M :mkdir&lt;space&gt;
+</code></pre></div></div>
+
+<p>The directory creation is shown in the image below (notice the <code class="language-plaintext highlighter-rouge">:mkdir</code> at the bottom).</p>
+
+<p><img src="/assets/images/vifm/mkdir.png" alt="" /></p>
+
+<h3 id="starting-a-shell-or-a-terminal">Starting a shell or a terminal</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" mapping to open shell in pwd
+nnoremap S :shell&lt;cr&gt;
+
+" mapping to start terminal
+nnoremap &lt;a-t&gt; :!$TERMINAL &amp;&lt;cr&gt;
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">S</code> starts a shell in the current directory. <code class="language-plaintext highlighter-rouge">ALT+t</code> spawns a new terminal by executing the environment variable <code class="language-plaintext highlighter-rouge">$TERMINAL</code>. Since I use the simple terminal <code class="language-plaintext highlighter-rouge">st</code>, mine is set to <code class="language-plaintext highlighter-rouge">TERMINAL=st</code> in my <code class="language-plaintext highlighter-rouge">.bashrc</code> file. A spawned terminal is shown in the image below.</p>
+
+<p><img src="/assets/images/vifm/terminal.png" alt="" /></p>
+
+<h3 id="keybindings-for-fast-rename">Keybindings for fast rename</h3>
+
+<p>The two commands below allow renaming files quickly, by pressing <code class="language-plaintext highlighter-rouge">a</code> or <code class="language-plaintext highlighter-rouge">A</code>. The latter skips the extension and allows renaming only the basename, since that is what we typically do. The latter allows changing the entire filename, including the extension.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" rename without extension
+nnoremap a cW 
+" rename with extension
+nnoremap A cw
+</code></pre></div></div>
+
+<p>We often have to select multiple files in a range, for copy or move operations. The two commands below make this easier: <code class="language-plaintext highlighter-rouge">SPACE</code> selects one file and then moves the cursor down by one file, allowing us to press <code class="language-plaintext highlighter-rouge">SPACE</code> again immediately to select the next file. <code class="language-plaintext highlighter-rouge">T</code> does the same thing, but from bottom to top.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" mapping to toggle select and move down
+nnoremap &lt;space&gt; tj
+" mapping to move up and toggle select
+nnoremap T kt
+</code></pre></div></div>
+
+<p>An example of a selection is shown in the image below.</p>
+
+<p><img src="/assets/images/vifm/selection.png" alt="" /></p>
+
+<p>That’s all.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ncurses" class="page__taxonomy-item p-category" rel="tag">ncurses</a><span class="sep">, </span>
+    
+      <a href="/tags/#software" class="page__taxonomy-item p-category" rel="tag">software</a><span class="sep">, </span>
+    
+      <a href="/tags/#unix" class="page__taxonomy-item p-category" rel="tag">unix</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-01-10T00:00:00+05:30">January 10, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=How+to+Turn+VIFM+into+a+Full-Fledged+File+Explorer%20http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/aot-foreshadow/" class="pagination--pager" title="All Foreshadowing and Easter Eggs in Attack on Titan: Season 1
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/aot-foreshadow/" rel="permalink">All Foreshadowing and Easter Eggs in Attack on Titan: Season 1
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">This is me trying to enumerate all foreshadowing attempts and hidden easter eggs in the modern day masterpiece Attack on Titan (Shingeki no Kyojin).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jekyll/" rel="permalink">Getting Yourself a Beautiful Website Using Jekyll
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Use the power of markdown to design a static website. Host it for free on GitHub 
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/moments/" rel="permalink">Moments that Saved Anime
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">Anime refers to a specific form of media - hand-drawn or computer-generated animated shows that originate from Japan. Anime differ from western animation pro...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/myanimelist/" rel="permalink">My A-to-Z Anime Ratings: the best as well as the worst
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">These are my personal ratings of the anime that I have watched over the years.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+        
+      
+        
+          <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Abhirup Mukherjee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
