@@ -1,0 +1,47 @@
+- arxiv_doi: https://arxiv.org/abs/2302.02328
+  arxiv_ref: 2302.02328
+  authors:
+  - Abhirup Mukherjee
+  - N. S. Vidhyadhiraja
+  - Arghya Taraphder
+  - Siddhartha Lal
+  permalink: /2302.02328/
+  submit_date: 5 Feb, 2023
+  tags:
+  - cond-mat.str-el
+  - cond-mat.mes-hall
+  - quant-ph
+  title: "Kondo frustration via charge fluctuations: a route to Mott localisation"
+- arxiv_doi: https://arxiv.org/abs/2205.00790
+  arxiv_ref: 2205.00790
+  authors:
+  - Siddhartha Patra
+  - Abhirup Mukherjee
+  - Anirban Mukherjee
+  - N. S. Vidhyadhiraja
+  - A. Taraphder
+  - Siddhartha Lal
+  permalink: /2205.00790/
+  submit_date: 2 May, 2022
+  tags:
+  - cond-mat.str-el
+  - cond-mat.mes-hall
+  - quant-ph
+  title: 'Frustration shapes multi-channel Kondo physics: a star graph perspective'
+- arxiv_doi: https://arxiv.org/abs/2111.10580
+  arxiv_ref: 2111.10580
+  authors:
+  - Anirban Mukherjee
+  - Abhirup Mukherjee
+  - N. S. Vidhyadhiraja
+  - A. Taraphder
+  - Siddhartha Lal
+  doi: https://doi.org/10.1103/PhysRevB.105.085119
+  journal_ref: Physical Review B 105, 085119 (2022)
+  journal_ref_short: PRB 105, 085119
+  permalink: /2111.10580/
+  submit_date: 2 February, 2022
+  tags:
+  - cond-mat.str-el
+  - cond-mat.mes-hall
+  title: 'Unveiling the Kondo cloud: unitary RG study of the Kondo model'

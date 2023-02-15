@@ -5,17 +5,15 @@ permalink: /research/
 
 ---
 
-This is a list of the projects that I have been involved in the past and have been completed, as well as the ones I am current involved in. To get a better idea of my research interests, check [this](/work/) out.
+This is a list of my publications (and preprints) and the projects that I am currently involved in. A more detailed version of my research interests can be found [here](/work/).
 
-### Ongoing Projects
+## Ongoing Projects
 
 - A new auxiliary model approach to studying fermionic systems of strong correlation
-
 - Holographic entanglement in free fermionic quantum matter: hierarchy & topology
+- Kondo model in magnetic field: breakdown of Kondo effect and its consequences for symmetry breaking, entanglement loss and the measurement problem
 
-- Revisiting the impurity metal-insulator transition at the heart of DMFT: what lies behind the veil of self-consistency?
-
-### Completed Projects
+## Publications and Preprints
 
 {% for work in site.data.publications %}
 - {% include publication_info.html %}

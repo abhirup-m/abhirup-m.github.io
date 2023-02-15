@@ -41,6 +41,7 @@ i:hover {
 img {
 	display: block;
 	margin: auto;
+	max-width: 700px;
 }
 
 
@@ -93,14 +94,6 @@ img {
 	}
 }
 
-// removes TOC on medium-sized
-// and smaller screens
-.toc {
-	display: none;
-	@include breakpoint($large) {
-		display: block;
-	}
-}
 
 .inline_svg {
 	text-align: center;
@@ -112,7 +105,7 @@ img {
 }
 
 .page__hero--overlay {
-	height: 30em;
+	height: 25em;
 }
 
 .page__hero--overlay .wrapper .page__lead,.page__hero--overlay .wrapper .page__title{
@@ -120,7 +113,33 @@ img {
 }
 
 
-.page__hero--overlay .wrapper .page__title{
-	margin-bottom: 2em;
-	margin-top: 1em;
+.page__hero--overlay .wrapper {
+	@include breakpoint($small) {
+		margin-top: 2em;
+	}
+}
+
+.pub__authors {
+	font-size: 50%;
+	opacity: 0.8;
+}
+
+
+// styles each column of the two-column layout on the home page.
+// makes the width of each column ~50% on large screens and 
+// 100% on small screens. sets the float accordingly.
+.home__column {
+	margin: auto;
+	@include breakpoint($medium) {
+		width:48%;
+		float:left;
+	}
+}
+
+// sets the spacing between the two columns on the home page.
+.home__column + .home__column {
+	@include breakpoint($medium) {
+		width:48%;
+		margin-left: 4%;
+	}
 }

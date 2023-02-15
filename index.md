@@ -15,6 +15,9 @@ header:
 ---
 ![](/assets/images/abhirup.png){:.align-right .home__body__image}
 
+<div class="home__column" markdown=1>
+## Welcome!
+
 My name is Abhirup Mukherjee.
 I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
 
@@ -22,18 +25,22 @@ I work in theoretical condensed matter physics, and am a part of the Emergent Ph
 I study various topics in the field of strongly correlated materials. Feel free to check out my [research interests](/work/) and my [research work](/research/).
 
 More information about me, and my contact details are available [here](/about/).
-
+</div>
+<div class="home__column" markdown=1>
 ## Recent Updates [(see all)](/updates/){:.btn}
 
 {% assign counter = 0 %}
 {% for post in site.posts %}
 {% if post.categories contains "Updates" %}
-- [**{{ post.title }}**]({{ post.url }})
+- **{{ post.title }}**
 <br>
 {{ post.date | date: "%-d %B, %Y"}}
+[Learn More]({{ post.url }}){: .btn .btn--danger .tag__highlight }
+
 {% assign counter = counter | plus: 1 %}
 {% if counter == 3 %}
 {% break %}
 {% endif %}
 {% endif %}
 {% endfor %}
+</div>

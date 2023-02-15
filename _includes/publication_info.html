@@ -1,11 +1,14 @@
-{%- if work["permalink"] != blank -%}
-[{{ work["title"] }}]({{ work["permalink"] }}) 
-{%- else -%}
-{{ work["title"] }}
+<b>{{ work["title"] }}&nbsp;&nbsp;&nbsp;</b>
+{%- if include.show_tags -%}
+{%- for tag in work["tags"] -%}
+<span class="btn btn--success">{{ tag | replace: "cond-mat.","" }}</span>
+{%- endfor -%}
 {%- endif -%}
 <br>
-**{{ work["date"] | date: "%-d %B, %Y" }}**
-{%- if work["journal doi"] != blank -%}
-[DOI]({{ work["journal doi"] }}){: .btn }{: .btn--primary }{: .tag__highlight }
+<span class='pub__authors'>{{ work["authors"] | join:", " | replace: "Abhirup Mukherjee", "<b>Abhirup Mukherjee</b>" }}</span>
+<br>
+{{ work["submit_date"] | strip | date: "%b %-d, %Y" }}&nbsp;&nbsp;&nbsp;
+{%- if work["doi"] -%}
+<a href="{{ work["doi"] }}" class="btn btn--danger">{{ work["journal_ref_short"] }}</a>&nbsp;&nbsp;&nbsp;
 {%- endif -%}
-[ARXIV]({{ work["arxiv doi"] }}){: .btn }{: .btn--success }{: .tag__highlight }
+<a href="{{ work["arxiv_doi"] }}" class="btn btn--primary">{{ work["arxiv_ref"] | replace: "cond-mat/","" }}</a>

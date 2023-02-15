@@ -24,7 +24,7 @@ I am part of an organisation named [Projectyl](https://projectyl.github.io/) tha
 ## Contact information
 
 <div class="contact_icons" markdown=1>
-[<i class="fas fa-at"></i>](mailto:mukherjeeabhirup44@gmail.com) [<i class="fab fa-facebook-messenger"></i>](https://www.facebook.com/Seary.Blue) [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/abhirup-mukherjee-665588229) [<i class="fab fa-github-alt"></i>](https://github.com/abhirup-m)
+[<i class="fas fa-at"></i>](mailto:mukherjeeabhirup44@gmail.com) [<i class="fab fa-facebook-messenger"></i>](https://www.facebook.com/Seary.Blue) [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/abhirup-mukherjee-665588229) [<i class="fab fa-github"></i>](https://github.com/abhirup-m)
 </div>
 - You can always send me [emails](mailto:mukherjeeabhirup44@gmail.com)  for any sort of communication.
 - You can also reach out to me on [Facebook](https://www.facebook.com/Seary.Blue)  or [LinkedIn](https://www.linkedin.com/in/abhirup-mukherjee-665588229).

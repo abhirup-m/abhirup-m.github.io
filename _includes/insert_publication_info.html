@@ -1,0 +1,6 @@
+{% for work in site.data.publications %}
+{% if work["permalink"] == page.permalink %}
+{% include publication_info.html %}
+{% break %}
+{% endif %}
+{% endfor %}
