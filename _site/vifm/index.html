@@ -1,333 +1,89 @@
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
 
-<!-- begin _includes/seo.html --><title>How to Turn VIFM into a Full-Fledged File Explorer - Abhirup’s website</title>
-<meta name="description" content="Tips and tricks for making VIFM more powerful and versatile">
+<html>
 
+<head>
 
-  <meta name="author" content="Abhirup">
-  
-  <meta property="article:author" content="Abhirup">
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-<meta property="og:type" content="article">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Abhirup's website">
-<meta property="og:title" content="How to Turn VIFM into a Full-Fledged File Explorer">
-<meta property="og:url" content="http://localhost:4000/vifm/">
-
-
-  <meta property="og:description" content="Tips and tricks for making VIFM more powerful and versatile">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/vifm/header.png">
-
-
-
-
-
-  <meta property="article:published_time" content="2023-01-10T00:00:00+05:30">
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="http://localhost:4000/vifm/">
-
-
-
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+  <title>
+    How to Turn VIFM into a Full-Fledged File Explorer - The Basement
     
-      "@type": "Person",
-      "name": "Abhirup Mukherjee",
-      "url": "http://localhost:4000/"
-    
-  }
-</script>
+  </title>
+
+  <meta name="description" content="Tips and tricks for making VIFM more powerful and versatile">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/vifm/">
+  <link rel="alternate" type="application/rss+xml" title="The Basement" href="/feed.xml">
+
+</head>
 
 
+<body>
 
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Abhirup's website Feed">
-
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
-
-
-    <script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-
-  </head>
-
-  <body class="layout--single">
-    <nav class="skip-links">
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/">The Basement</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
+
+  <!-- Page Header -->
+
+  <header class="masthead">
     
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        
-          <a class="site-logo" href="/"><img src="/assets/images/logo.svg" alt="The Basement"></a>
-        
-        <a class="site-title" href="/">
-          The Basement
-          
-        </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/updates/">Updates</a>
-            </li><li class="masthead__menu-item">
-              <a href="/work/">Interests</a>
-            </li><li class="masthead__menu-item">
-              <a href="/research/">Research</a>
-            </li><li class="masthead__menu-item">
-              <a href="/blogs/">Blogs</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
-            </li></ul>
-        
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <i class="fas fa-search"></i>
-        </button>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
-
-
-    <div class="initial-content">
-      
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>How to Turn VIFM into a Full-Fledged File Explorer</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">Abhirup Mukherjee</a>
+              on January 10, 2023 &middot; <span class="reading-time" title="Estimated read time">
   
+   13 mins  read </span>
 
-
-
-
-
-
-
-<div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(40,40,40,0.8), rgba(40,40,40,0.8)), url('/assets/images/vifm/header.png');"
->
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          How to Turn VIFM into a Full-Fledged File Explorer
-
-        
-      </h1>
-      
-        <p class="page__lead">Tips and tricks for making VIFM more powerful and versatile
-</p>
-      
-      
-
-
-      
-      
-    </div>
-  
-  
-</div>
-
-
-
-
-
-
-
-<div id="main" role="main">
-  
-  <div class="sidebar sticky">
-  
-
-
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
-
-  
-    <div class="author__avatar">
-      <a href="http://localhost:4000/">
-        <img src="/assets/images/avatar.svg" alt="Abhirup" itemprop="image" class="u-photo">
-      </a>
-    </div>
-  
-
-  <div class="author__content">
-    <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Abhirup</a>
-    </h3>
-    
-      <div class="author__bio p-note" itemprop="description">
-        <p>Graduate student in physics, IISER Kolkata</p>
-
+            </span>
+          </div>
+        </div>
       </div>
-    
-  </div>
+    </div>
+  </header>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">West Bengal, India</span>
-        </li>
-      
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
 
-      
-        
-          
-            <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
-          
-        
-          
-            <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
-          
-        
-          
-            <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i><span class="label">Facebook</span></a></li>
-          
-        
-          
-            <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
-          
-        
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
-      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
-
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How to Turn VIFM into a Full-Fledged File Explorer">
-    <meta itemprop="description" content="Tips and tricks for making VIFM more powerful and versatile">
-    <meta itemprop="datePublished" content="2023-01-10T00:00:00+05:30">
-    
-
-    <div class="page__inner-wrap">
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right ">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#coloured-filefolder-preview-and-suggestions">Coloured file/folder preview and suggestions</a></li><li><a href="#enabling-suggestions">Enabling suggestions</a></li><li><a href="#using-tabs-more-efficiently">Using tabs more efficiently</a></li><li><a href="#trash-folder-for-safer-deletion">Trash folder for safer deletion</a></li><li><a href="#customise-the-statusline">Customise the statusline</a></li><li><a href="#navigation-using-marks">Navigation using marks</a></li><li><a href="#fuzzy-search-using-fzf">Fuzzy search using fzf</a></li><li><a href="#miscellaneous-options">Miscellaneous options</a></li><li><a href="#keybindings-to-copy-file-name-etc">Keybindings to copy file name, etc</a></li><li><a href="#creating-new-files-and-folders">Creating new files and folders</a></li><li><a href="#starting-a-shell-or-a-terminal">Starting a shell or a terminal</a></li><li><a href="#keybindings-for-fast-rename">Keybindings for fast rename</a></li></ul>
-
-            </nav>
-          </aside>
-        
         <p><a href="https://github.com/vifm/vifm">Vifm</a> is a terminal file manager for linux that relies heavily on vim-like keybindings. Overall it is quite fast and feature-full, making it a prominent choice among minimalist users. Below I mention some steps I have taken to make it more useful.</p>
 
 <p>Most of these require modifying only the VIFM config file. A good place to find/create such a file is <code class="language-plaintext highlighter-rouge">~/.config/vifm/vifmrc</code>. If this file already exists on your machine, create a backup of the file, because we will be editing it. Now delete all contents from the <em>original</em> file (not the backup), and start with an empty <code class="language-plaintext highlighter-rouge">vifmrc</code> file. If you do not have such a file at that location, create an empty file with that name.</p>
@@ -538,252 +294,125 @@ nnoremap T kt
 
 <p>That’s all.</p>
 
-        
-      </section>
 
-      <footer class="page__meta">
-        
-        
-  
+        <hr>
 
+        <div class="clearfix">
 
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#ncurses" class="page__taxonomy-item p-category" rel="tag">ncurses</a><span class="sep">, </span>
-    
-      <a href="/tags/#software" class="page__taxonomy-item p-category" rel="tag">software</a><span class="sep">, </span>
-    
-      <a href="/tags/#unix" class="page__taxonomy-item p-category" rel="tag">unix</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
-    
-    </span>
-  </p>
-
-
-        
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-01-10T00:00:00+05:30">January 10, 2023</time></p>
-
-      </footer>
-
-      <section class="page__share">
-  
-
-  <a href="https://twitter.com/intent/tweet?text=How+to+Turn+VIFM+into+a+Full-Fledged+File+Explorer%20http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fvifm%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/aot-foreshadow/" class="pagination--pager" title="All Foreshadowing and Easter Eggs in Attack on Titan: Season 1
-">Previous</a>
-    
-    
-      <a href="/2302.02328/" class="pagination--pager" title="Our work on an auxiliary model-based approach to the Mott MIT is now available on the arxiv.
-">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h2 class="page__related-title">You May Also Enjoy</h2>
-      <div class="grid__wrapper">
-        
+          
+          <a class="btn btn-primary float-left" href="/aot-foreshadow/" data-toggle="tooltip" data-placement="top" title="All Foreshadowing and Easter Eggs in Attack on Titan: Season 1">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/aot-physics/" data-toggle="tooltip" data-placement="top" title="The causality loop in Shingeki no Kyojin: Is there a paradox?">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
           
 
+        </div>
 
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2302.02328/" rel="permalink">Our work on an auxiliary model-based approach to the Mott MIT is now available on the arxiv.
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">In this work, we provide a Hamiltonian-based explanation of the phenomenology of DMFT, obtaining new insights on then MIT along the way.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aot-foreshadow/" rel="permalink">All Foreshadowing and Easter Eggs in Attack on Titan: Season 1
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">This is me trying to enumerate all foreshadowing attempts and hidden easter eggs in the modern day masterpiece Attack on Titan (Shingeki no Kyojin).
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/jekyll/" rel="permalink">Getting Yourself a Beautiful Website Using Jekyll
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Use the power of markdown to design a static website. Host it for free on GitHub 
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/2205.00790/" rel="permalink">Our work on the multichannel Kondo problem is now available on the arxiv.
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">In this work, we elucidate the importance of ground-state degeneracy and frustration in determining the physics of the multichannel Kondo model.
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
-  
-  
-</div>
+  </div>
 
-    </div>
 
-    
-      <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
+  <!-- Footer -->
 
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:mukherjeeabhirup44@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/abhirup_mjee">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Seary.Blue">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/abhirup-mukherjee-665588229">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/abhirup-m">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          <li class="list-inline-item">
+            <a href="https://instagram.com/searyblue">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Abhirup Mukherjee 2023</p>
       </div>
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-
-    
-      
-        
-          <li><a href="mailto:mukherjeeabhirup44@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        
-      
-        
-          <li><a href="https://abhirup-m.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
-        
-      
-        
-          <li><a href="https://www.facebook.com/Seary.Blue" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-        
-      
-        
-          <li><a href="https://github.com/abhirup-m" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-    
-
-    
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2023 Abhirup Mukherjee. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
     </div>
-
-    
-  <script src="/assets/js/main.min.js"></script>
-
+  </div>
+</footer>
 
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
-
+<script src="/assets/scripts.js"></script>
 
 
 
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NY99EHY8J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NY99EHY8J');
+</script>
 
 
-  </body>
+
+</body>
+
 </html>

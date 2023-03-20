@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "styles";
+
+.navbar-brand {
+	display: none;
+}
+
+.img-fluid {
+	display: block;
+	margin: auto;
+}
+
+header.masthead .overlay {
+	opacity: 0.4;
+}

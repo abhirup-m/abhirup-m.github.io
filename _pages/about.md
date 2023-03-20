@@ -1,7 +1,8 @@
 ---
 title: More about me
 permalink: /about/
-date: 
+background: /assets/images/gen4.jpeg
+background: /assets/images/posts/esiam.jpg
 
 ---
 

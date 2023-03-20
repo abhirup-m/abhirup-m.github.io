@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// remove the footer
+.page__footer {
+	display: none;
+}
+
+
+// remove permanent underline on links, 
+// now underline only shows on hover
+a,a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+// center align all images
+.page img {
+	display: block;
+	text-align: center;
+}
+
+
+// remove the translucent feature
+// of the author profile
+.sidebar {
+	opacity: 1;
+}
+
+
+.inline_svg {
+	text-align: center;
+	zoom: 40%;
+	@include breakpoint($small) {
+		text-align: center;
+		zoom: 60%;
+	}
+}
+
+.page__hero--overlay {
+	height: 30em;
+}
+
+.pub__authors {
+	font-size: 50%;
+	opacity: 0.8;
+}
+
+
+// styles each column of the two-column layout on the home page.
+// makes the width of each column ~50% on large screens and 
+// 100% on small screens. sets the float accordingly.
+.home__column {
+	margin: auto;
+	@include breakpoint($medium) {
+		width:48%;
+		float:left;
+	}
+}
+
+// sets the spacing between the two columns on the home page.
+.home__column + .home__column {
+	@include breakpoint($medium) {
+		width:48%;
+		margin-left: 4%;
+	}
+}
