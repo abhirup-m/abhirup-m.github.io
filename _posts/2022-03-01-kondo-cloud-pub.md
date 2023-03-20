@@ -3,8 +3,7 @@ title: "Our work on the single-channel Kondo problem has been published in Phys.
 excerpt: "In the work, we study the feedback effect of Kondo cloud screening on the conduction electrons, obtaining an effective Hamiltonian that describes its dynamics."
 permalink: /2111.10580/
 categories:
-  - publication
-  - Updates
+  - manuscript
 tags:
   - Kondo model
   - impurity models

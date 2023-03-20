@@ -5,7 +5,7 @@ permalink: /updates/
 ---
 
 {% for post in site.posts %}
-{% if post.categories contains "Updates" %}
+{% if post.categories contains "update" or post.categories contains "manuscript" %}
 - [**{{ post.title }}**]({{ post.url }})
 <br>
 {{ post.date | date: "%-d %B, %Y"}}

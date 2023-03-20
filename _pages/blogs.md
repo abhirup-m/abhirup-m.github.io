@@ -1,6 +1,12 @@
 ---
-title: Blog-type Posts
+layout: splash
+title: Blog posts on scripting, website-building and anime
+classes: wide
+author_profile: false
 permalink: /blogs/
+header:
+  overlay_image: /assets/images/home/layered-waves-haikei.svg
+
 ---
 
 {% for post in site.posts %}

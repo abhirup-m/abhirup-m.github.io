@@ -1,8 +1,10 @@
 ---
 title: "Chekov's gun and the use of perspectives: what makes Attack on Titan special"
-excerpt: "A few specific reasons why Attack on Titan redefined anime"
+excerpt: "Deconstructing the elements of Attack on Titan that redefined anime..."
 permalink: /aot-why/
-background: /assets/images/eren-zeke-ball.jpg
+header:
+    overlay_image: /assets/images/eren-zeke-ball.jpg
+    overlay_filter: 0.4
 tags:
   - anime
   - AOT

@@ -1,0 +1,45 @@
+{% if include.id %}
+  {% assign feature_row = page[include.id] %}
+{% else %}
+  {% assign feature_row = page.feature_row %}
+{% endif %}
+
+<div class="feature__wrapper">
+
+<div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+<div class="archive__item">
+{% if post.header.overlay_image %}
+  <div class="archive__item-teaser">
+    <a href="{{ post.url | relative_url }}"><img src="{{ post.header.overlay_image | relative_url }}"></a>
+  </div>
+{% elsif post.header.image %}
+  <div class="archive__item-teaser">
+    <a href="{{ post.url | relative_url }}"><img src="{{ post.header.image | relative_url }}"></a>
+  </div>
+{% else %}
+  <div class="archive__item-teaser">
+    <a href="{{ post.url | relative_url }}"><img src="/assets/images/posts/default_header.svg"></a>
+  </div>
+{% endif %}
+
+<div class="archive__item-body">
+  {% if post.title %}
+    <b class="archive__item-title">{{ post.title }}</b>
+  {% endif %}
+
+  <div class="archive__item-excerpt" markdown=1>
+  {% if include.show_tags == "true" %}
+  {% for tag in post.tags limit:3 %}
+  <a href="/tags/#{{ tag }}" class="btn btn--info btn--small">{{ tag }}</a>
+  {% endfor %}
+  {% endif %}
+  **{{ post.date | date: "%b %Y" | upcase }}**.&nbsp;&nbsp;
+  {% if post.excerpt %}{{ post.excerpt | truncate:200 }}&nbsp;&nbsp;{%- endif -%}
+  <a href="{{ post.url | relative_url }}" class="btn btn--danger">{{ post.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+  </div>
+
+</div>
+</div>
+</div>
+
+</div>

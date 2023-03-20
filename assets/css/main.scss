@@ -10,7 +10,7 @@ search: false
 
 // remove the footer
 .page__footer {
-	display: none;
+	// display: none;
 }
 
 
@@ -45,8 +45,13 @@ a,a:hover {
 	}
 }
 
-.page__hero--overlay {
-	height: 30em;
+.page__hero--overlay .page__lead {
+	min-height: 6em;
+}
+
+.page__hero--overlay .page__title {
+	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .pub__authors {
@@ -73,3 +78,4 @@ a,a:hover {
 		margin-left: 4%;
 	}
 }
+
