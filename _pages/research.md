@@ -9,8 +9,7 @@ This is a list of my publications (and preprints) and the projects that I am cur
 
 ## Ongoing Projects
 
-- A new auxiliary model approach to studying fermionic systems of strong correlation
-- Holographic entanglement in free fermionic quantum matter: hierarchy & topology
+- A new auxiliary model approach to studying metal-insulator transitions in bulk lattice models; connecting the infinite dimensional auxiliary model to a finite dimensional system without resorting to self-consistency
 - Kondo model in magnetic field: breakdown of Kondo effect and its consequences for symmetry breaking, entanglement loss and the measurement problem
 
 ## Publications and Preprints

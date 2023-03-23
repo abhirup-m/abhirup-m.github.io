@@ -120,9 +120,9 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/updates/">Updates</a>
             </li><li class="masthead__menu-item">
-              <a href="/work/">Interests</a>
+              <a href="/work/">Research Interests</a>
             </li><li class="masthead__menu-item">
-              <a href="/research/">Research</a>
+              <a href="/research/">Work</a>
             </li><li class="masthead__menu-item">
               <a href="/blogs/">Blogs</a>
             </li><li class="masthead__menu-item">
@@ -318,17 +318,39 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        
-<p><b>Frustration shapes multi-channel Kondo physics: a star graph perspective   </b><br />
-<span class="pub__authors">Siddhartha Patra, <b>Abhirup Mukherjee</b>, Anirban Mukherjee, N. S. Vidhyadhiraja, A. Taraphder, Siddhartha Lal</span>
-<br />
-May 2, 2022   <a href="https://arxiv.org/abs/2205.00790" class="btn btn--primary">2205.0079</a></p>
+        <h2 id="some-background-and-questions-addressed">Some background and questions addressed</h2>
 
-<hr />
+<p>This work is devoted towards understanding how various important properties of multi-channel Kondo (MCK) physics (e.g., the nature of its criticality and the emergence of gapless local non-Fermi liquid excitations) arise from the frustration of spin-singlet order and ground state degeneracy in the system. We recall that the absence of Fermi liquid excitations, an imperfect screening of impurity local moment, and a \(T=0\) divergence of the impurity susceptibility are some of the defining features that make the MCK problem different from its single-channel counterpart. However, the structure of the ground-state manifold of this problem, and the quantum entanglement encoded therein, remain unknown in general. This is due to the lack of an effective Hamiltonian at the intermediate-coupling critical fixed point that defines the low energy physics of the problem.</p>
 
-<p>We study the overscreened multi-channel Kondo (MCK) model using the recently developed unitary renormalization group (URG) technique. Our results display the importance of ground state degeneracy in explaining various important properties like the breakdown of screening and the presence of local non-Fermi liquids. The impurity susceptibility of the intermediate coupling fixed point Hamiltonian in the zero-bandwidth (or star graph) limit shows a power-law divergence at low temperature, signalling its critical nature. Despite the absence of inter-channel coupling in the MCK fixed point Hamiltonian, the study of mutual information between any two channels shows non-zero correlation between them. A spectral flow analysis of the star graph reveals that the degenerate ground state manifold possesses topological quantum numbers.</p>
+<p>This elicits the following questions:</p>
+<ul>
+  <li>
+    <p>Can features of the ground state Hilbert space be used to obtain fresh insights on the criticality and emergence of non-Fermi liquids in the MCK?</p>
+  </li>
+  <li>
+    <p>How is the entanglement of the ground state and lowest-lying excited states different from the single-channel case?</p>
+  </li>
+  <li>
+    <p>Does the orthogonality catastrophe of the ground state show up in any of these measures? Answering such important questions is the primary goal of our work.</p>
+  </li>
+</ul>
 
-<p>The low energy effective Hamiltonian obtained upon adding a finite non-zero conduction bath dispersion to the star graph Hamiltonian for both the two and three-channel cases displays the presence of local non-Fermi liquids arising from inter-channel quantum fluctuations. Discontinuous behaviour is observed in several measures of ground state entanglement, signalling the underlying orthogonality catastrophe associated with the degenerate ground state manifold. We extend our results to underscreened and perfectly screened MCK models through duality arguments. A study of channel anisotropy under renormalisation flow reveals a series of quantum phase transitions due to the change in ground state degeneracy. Our work thus presents a template for the study of how a degenerate ground state manifold arising from symmetry and duality properties in a multichannel quantum impurity model can lead to novel multicritical phases at intermediate coupling.</p>
+<p class="body__img"><img src="/assets/images/mck/mckondo.svg" alt="" />
+Multichannel Kondo model, where the central impurity spin (red sphere) interacts with multiple conduction channels (brown and gray spheres). The two channels try to force opposite configurations on the impurity spin, leading to its frustration.</p>
+
+<h2 id="methods-and-main-results">Methods and main results</h2>
+
+<p>We begin by employing the unitary renormalisation group (URG) formalism developed recently by us to derive the low energy intermediate coupling fixed point effective Hamiltonian of the MCK with \(N\) conduction channels. In the zero-bandwidth limit, the effective Hamiltonian corresponds to a star graph model of the impurity moment interacting with \(N\) spin\(-1/2\) moments via Heisenberg antiferromagnetic exchange. This makes apparent the frustration inherent in the problem, and reveals the fact that the start graph model possesses a \(N\)-fold degenerate ground-state manifold. The critical behaviour of the effective Hamiltonian is captured via a zero-temperature discontinuity in the impurity magnetization and a related divergence in the impurity susceptibility. The topological feature of the ground state manifold can be captured through spectral flow arguments. We also find that a local Mott liquid is formed from the conduction bath moments that couple to the impurity, and formed by inter-channel interactions (induced by the impurity).</p>
+
+<p>The availability of an effective Hamiltonian has further enabled the study of the ground state wavefunction of the MCK. For example, we have been able to display the inter-channel and intra-channel entanglement structure, unveil a discontinuity in various entanglement measures such as the \(N-\)partite information (for \(N&gt;1\)), and employed the Bures distance measure to capture the orthogonality catastrophe in the MCK system. We have also identified two kinds of duality transformations in the MCK models, and show how they constrain the nature of the RG flows as well as connect between the overscreened and underscreened versions of the problem. We end by studying the effect of channel-anisotropic perturbations on the Kondo couplings: the impurity phase transitions here are shown to be related to changes in the ground state degeneracy structure of the model. While the main results are presented in the manuscript, we have provided various detailed derivations and additional results in the Supplementary Materials. Thus, our work offers a host of new results on the entanglement features of the multi-channel Kondo problem, and the central role of quantum frustration in describing its signature properties.</p>
+
+<p class="body__img"><img src="/assets/images/mck/zero_mode.png" alt="" />
+(a) Schematic diagram of 8−channel multichannel Kondo model zero mode. (b) All-to-all model obtained by disentangling the impurity spin from the bath zero modes. \(C_\mu\) is a particular closed
+curve. (c) Translated configuration along the curve \(C_\mu\) by one unit.</p>
+
+<h2 id="main-results-importance-of-the-star-graph-zero-mode">Main results: Importance of the star graph zero mode</h2>
+
+<p>Upon the addition of electronic dispersion to the zero-bandwidth model, we have derived the effective Hamiltonian for two-channel and three-channel (shown in the Supplementary Materials provided along with the main manuscript). These effective Hamiltonians clearly show the absence of local Fermi liquid due to the exact cancellation of terms associated with degenerate ground states, and the emergence of non-Fermi liquid (NFL) excitations arising from the related orthogonality catastrophe. Importantly, the RG equation is seen to be guided by the scattering phase shift arising from those members of the degenerate ground state manifold of the star graph that cause the maximal impurity magnetisation; the intermediate coupling fixed point of the MCK is seen to correspond to a function of this scattering phase shift. The algebraic behaviour of the impurity contribution to the specific heat and magnetic susceptibility, as well as the fractional value of the impurity entropy at \(T=0\), are also observed to be related to this scattering phase shift. Thus, our results establish the central role played by ground state degeneracy in governing the physics of the MCK, including the emergence of the NFL phase and various thermodynamic properties associated with it.</p>
 
         
       </section>
@@ -445,6 +467,27 @@ May 2, 2022   <a href="https://arxiv.org/abs/2205.00790" class="btn btn--prim
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/dps-day-2023/" rel="permalink">Got to showcase my work in a poster session held on the occasion of DPS Days 2023
+</a>
+      
+    </h2>
+    
+
+
+    <p class="archive__item-excerpt" itemprop="description">The department of physical sciences at IISER Kolkata held its DPS Day(s) this year on March 17 and 18. This is an event where we host invited talks on variou...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/2302.10590/" rel="permalink">Our latest work on holographic renormalisation of entanglement in metals is now available on the arxiv.
 </a>
       
@@ -474,28 +517,6 @@ May 2, 2022   <a href="https://arxiv.org/abs/2205.00790" class="btn btn--prim
 
 
     <p class="archive__item-excerpt" itemprop="description">In this work, we provide a Hamiltonian-based explanation of the phenomenology of DMFT, obtaining new insights on then MIT along the way.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/aot-physics/" rel="permalink">The causality loop in Shingeki no Kyojin: Is there a paradox?
-</a>
-      
-    </h2>
-    
-
-
-    <p class="archive__item-excerpt" itemprop="description">Decoding the laws of physics in the world of Attack on Titan.
 </p>
   </article>
 </div>

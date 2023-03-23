@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: Blog posts on scripting, website-building and anime
+title: Blog-style posts on python & bash scripting, website-building, anime and other stuff
 classes: wide
 author_profile: false
 permalink: /blogs/

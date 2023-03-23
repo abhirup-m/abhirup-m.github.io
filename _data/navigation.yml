@@ -1,9 +1,9 @@
 main:
   - title: "Updates"
     url: /updates/
-  - title: "Interests"
+  - title: "Research Interests"
     url: /work/
-  - title: "Research"
+  - title: "Work"
     url: /research/
   - title: "Blogs"
     url: /blogs/
