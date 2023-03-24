@@ -31,7 +31,7 @@ I am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iis
 
 ## Master's thesis work
 
-A short abstract of my master's research work and the thesis itself can be found [here](/ms-thesis/). I studied an extended Anderson impurity model using an analytical non-perturbative renormalisation group method.
+A short abstract of my master's research work and the thesis itself can be found [here](/assets/pdfs/ms_thesis.pdf). I studied an extended Anderson impurity model using an analytical non-perturbative renormalisation group method.
 
 ## Informal write-ups
 
