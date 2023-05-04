@@ -45,7 +45,7 @@ a,a:hover {
 	}
 }
 
-.page__hero--overlay .page__lead {
+.page__hero--overlay {
 	min-height: 6em;
 }
 
@@ -59,28 +59,7 @@ a,a:hover {
 	opacity: 0.8;
 }
 
-
-// styles each column of the two-column layout on the home page.
-// makes the width of each column ~50% on large screens and 
-// 100% on small screens. sets the float accordingly.
-.home__column {
-	margin: auto;
-	@include breakpoint($medium) {
-		width:48%;
-		float:left;
-	}
-}
-
-// sets the spacing between the two columns on the home page.
-.home__column + .home__column {
-	@include breakpoint($medium) {
-		width:48%;
-		margin-left: 4%;
-	}
-}
-
 .caption {
 	text-align: center;
-	opacity: 0.7;
 	font-style: italic;
 }

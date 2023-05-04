@@ -27,7 +27,7 @@ Modern day masterpiece **Attack on Titan** (AOT) is undoubtedly **the** most con
 
 **Needlesss to say, I will be spoiling all of Attack on Titan that has been aired until now (that is, upto the Final Season Part 2). You have been warned. There are no manga spoilers though.**
 
-## 1. Quantum entanglement connects all Subjects of Ymir
+## Quantum entanglement connects all Subjects of Ymir
 
 ![](/assets/images/aot-physics/connected.jpg)
 
@@ -39,7 +39,7 @@ For the uninitiated, quantum entanglement is a weird phenomenon where two the pr
 
 Eren addressing all Subjects of Ymir using the Founding titan's power can then be understood as a result of quantum entanglement between the Subjects and the Coordinate. Just as volunteer $$V_2$$ can detect the colour of $$V_1$$'s ball simply by checking their own ball, the Subjects can know immediately what Eren's brain is thinking by listening within their own brains.
 
-## 2. The Paths represent wormholes that connect all Eldians
+## The Paths represent wormholes that connect all Eldians
 
 ![](/assets/images/aot-physics/ymir_eren_paths.jpeg)
 
@@ -49,7 +49,7 @@ A wormhole (also known as Einstein-Rosen bridge) is, loosely speaking, a hypothe
 
 In light of the thesis presented in the previous point (that all subjects of Ymir are entangled with the Founding titan through the Paths), the Paths must be the corresponding wormholes that connect the entangled parties. For example, when Zeke screams and turns people who have consumed his spinal fluid into pure titans, he is actually channeling his intent and commands through the aforementioned wormhole. When Founder Ymir creates and heals titans, she sends the muscles and bones through these wormholes. That is why the bodies of titans appear almost instantaneously and out of thin air.
 
-## 3. Time flow in the Paths is orthogonal to that in the physical world
+## Time flow in the Paths is orthogonal to that in the physical world
 
 ![](/assets/images/aot-physics/zeke_paths.jpg)
 
@@ -61,13 +61,13 @@ Orthogonal dimensions are nothing special. On a chess board, horizontal and vert
 
 Consider the particular instant in real time when Gabi blows off Eren's head (as represented by the red mark in the figure). One now has the freedom to move along "Paths time" by traversing the vertical blue axis that starts from the red mark, while keeping "real time" fixed at that that mark. This leads, for example, to the fact that Eren and Zeke spend many years in Paths time going through Grisha's memories (longish green mark) while staying fixed at the red mark in "real time".
 
-## 4. Superluminal propagation of information
+## Superluminal propagation of information
 
 ![](/assets/images/aot-physics/eren_address.jpg)
 
 In the physical world, there is a limit to how fast any information-carrying signal can travel. This limit is set by the speed of light in vacuum, which is roughly 3 followed by 8 zeroes, in the SI units. No information can be transmitted at arbitrarily high speeds. This is however not true in the world of Attack on Titan, because the Paths make it possible to transmit information instantaneously over arbitrarily large distances. This was used by Eren to address all Subjects of Ymir living across the world. This superluminal propagation is again made possible because of the wormhole-like property of the Paths.
 
-## 5. Past, Present and Future coexist 
+## Past, Present and Future coexist 
 
 ![](/assets/images/aot-physics/past_present.jpg)
 
