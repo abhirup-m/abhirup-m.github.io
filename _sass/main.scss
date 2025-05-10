@@ -1,0 +1,137 @@
+@use 'constants';
+
+html {
+  background-color: constants.$bg-color;
+  color: constants.$fg-color;
+  max-width: constants.$width;
+  width: 100%;
+  font-family: constants.$font;
+  font-size: constants.$size;
+  font-weight: constants.$weight;
+  margin: auto;
+  margin-top: constants.$margin;
+  text-align: justify;
+}
+
+h1 {
+  color: constants.$h1-color;
+  font-weight: 600;
+  font-family: constants.$hn-font;
+  margin: 0.0em;
+  margin-top: 1em;
+  line-height: 1.2em;
+}
+
+h2 {
+  line-height: 1.2em;
+  color: constants.$hn-color;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-family: constants.$hn-font;
+}
+
+a {
+  color: constants.$emph-color;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {
+    > p {
+      margin: 0;
+    }
+}
+
+ul { 
+  margin-top: 0;
+}
+
+ul > li {
+  list-style: square;
+}
+
+ul > li::marker {
+  list-style: square;
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: constants.$button-color;
+  color: constants.$bg-color;
+  border-radius: 4px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: constants.$margin;
+  padding-bottom: 0.5em;
+  border-bottom: 0.1em solid constants.$emph-color;
+  > a {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: constants.$hn-color;
+  }
+}
+
+.publication-time {
+  color: constants.$emph-color;
+  font-weight: bold;
+}
+.publication-reference {
+  color: constants.$h1-color;
+  font-weight: bold;
+}
+.publication-authors {
+  color: constants.$emph-color;
+  font-weight: bold;
+}
+
+.publication-title {
+  font-style: italic;
+}
+
+.author {
+  text-decoration: underline;
+  text-underline-offset: 4pt;
+}
+
+.katex .katex-html { 
+  font-family: "Fira Math";
+  font-size: 0.8em;
+}
+
+.katex-display {
+  font-size: 1.15em;
+  background-color: rgba(constants.$fg-color, 0.1);
+  padding: 1em;
+  margin-top: -0.5em !important;
+  margin-bottom: -0.5em !important;
+}
+
+figure {
+  max-width: constants.$width;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+figcaption {
+  color: constants.$button-color;
+  font-weight: bold;
+}
+
+img {
+  max-width: constants.$width;
+  text-align: center;
+}
+
+.excerpt {
+  // font-size: 0.9em;
+  // color: constants.$button-color;
+  font-style: italic;
+}

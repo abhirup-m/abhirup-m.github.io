@@ -1,27 +1,19 @@
 ---
-layout: splash
+layout: default
 permalink: /
-title: "Welcome to my website!"
-excerpt: "I am currently [pursuing](/research/) a  PhD in theoretical condensed matter physics. I spend the rest of my time watching anime, dabbling in website design and writing python and bash scripts."
-header:
-  overlay_image: /assets/images/home/layered-waves-haikei.svg
-  actions:
-      - label: "More about me"
-        url: /about/
-      - label: "Contact info"
-        url: /about/#contact-information
-      - label: "Updates"
-        url: /updates/
 ---
 
-## Recent Updates [(see all)](/updates/){:.btn}
+# Hey There!
+Welcome to my website. I am **Abhirup**, a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
+I work in **theoretical condensed matter physics**, and am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group.
+I study various topics in the field of **strongly correlated materials**. 
 
-{% for post in site.categories["manuscript"] limit:2 %}
-{% include feature_row_posts.html type="left" %}
+## Recent Publications and Preprints
+{% for work in site.data.publications limit:2 %}
+- {% include publicationInfo.html %}
 {% endfor %}
 
-## Miscellaneous News [(see all)](/updates/){:.btn}
-
-{% for post in site.categories["update"] limit:2 %}
-- **{{ post.title }}**&nbsp;&nbsp;<br>{{ post.date | date: "%b %d, %Y" | upcase }}.&nbsp;&nbsp;[Learn More]({{ post.url | relative_url }}){: .btn .btn--danger }
+## Blogs
+{% for post in site.categories["blog"] limit:2 %}
+- {{ post.title }} 
 {% endfor %}

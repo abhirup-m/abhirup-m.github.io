@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+<body>
+	<nav class="navbar">
+	{% for pair in site.data.navbar %}
+	<a href={{ pair["url"] }}>{{ pair["show"] }}</a>
+	{% endfor %}
+	</nav>
+	{{ content }}
+
+</body>
+
+</html>
