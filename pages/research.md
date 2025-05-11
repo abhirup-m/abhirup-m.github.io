@@ -19,5 +19,5 @@ I work in theoretical condensed matter physics, more specifically on **strongly 
 # Publications and Preprints
 
 {% for work in site.data.publications %}
-- {% include publicationInfo.html %}
+- {% include publicationInfo.html showAuthor=true %}
 {% endfor %}

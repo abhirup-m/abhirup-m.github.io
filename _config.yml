@@ -1,5 +1,5 @@
 locale                   : "en-US"
-title                    : "Abhirup's website"
+title                    : "The Basement"
 title_separator          : "-"
 subtitle                 : "Abhirup Mukherjee"
 name                     : "Abhirup Mukherjee"
@@ -33,6 +33,7 @@ kramdown:
   enable_coderay: false
   math_engine: katex
   parse_block_html: true
+  highlighter: rouge
 
 # Defaults
 defaults:

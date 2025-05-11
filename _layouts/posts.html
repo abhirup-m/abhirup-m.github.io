@@ -12,4 +12,9 @@ layout: default
 
 <hr>
 
+<h2>Table of contents</h2>
+{% if page.toc == true %}
+{% include toc.html sanitize=true html=content h_min=2 h_max=2 skip_no_ids=true %}
+{% endif %}
+
 {{ content }}

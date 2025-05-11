@@ -108,10 +108,10 @@ ul > li::marker {
 
 .katex-display {
   font-size: 1.15em;
-  background-color: rgba(constants.$fg-color, 0.1);
-  padding: 1em;
-  margin-top: -0.5em !important;
-  margin-bottom: -0.5em !important;
+  background-color: constants.$bg-color-lighter;
+  padding: 0.5em;
+  // margin-top: -0.5em !important;
+  // margin-bottom: -0.5em !important;
 }
 
 figure {
@@ -134,4 +134,25 @@ img {
   // font-size: 0.9em;
   // color: constants.$button-color;
   font-style: italic;
+}
+
+code {
+  color: constants.$code-color;
+  font-size: 0.9em;
+  // font-family: "Iosevka";
+}
+
+.highlight {
+  text-align: left;
+  margin: 0;
+  margin-top: -0.5em;
+  padding: 0.5em;
+  overflow: scroll;
+  max-height: 500px;
+  scrollbar-width: none; /* Firefox */
+  background-color: constants.$bg-color-lighter;
+}
+.highlight::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
