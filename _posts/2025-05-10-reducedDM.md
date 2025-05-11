@@ -150,4 +150,3 @@ rho_subsystem = C_matrix * C_matrix.H
 ```
 
 This is enough to obtain the RDM for the simplified case of continuous subsystems.
-
