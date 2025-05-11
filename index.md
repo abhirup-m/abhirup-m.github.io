@@ -14,7 +14,5 @@ I work in **theoretical condensed matter physics**, and am a part of the Emergen
 
 ## Blogs
 {% for post in site.posts limit:2 %}
-- **{{ post.title }}**
-<br>
-{{ post.date | date: "%-d %B, %Y"}}&nbsp;&nbsp;[Read More]({{ post.permalink }})
+{% include blogInfo.html %}
 {% endfor %}

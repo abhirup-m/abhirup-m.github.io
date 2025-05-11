@@ -4,7 +4,5 @@ permalink: /blogs/
 ---
 
 {% for post in site.posts %}
-- **{{ post.title }}**
-<br>
-{{ post.date | date: "%-d %B, %Y"}}&nbsp;&nbsp;[Read More]({{ post.permalink }})
+{% include blogInfo.html %}
 {% endfor %}

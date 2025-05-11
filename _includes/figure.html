@@ -10,9 +10,9 @@
   	{% assign currentWidth = widths[forloop.index0] %}
   {% endif %}
   {% if currentWidth != blank %}
-  	<img src="{{ image }}" width="{{ currentWidth }}" />
+  	<img src="{{ image | relative_url }}" width="{{ currentWidth }}" />
   {% else %}
-  	<img src="{{ image }}" width="600px" />
+  	<img src="{{ image | relative_url }}" width="600px" />
   {% endif %}
   {% endfor %}
   <figcaption>FIG {{ figCounter }}. {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
