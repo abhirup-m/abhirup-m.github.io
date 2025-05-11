@@ -5,20 +5,39 @@ html {
   color: constants.$fg-color;
   max-width: constants.$width;
   width: 100%;
-  font-family: constants.$font;
+  font-family: constants.$font, constants.$emoji-font !important;
   font-size: constants.$size;
   font-weight: constants.$weight;
   margin: auto;
   margin-top: constants.$margin;
   text-align: justify;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+html::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - constants.$footer-height - 10px);
+  gap: 0;
+  // margin: 0;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
   color: constants.$h1-color;
   font-weight: 600;
   font-family: constants.$hn-font;
-  margin: 0.0em;
-  margin-top: 1em;
+  // margin: 0.0em;
+  // margin-top: 1em;
   line-height: 1.2em;
 }
 
@@ -68,10 +87,11 @@ ul > li::marker {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: constants.$margin;
   padding-bottom: 0.5em;
-  border-bottom: 0.1em solid constants.$emph-color;
+  margin-bottom: constants.$margin;
+  // border-bottom: 0.2em solid rgba(constants.$hn-color, 1);
   > a {
     font-weight: 700;
     font-size: 1.2em;
@@ -102,7 +122,7 @@ ul > li::marker {
 }
 
 .katex .katex-html { 
-  font-family: "Fira Math";
+  font-family: constants.$math-font;
   font-size: 0.8em;
 }
 
@@ -155,4 +175,23 @@ code {
 .highlight::-webkit-scrollbar { /* WebKit */
     width: 0;
     height: 0;
+}
+
+header {
+  margin-bottom: 1em;
+  border-bottom: 3px solid constants.$fg-color;
+}
+
+footer {
+  height: constants.$footer-height;
+  margin-top: constants.$margin;
+  padding-top: 20px;
+  text-align: center;
+  color: constants.$hn-color;
+  border-top: 3px solid constants.$hn-color;
+  > a {
+    color: constants.$hn-color;
+    text-decoration: underline;
+    padding-left: 1em;
+  }
 }

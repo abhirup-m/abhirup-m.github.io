@@ -3,10 +3,10 @@ title: Research and Publications
 permalink: /research/
 ---
 
-# Broad Research Area
+## Broad Research Area
 I work in theoretical condensed matter physics, more specifically on **strongly correlated fermionic systems**. Strong correlation refers to interaction that cannot be expressed purely in terms of single-particle scattering. I am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group. The group's work involves studying correlated fermionic and spin models and obtaining novel emergent states of matter such as superconductivity, non-Fermi liquids, etc.
 
-# More Specifically...
+## More Specifically...
 
 - **Quantum impurity models** and phase transitions within them, with particular emphasis on universal behaviour near Kondo breakdown, and **non-Fermi liquid behaviour** about such points.
 
@@ -16,7 +16,7 @@ I work in theoretical condensed matter physics, more specifically on **strongly 
 
 - **Quantum hall systems** and other topologically active states of matter.
 
-# Publications and Preprints
+## Publications and Preprints
 
 {% for work in site.data.publications %}
 - {% include publicationInfo.html showAuthor=true %}
