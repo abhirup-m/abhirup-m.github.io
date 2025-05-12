@@ -9,7 +9,8 @@ $code-color: #509fff;
 
 $margin: 2em;
 $width: 1000px;
-$footer-height: 50px;
+$footer-height: 60px;
+$footer-gap: 20px;
 
 $font: "Lato";
 $hn-font: "Hero New";
@@ -17,3 +18,6 @@ $math-font: "Fira Math";
 $emoji-font: "Noto Color Emoji";
 $weight: 400;
 $size: 14pt;
+
+$breakpoint1: $width;
+$breakpoint2: 500px;

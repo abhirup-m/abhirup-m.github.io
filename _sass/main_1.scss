@@ -21,20 +21,30 @@ body {
   margin-top: $margin;
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - $footer-height - 10px);
   gap: 0;
-  min-height: calc(100vh - $footer-height + $footer-gap);
+}
+
+@media only screen and (max-width: 1000px)  {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 main {
-  flex-grow: 1;
+  flex: 1;
 }
 
 h1 {
   color: $h1-color;
   font-weight: 600;
   font-family: $hn-font;
+  // margin: 0.0em;
+  // margin-top: 1em;
   line-height: 1.2em;
-  text-align: left;
 }
 
 h2 {
@@ -43,7 +53,6 @@ h2 {
   margin-bottom: 0.1em;
   font-weight: 600;
   font-family: $hn-font;
-  text-align: left;
 }
 
 a {
@@ -127,8 +136,8 @@ ul > li::marker {
   font-size: 1.15em;
   background-color: $bg-color-lighter;
   padding: 0.5em;
-  overflow-x: scroll;
-  scrollbar-width: none; /* Firefox */
+  // margin-top: -0.5em !important;
+  // margin-bottom: -0.5em !important;
 }
 
 figure {
@@ -181,7 +190,8 @@ header {
 
 footer {
   height: $footer-height;
-  margin-top: $footer-gap;
+  margin-top: $margin;
+  padding-top: 20px;
   text-align: center;
   color: $hn-color;
   border-top: 3px solid $hn-color;
@@ -189,23 +199,5 @@ footer {
     color: $hn-color;
     text-decoration: underline;
     padding-left: 1em;
-  }
-  align-content: center;
-}
-
-@media only screen and (max-width: $breakpoint1)  {
-  body {
-    width: 100vw;
-    // max-width: 100%;
-  }
-  main {
-    margin-left: $margin;
-    margin-right: $margin;
-  }
-}
-
-@media only screen and (max-width: $breakpoint2)  {
-  html {
-    font-size: 1em;
   }
 }

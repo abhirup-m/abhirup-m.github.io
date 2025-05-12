@@ -1,8 +1,11 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href={{ "assets/css/styles.css" | relative_url }}>
+  <link rel="stylesheet" href={{ "assets/fonts/Lato/stylesheet.css" | relative_url }}>
+  <link rel="stylesheet" href={{ "assets/fonts/Hero New/stylesheet.css" | relative_url }}>
+  <link rel="stylesheet" href={{ "assets/fonts/Fira Math/stylesheet.css" | relative_url }}>
   <meta name="description" content={{ site.description }}>
 
   <meta property="og:title" content={{ page.title }}>
@@ -11,7 +14,6 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
 
   <!-- KaTeX -->
   {% if page.katex %}
