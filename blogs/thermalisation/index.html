@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>The Basement</title>
+  <link rel="stylesheet" href=/assets/css/styles.css>
+  <link rel="stylesheet" href=/assets/fonts/Lato/stylesheet.css>
+  <link rel="stylesheet" href=/assets/fonts/Hero%20New/stylesheet.css>
+  <link rel="stylesheet" href=/assets/fonts/Fira%20Math/stylesheet.css>
+  <meta name="description" content=Graduate student, India.>
+
+  <meta property="og:title" content=From Chaos to Order: The Eigenstate Thermalisation Hypothesis>
+  <meta property="og:url" content=/blogs/thermalisation/>
+  <meta property="og:image" content=>
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <!-- KaTeX -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+              // ...options...
+          });
+      });
+  </script>
+  
+</head>
+
+<body>
+	<nav class="navbar">
+	
+	<a href=/>Home</a>
+	
+	<a href=/research/>Research</a>
+	
+	<a href=/blogs/>Blogs</a>
+	
+	</nav>
+	<main>
+	<header>
+<h1> From Chaos to Order: The Eigenstate Thermalisation Hypothesis </h1>
+<p class="excerpt"> This article explains how quantum systems can appear to reach thermal equilibrium, even though their evolution is fully reversible and depends on initial conditions. It introduces the Eigenstate Thermalisation Hypothesis (ETH), which suggests that the behavior of small parts of large quantum systems becomes independent of their initial state due to interactions with the rest of the system. Through simple spin models and numerical examples, the article shows how increasing the number of particles leads to thermal-like behavior. It is intended for undergraduate physics students familiar with basic quantum mechanics and thermodynamics. </p>
+<p>
+<b>Date:</b> 22 September, 2024
+<br>
+<b>Category:</b> Physics
+</p>
+</header>
+
+<h2>Table of contents</h2>
+
+
+<h2 id="thermalisation-in-classical-systems-irreversability-and-role-of-temperature">Thermalisation in Classical Systems: Irreversability and Role of Temperature</h2>
+
+<p>If we place a large number \(N\) of oxygen molecules in a corner of an isolated box and wait for some time, what would be the final distribution of the speeds of the molecules? The answer is, to a very good approximation, the Maxwell-Boltzmann distribution function:</p>
+
+\[f(v) = \left(\frac{m}{2\pi k_B T}\right)^\frac{3}{2} \exp\left(-\frac{m v^2}{2k_B T}\right) ~,\]
+
+<p>where \(m\) is the mass of each molecule, \(k_B\) is the Boltzmann constant and \(T\) is the temperature of the system, fixed by the total energy \(U\) through the equipartition theorem \(U = \frac{3}{2}N k_B T\). This is one example of the power of statistical thermodynamics: given only the macroscopic parameter \(T\), it allows the calculation of average quantities to very high accuracies. This experiment is shown in Fig. 1.</p>
+
+<p>It is useful to examine some qualitative features of this solutions:</p>
+<ul>
+  <li>The Maxwell-Boltzmann distribution is <em>independent of the initial conditions</em>, except through the total energy \(U\). No matter how the molecules are initially setup, time evolution ensures that they end up in the same distribution.</li>
+  <li>The time evolution is <em>irreversible</em>. Even if all the molecules start out with identical speeds, they will almost certainly end up with speeds that are distributed at differing values, according to the above-mentioned distribution.</li>
+</ul>
+
+<figure>
+
+  	<img src="/assets/images/blogs/thermalisation/boxMolecules.svg" width="" />
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;figcaption&gt;FIG 1. Molecules kept at the corner of a box in an orderly fashion results in their speeds getting distributed according the Maxwell-Boltzmann distribution (right panel).
+</code></pre></div>  </div>
+  <p>&lt;/figcaption&gt;</p>
+
+</figure>
+
+<p>Within the formulation of statistical mechanics, they are explained using the <em>ergodic hypothesis</em>: given enough time, each molecule explores the entirety of its available phase space, and in doing so, the measured value is equal to the average within the patch of phase space at the appropriate energy <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> <sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>.</p>
+
+<h2 id="can-quantum-systems-thermalise">Can Quantum Systems Thermalise?</h2>
+<p>While this explanation makes sense from a classical standpoint, it is <em>hugely problematic for quantum evolution</em>. Given a system of \(N\) particles with a many-particle wavefunction \(\ket{\Psi(0)}\) described by a Hamiltonian \(\mathcal{H}\), the state of the system a later time \(t\) is given by (setting \(\hbar\) to 1)</p>
+
+\[\ket{\Psi(t)} = \exp\left(-i \mathcal{H}t\right) \ket{\Psi(0)}~.\]
+
+<p>Both of the qualitative features mentioned in the previous section are absent in quantum time evolution: the evolution is <em>time-reversible</em>, and the final state depends on the <em>details of the initial state</em> \(\ket{\Psi(0)}\). This is easily demonstrated by a simple model.</p>
+
+<figure>
+
+  	<img src="/assets/images/blogs/thermalisation/twoSpin.svg" width="500" />
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;figcaption&gt;FIG 2. Systems of two spins. The interact with each other through spin-flip processes.
+</code></pre></div>  </div>
+  <p>&lt;/figcaption&gt;</p>
+
+</figure>
+
+<p>Consider two spins interacting with each other through simultaneous flips; if one flips down, the other must flip up, and vice versa (Fig. 2). The operator for an up(down) flip is \(S^+\left(S^-\right)\), so the Hamiltonian describing this process is</p>
+
+\[\mathcal{H} = S_1^+ S_2^- + S_2^+ S_1^-~.\]
+
+<p>The first term flips the first spin up and the second spin down, while the second term does the opposite. We perform two parallel time evolution calculations, one with the initial state \(\ket{\Psi(0)} = \ket{\uparrow, \downarrow}\) (red curve in Fig. 3), and another with the initial state \(\ket{\Psi(0)} = \ket{\downarrow, \uparrow}\) (orange curve). For both the cases, we calculate the time evolution of the \(z-\)component of the first spin, defined as \(\braket{\Psi(t)\vert S_1^z\vert \Psi(t)}\), \(S_1^z\) being the \(z-\)component of the first spin. The results are shown in Fig. 3, and we can draw the following conclusions:</p>
+
+<ul>
+  <li>The time evolution <em>does depend on initial conditions</em>. The curve that starts from the \(\ket{\uparrow,\downarrow}\) state does not in general match with the curve that starts from the \(\ket{\downarrow,\uparrow}\) state.</li>
+  <li>The evolution is reversible; the <em>initial values are recovered</em> at every \(8^\text{th}\) time step. This reversibility is also encoded in the fact that the evolution is unitary and all information is preserved in the process.</li>
+</ul>
+
+<p>The challenge then is the following: If we expect our universe to be fundamentally quantum, how do we reconcile these two features with those of <em>thermalization</em> (described above). More specifically, <em>how can unitary quantum evolution lead to a thermal state</em> that has no memory of the initial state and that is in accordance with the predictions of thermodynamics?</p>
+
+<figure>
+
+  	<img src="/assets/images/blogs/thermalisation/manySpin-2.png" width="600" />
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;figcaption&gt;FIG 3. Time evolution the average spin along \(z-\)direction for the first spin. The red curve is for an initial state where the first spin is up and the second one is down, while the orange curve starts with a flipped initial state. The evolution is obtained by applying the time evolution operator \(\exp\left(-i \mathcal{H}t\right)\) on the initial state.
+</code></pre></div>  </div>
+  <p>&lt;/figcaption&gt;</p>
+
+</figure>
+
+<h2 id="the-eigenstate-thermalisation-hypothesis">The Eigenstate Thermalisation Hypothesis</h2>
+<p>In the late twentieth century, the <em>eigenstate thermalisation hypothesis</em> (ETH) was proposed as a solution to the above question <sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup> <sup id="fnref:4"><a href="#fn:4" class="footnote" rel="footnote" role="doc-noteref">4</a></sup>. It is an ansatz for the matrix elements of operators \(\mathcal{O}\) in the eigenbasis \(\left\{ \ket{n} \right\}\)of the Hamiltonian:</p>
+
+\[\mathcal{O}_{mn} = \mathcal{O}(\bar E)\delta_{m,n} + e^{-S(\bar E)/2}f_{\mathcal{O}}R_{mn}~.\]
+
+<p>The ansatz certainly looks more intimdating than it is; it says that given an observable \(\mathcal{O}\) that can be measured in a laboratory, its matrix elements \(\mathcal{O}_{mn} = \braket{ m \vert \mathcal{O} \vert n }\) in the eigenbasis of the Hamiltonian is equal to the microcanonical expectation value  \(\mathcal{O}(\bar E)\) at the average energy \(\bar E = (E_m + E_n)/2\)  if \(m=n\), and it obtains corrections that are exponentially suppressed by the entropy \(S\). Since \(S\) is extensive, these corrections vanish in the thermodynamic limit \(N \to \infty\). Such an ansatz of course immediately <em>explains the thermal behaviour</em> of statistical mechanics, almost as a matter of principle, because in any eigenstate \(\ket{m}\) of the system at energy \(E_m\), the expectation value of the operator will be, to a very good approximation, \(\mathcal{O}(\bar E)\), which is the expected value.</p>
+
+<p>More importantly, we should analyse what this means for the mechanism of thermalisation in quantum systems. The ETH tells us that quantum systems <em>thermalise locally</em>; even though the evolution of the total system is reversible and dependent on the initial conditions, the temporal behaviour of any small subsystem (a single particle, a single point in space, etc) becomes incoherent very fast. This happens because the information of the initial configuration of any individual particle gets <em>scrambled through interactions</em> with a macroscopic number of particles. This also explains the title of the article: multiple initial states (chaos) lead to the same value of the local observable (order) <sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup>.</p>
+
+<h2 id="quantum-thermalisation-in-action">Quantum Thermalisation in Action</h2>
+
+<figure>
+
+  	<img src="/assets/images/blogs/thermalisation/manySpins.svg" width="700" />
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;figcaption&gt;FIG 4. Model of several interacting spins. Each spin interacts with the two spins on each side of itself, through coordinated spin-flips.
+</code></pre></div>  </div>
+  <p>&lt;/figcaption&gt;</p>
+
+</figure>
+
+<p>The upshot of the previous section was that quantum systems thermalise through interactions with other particles. This also explains why we did not see thermalisation in Fig. 3 - there weren’t enough interacting spins present to allow local information to scramble! To see the emergence of information scrambling as the number of spins are increased, we perform the same computations but now for \(N=8\) and \(N=14\) spins, for similar kind of Hamiltonians (each spin interacts with its neighbouring spins through spin-flips). The model is shown in Fig. 4.</p>
+
+<p>The results are shown in Fig. 5, and effect of increasing number of spins is quite apparent! Compared to the case of \(N=2\) (shown in Fig. 3), the long-time evolution of both the initial states are approaching similar values, and the effect is more pronounced for \(N=14\) than for \(N=8\). This demonstrates how local measurements on a many-particle system display the loss of initial state memory (both the initial states approach similar values as \(t\to\infty\)) as well as the emergence of irreversibility (the oscillations get suppressed).</p>
+
+<figure>
+
+  	<img src="/assets/images/blogs/thermalisation/manySpin-8.png" width="600" />
+
+  	<img src="/assets/images/blogs/thermalisation/manySpin-14.png" width="600" />
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;figcaption&gt;FIG 5. Evolution of expectation value of \(z-\)component of first spin for \(N=8\) spins and \(N=14\) spins. As \(N\) is increased, the values better thermalise to common values.
+</code></pre></div>  </div>
+  <p>&lt;/figcaption&gt;</p>
+
+</figure>
+
+<h2 id="looking-beyond">Looking Beyond</h2>
+<p>It should now be clear from the above discussion that the thermalisation we see around us (and that are in agreement with statistical thermodynamics) likely results, more fundamentally, from the <em>quantum interactions between system and universe</em>. This is expressed formally by the ETH, and demonstrated in Fig. 5. While there is yet no derivation of the ETH, it has been tested on various systems and has proven to be quite successful. Heuristic justifications of the ETH come from <em>random matrix theory</em> (RMT): it can be proved that eigenvectors of random matrices satisfy an equation similar to ETH, and the leap from RMT to quantum mechanics is then made by saying that interacting systems of a large number of particles are sufficiently complicated so as to be <em>well-represented by random matrices</em>. On the frontier, research is being carried out on exotic systems that <em>violate the hypothesis</em> (and hence the predictions of statistical mechanics) <sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>. People are also looking into fundamental open questions such as the relation between ETH and entanglement.</p>
+
+<h2 id="references">References</h2>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>“A. P. Luca D’Alessio, Yariv Kafri and M. Rigol, From quantum chaos and eigenstate thermalization to statistical mechanics and thermodynamics, Advances in Physics 65, 239 (2016).” <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>“J. M. Deutsch, Eigenstate thermalization hypothesis, Reports on Progress in Physics 81, 082001 (2018).” <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>“M. Srednicki, Chaos and quantum thermalization, Phys. Rev. E 50, 888 (1994).” <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>“J. M. Deutsch, Quantum statistical mechanics in a closed system, Phys. Rev. A 43, 2046 (1991).” <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>“M. Rigol, V. Dunjko, and M. Olshanii, Thermalization and its mechanism for generic isolated quantum systems, Nature 452, 854 (2008).” <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>“S. Sinha, S. Ray, and S. Sinha, Classical route to ergodicity and scarring in collective quantum systems, Journal of Physics: Condensed Matter 36, 163001 (2024).” <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+	</main>
+	<footer markdown="1">
+	Made with ☕ and Jekyll.
+</footer>
+
+</body>
+
+</html>
