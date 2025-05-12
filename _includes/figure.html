@@ -1,4 +1,3 @@
-{% assign figCounter = figCounter | plus:1 %}
 {% assign images = include.image | split: ", " %}
 {% assign widths = include.width | split: ", " %}
 {% assign length = widths | size %}
@@ -10,10 +9,14 @@
   	{% assign currentWidth = widths[forloop.index0] %}
   {% endif %}
   {% if currentWidth != blank %}
-  	<img src="{{ image | relative_url }}" width="{{ currentWidth }}" />
+  {% assign imagePath = page.permalink | append: image | prepend: "/assets/images" %}
+  	<img src="{{ imagePath | relative_url }}" width="{{ currentWidth }}" />
   {% else %}
-  	<img src="{{ image | relative_url }}" width="600px" />
+  	<img src="{{ imagePath | relative_url }}" width="600px" />
   {% endif %}
   {% endfor %}
-  <figcaption>FIG {{ figCounter }}. {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+  {% if include.caption %}
+	  {% assign figCounter = figCounter | plus:1 %}
+	  <figcaption>FIG {{ figCounter }}. {{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+  {% endif %}
 </figure>
