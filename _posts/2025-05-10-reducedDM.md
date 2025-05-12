@@ -13,7 +13,7 @@ Since this article is primarily for demonstrating the computation of reduced den
 
 A density matrix plays the role of a probability density function (PDF) for a quantum system. A classical variable $$ X $$ that can take values $$ x \in [-X^*, X^*] $$ has a PDF $$ F(X=x) $$, which is used, for example, for calculating the average value (expectation value) of the variable:
 
-$$ \begin{gather} \braket{X} = \int_{-X^*}^{X^*} xF(x)dx ~. \end{gather} $$
+$$ \braket{X} = \int_{-X^*}^{X^*} xF(x)dx ~. $$
 
 In quantum mechanics, the variables we are interested in are operators $$ \mathcal{O} $$, and a quantum PDF $$ \rho $$ will then give the expectation value of the operator, in a fashion similar to its classical counterpart:
 
