@@ -130,23 +130,22 @@ import numpy as np
 ### subsystem being traced over has m qubits ###
 ### these are assumed to be defined ###
 
-# get spectrum
-eigvals, eigvecs = eigen(hamiltonian)
+###### algorithm for RDM calculation ######
 
-# get groundstate
-gstate = eigvecs[:, 0]
+# 1. get spectrum (eigvals and eigvecs)
 
-# define the subsystem being traced over
-tracedIndices = range(m)
+# 2. store ground state in gstate variable 
+#    (simply the first element of eigvecs)
 
-# the untraced system is the obviously the remaining indices
-nonTracedIndices = range(m, N)
+# 3. store dimension of traced and untraced Hilbert spaces
+#    in separate variables sizeTraced and sizeUntraced
+#    (these sizes are simply 2**N_1 and 2**N_2, where N_1
+#     and N_2 are the number of qubits being traced over
+#     and not being traced over, respectively.)
 
-# reshape the gstate into the C-tensor of size (2^m, 2^(N-m))
-C_matrix = np.reshape(gstate, (2**m, 2**(N-m))) 
+# 4. create C_matrix by reshaping gstate into size (sizeTraced, sizeUntraced)
 
-# finally obtain the RDM using the expression mentioned above
-rho_subsystem = C_matrix * C_matrix.H
+# 5. finally obtain the subsystem RDM using the expression C * C^\dagger
 ```
 
 This is enough to obtain the RDM for the simplified case of continuous subsystems.
