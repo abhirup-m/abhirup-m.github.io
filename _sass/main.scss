@@ -1,9 +1,11 @@
+@use 'constants';
+
 html {
-  background-color: $bg-color;
-  color: $fg-color;
-  font-family: $font, $emoji-font !important;
-  font-size: $size;
-  font-weight: $weight;
+  background-color: constants.$bg-color;
+  color: constants.$fg-color;
+  font-family: constants.$font, constants.$emoji-font !important;
+  font-size: constants.$size;
+  font-weight: constants.$weight;
   text-align: justify;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
@@ -15,14 +17,14 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 body {
-  max-width: $width;
+  max-width: constants.$width;
   width: 100%;
   margin: auto;
-  margin-top: $margin;
+  margin-top: constants.$margin;
   display: flex;
   flex-direction: column;
   gap: 0;
-  min-height: calc(100vh - $footer-height + $footer-gap);
+  min-height: calc(100vh - constants.$footer-height + constants.$footer-gap);
 }
 
 main {
@@ -30,24 +32,24 @@ main {
 }
 
 h1 {
-  color: $h1-color;
+  color: constants.$h1-color;
   font-weight: 600;
-  font-family: $hn-font;
+  font-family: constants.$hn-font;
   line-height: 1.2em;
   text-align: left;
 }
 
 h2 {
   line-height: 1.2em;
-  color: $hn-color;
+  color: constants.$hn-color;
   margin-bottom: 0.1em;
   font-weight: 600;
-  font-family: $hn-font;
+  font-family: constants.$hn-font;
   text-align: left;
 }
 
 a {
-  color: $emph-color;
+  color: constants.$emph-color;
   text-decoration: none;
   font-weight: bold;
 }
@@ -72,8 +74,8 @@ ul > li::marker {
 }
 
 .button {
-  background-color: $button-color;
-  color: $bg-color;
+  background-color: constants.$button-color;
+  color: constants.$bg-color;
   border-radius: 4px;
   padding: 2px;
   padding-left: 4px;
@@ -85,27 +87,27 @@ ul > li::marker {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: $margin;
+  gap: constants.$margin;
   padding-bottom: 0.5em;
-  margin-bottom: $margin;
-  // border-bottom: 0.2em solid rgba($hn-color, 1);
+  margin-bottom: constants.$margin;
+  // border-bottom: 0.2em solid rgba(constants.$hn-color, 1);
   > a {
     font-weight: 700;
     font-size: 1.2em;
-    color: $hn-color;
+    color: constants.$hn-color;
   }
 }
 
 .publication-time {
-  color: $emph-color;
+  color: constants.$emph-color;
   font-weight: bold;
 }
 .publication-reference {
-  color: $h1-color;
+  color: constants.$h1-color;
   font-weight: bold;
 }
 .publication-authors {
-  color: $emph-color;
+  color: constants.$emph-color;
   font-weight: bold;
 }
 
@@ -119,42 +121,45 @@ ul > li::marker {
 }
 
 .katex .katex-html { 
-  font-family: $math-font;
+  font-family: constants.$math-font;
   font-size: 0.8em;
+}
+.katex-mathml {
+  display: none;
 }
 
 .katex-display {
   font-size: 1.15em;
-  background-color: $bg-color-lighter;
+  background-color: constants.$bg-color-lighter;
   padding: 0.5em;
   overflow-x: scroll;
   scrollbar-width: none; /* Firefox */
 }
 
 figure {
-  max-width: $width;
+  max-width: constants.$width;
   margin: auto;
   display: block;
   text-align: center;
 }
 figcaption {
-  color: $button-color;
+  color: constants.$button-color;
   font-weight: bold;
 }
 
 img {
-  max-width: $width;
+  max-width: constants.$width;
   text-align: center;
 }
 
 .excerpt {
   // font-size: 0.9em;
-  // color: $button-color;
+  // color: constants.$button-color;
   font-style: italic;
 }
 
 code {
-  color: $code-color;
+  color: constants.$code-color;
   font-size: 0.9em;
   // font-family: "Iosevka";
 }
@@ -167,7 +172,7 @@ code {
   overflow: scroll;
   max-height: 500px;
   scrollbar-width: none; /* Firefox */
-  background-color: $bg-color-lighter;
+  background-color: constants.$bg-color-lighter;
 }
 .highlight::-webkit-scrollbar { /* WebKit */
     width: 0;
@@ -176,35 +181,35 @@ code {
 
 header {
   margin-bottom: 1em;
-  border-bottom: 3px solid $fg-color;
+  border-bottom: 3px solid constants.$fg-color;
 }
 
 footer {
-  height: $footer-height;
-  margin-top: $footer-gap;
+  height: constants.$footer-height;
+  margin-top: constants.$footer-gap;
   text-align: center;
-  color: $hn-color;
-  border-top: 3px solid $hn-color;
+  color: constants.$hn-color;
+  border-top: 3px solid constants.$hn-color;
   > a {
-    color: $hn-color;
+    color: constants.$hn-color;
     text-decoration: underline;
     padding-left: 1em;
   }
   align-content: center;
 }
 
-@media only screen and (max-width: $breakpoint1)  {
+@media only screen and (max-width: constants.$breakpoint1)  {
   body {
     width: 100vw;
     // max-width: 100%;
   }
   main {
-    margin-left: $margin;
-    margin-right: $margin;
+    margin-left: constants.$margin;
+    margin-right: constants.$margin;
   }
 }
 
-@media only screen and (max-width: $breakpoint2)  {
+@media only screen and (max-width: constants.$breakpoint2)  {
   html {
     font-size: 1em;
   }

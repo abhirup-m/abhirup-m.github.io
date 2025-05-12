@@ -1,0 +1,47 @@
+#grid {
+	border: 10px solid #90ee90;
+	border-bottom: 10px solid #90ee90;
+	height: 80vh;
+	width: 90vw;
+	margin: auto;
+}
+
+
+.square {
+	float: left;
+	display: inline-block;
+	visibility: hidden;
+}
+
+.food {
+	transform: scale(3);
+	background-color: #FF6863;
+	border-radius: 10px;
+	visibility: visible;
+}
+
+
+.snake {
+	transform: scale(2);
+	background-color: #027DFF;
+	border-radius: 20px;
+	visibility: visible;
+}
+
+.ruler {
+  border: none;
+  border-top: 10px dotted green;
+}
+
+.footer {
+	display: flex;
+	margin-top: 1em;
+	width: 90vw;
+	margin: auto;
+}
+
+#score {
+	font-size: 2em;
+	font-weight: bold;
+	margin: auto;
+}
