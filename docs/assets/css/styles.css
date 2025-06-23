@@ -209,6 +209,9 @@ footer > a {
   html {
     font-size: 1em;
   }
+  img {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
