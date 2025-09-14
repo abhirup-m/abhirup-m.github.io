@@ -16,6 +16,8 @@ I work in theoretical condensed matter physics, more specifically on **strongly 
 
 - **Quantum hall systems** and other topologically active states of matter.
 
+Feel free to check out my [research statement](/res-state/) for more technical details.
+
 ## Publications and Preprints
 
 {% for work in site.data.publications %}
