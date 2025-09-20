@@ -4,3 +4,5 @@
   url: "/research/"
 - show: "Blogs"
   url: "/blogs/"
+- show: "Toys"
+  url: "/toys/"

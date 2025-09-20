@@ -26,7 +26,7 @@ body {
 }
 
 main {
-  margin: auto;
+  margin: calc(50vw - 450px);
   max-width: 900px;
   margin-top: 2em;
   flex-grow: 1;
@@ -52,7 +52,7 @@ h2 {
 h3 {
   line-height: 1.2em;
   color: #f28482;
-  margin-bottom: 0.1em;
+  margin-bottom: -0.7em;
   font-weight: 600;
   font-family: "Hero New";
   text-align: left;

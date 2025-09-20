@@ -26,7 +26,7 @@ body {
 }
 
 main {
-  margin: auto;
+  margin: calc(50vw - 0.5 * constants.$width);
   max-width: constants.$width;
   margin-top: constants.$margin;
   flex-grow: 1;
@@ -52,7 +52,7 @@ h2 {
 h3 {
   line-height: 1.2em;
   color: constants.$hn-color;
-  margin-bottom: 0.1em;
+  margin-bottom: -0.7em;
   font-weight: 600;
   font-family: constants.$hn-font;
   text-align: left;
