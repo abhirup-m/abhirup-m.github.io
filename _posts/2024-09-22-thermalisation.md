@@ -1,5 +1,6 @@
 ---
 title: "From Chaos to Order: The Eigenstate Thermalisation Hypothesis"
+toc: true
 permalink: /blogs/thermalisation/
 category: Physics
 refs: eth

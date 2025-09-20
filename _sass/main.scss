@@ -17,17 +17,18 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 body {
-  max-width: constants.$width;
   width: 100%;
-  margin: auto;
-  margin-top: constants.$margin;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
-  min-height: calc(100vh - constants.$footer-height + constants.$footer-gap);
+  min-height: calc(100vh);
 }
 
 main {
+  margin: auto;
+  max-width: constants.$width;
+  margin-top: constants.$margin;
   flex-grow: 1;
 }
 
@@ -41,6 +42,15 @@ h1 {
 
 h2 {
   line-height: 1.2em;
+  color: constants.$h2-color;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-family: constants.$hn-font;
+  text-align: left;
+}
+
+h3 {
+  line-height: 1.2em;
   color: constants.$hn-color;
   margin-bottom: 0.1em;
   font-weight: 600;
@@ -49,9 +59,13 @@ h2 {
 }
 
 a {
-  color: constants.$emph-color;
+  color: constants.$link-color;
   text-decoration: none;
   font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 li {
@@ -74,32 +88,45 @@ ul > li::marker {
 }
 
 .button {
-  background-color: constants.$button-color;
+  background-color: constants.$h1-color;
   color: constants.$bg-color;
+  font-size: 0.9rem;
   border-radius: 4px;
   padding: 2px;
   padding-left: 4px;
   padding-right: 4px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translate(2px, 0px);
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .navbar {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: constants.$margin;
-  padding-bottom: 0.5em;
-  margin-bottom: constants.$margin;
-  // border-bottom: 0.2em solid rgba(constants.$hn-color, 1);
-  > a {
+  align-items: center;
+  gap: constants.$bar-ele-gap;
+  height: constants.$bar-height;
+  > * {
+    color: constants.$fg-color;
     font-weight: 700;
-    font-size: 1.2em;
-    color: constants.$hn-color;
+    font-size: 0.9em;
+  }
+  > a:hover {
+    text-decoration: none;
   }
 }
 
 .publication-time {
-  color: constants.$emph-color;
+  color: constants.$link-color;
   font-weight: bold;
 }
 .publication-reference {
@@ -107,7 +134,7 @@ ul > li::marker {
   font-weight: bold;
 }
 .publication-authors {
-  color: constants.$emph-color;
+  color: constants.$link-color;
   font-weight: bold;
 }
 
@@ -137,14 +164,20 @@ ul > li::marker {
 }
 
 figure {
-  max-width: constants.$width;
   margin: auto;
+  padding: constants.$fig-pad;
+  padding-top: calc(0.5 * constants.$fig-pad);
+  padding-bottom: calc(0.5 * constants.$fig-pad);
   display: block;
   text-align: center;
+  background-color: rgba(constants.$bg-color-lighter, 0.3);
+  > * > img {
+    max-width: calc(constants.$width - 2 * constants.$fig-pad);
+  }
 }
 figcaption {
-  color: constants.$button-color;
-  font-weight: bold;
+  font-family: constants.$code-font;
+  font-size: 0.9em;
 }
 
 img {
@@ -153,15 +186,13 @@ img {
 }
 
 .excerpt {
-  // font-size: 0.9em;
-  // color: constants.$button-color;
   font-style: italic;
 }
 
 code {
   color: constants.$code-color;
-  font-size: 0.9em;
-  // font-family: "Iosevka";
+  font-size: 0.8em;
+  font-family: constants.$code-font;
 }
 
 .highlight {
@@ -180,22 +211,24 @@ code {
 }
 
 header {
-  margin-bottom: 1em;
-  border-bottom: 3px solid constants.$fg-color;
+  background-color: constants.$bar-color;
+  width: 100%;
 }
 
 footer {
-  height: constants.$footer-height;
-  margin-top: constants.$footer-gap;
-  text-align: center;
-  color: constants.$hn-color;
-  border-top: 3px solid constants.$hn-color;
+  background-color: constants.$bar-color;
+  color: constants.$fg-color;
+  height: constants.$bar-height;
   > a {
-    color: constants.$hn-color;
-    text-decoration: underline;
-    padding-left: 1em;
+    color: constants.$fg-color;
   }
-  align-content: center;
+  > a:hover {
+    text-decoration: none;
+  }
+  display: flex;
+  gap: constants.$bar-ele-gap;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: constants.$breakpoint1)  {
@@ -217,3 +250,14 @@ footer {
     max-width: 100%;
   }
 }
+
+.nf-dev-google {
+  color: constants.$google;
+}
+.nf-dev-github {
+  // color: white;
+}
+.nf-md-email_check {
+  color: constants.$email;
+}
+

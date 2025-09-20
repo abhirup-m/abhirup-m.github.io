@@ -1,3 +1,8 @@
 <footer markdown="1">
-	Made with ☕ and Jekyll.
+	{%- for pair in site.data.socials -%}
+	{% assign k = pair[0] %}
+	{% assign class = site.data.nf-class[k] %}
+	<a class="nf {{ class }} icon" href="{{ pair[1] }}"></a>
+	{%- endfor -%}
+	<span>Updated: &nbsp;<b>{{ "now" | date: "%b %d, %Y" }}</b> </span>
 </footer>

@@ -1,5 +1,6 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 html {
-  background-color: #353535;
+  background-color: #2a2a2f;
   color: #eee;
   font-family: "Lato", "Noto Color Emoji" !important;
   font-size: 14pt;
@@ -16,17 +17,18 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 body {
-  max-width: 900px;
   width: 100%;
-  margin: auto;
-  margin-top: 2em;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 0;
-  min-height: calc(100vh - 60px + 20px);
+  min-height: 100vh;
 }
 
 main {
+  margin: auto;
+  max-width: 900px;
+  margin-top: 2em;
   flex-grow: 1;
 }
 
@@ -47,10 +49,24 @@ h2 {
   text-align: left;
 }
 
+h3 {
+  line-height: 1.2em;
+  color: #f28482;
+  margin-bottom: 0.1em;
+  font-weight: 600;
+  font-family: "Hero New";
+  text-align: left;
+}
+
 a {
-  color: #fca311;
+  color: #E5AA70;
   text-decoration: none;
   font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 li > p {
@@ -71,31 +87,45 @@ ul > li::marker {
 }
 
 .button {
-  background-color: #c0c0c0;
-  color: #353535;
+  background-color: #f5cb5c;
+  color: #2a2a2f;
+  font-size: 0.9rem;
   border-radius: 4px;
   padding: 2px;
   padding-left: 4px;
   padding-right: 4px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translate(2px, 0px);
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .navbar {
-  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2em;
-  padding-bottom: 0.5em;
-  margin-bottom: 2em;
+  align-items: center;
+  gap: 2rem;
+  height: 50px;
 }
-.navbar > a {
+.navbar > * {
+  color: #eee;
   font-weight: 700;
-  font-size: 1.2em;
-  color: #ef8354;
+  font-size: 0.9em;
+}
+.navbar > a:hover {
+  text-decoration: none;
 }
 
 .publication-time {
-  color: #fca311;
+  color: #E5AA70;
   font-weight: bold;
 }
 
@@ -105,7 +135,7 @@ ul > li::marker {
 }
 
 .publication-authors {
-  color: #fca311;
+  color: #E5AA70;
   font-weight: bold;
 }
 
@@ -136,15 +166,21 @@ ul > li::marker {
 }
 
 figure {
-  max-width: 900px;
   margin: auto;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: block;
   text-align: center;
+  background-color: rgba(59, 59, 59, 0.3);
+}
+figure > * > img {
+  max-width: calc(900px - 2rem);
 }
 
 figcaption {
-  color: #c0c0c0;
-  font-weight: bold;
+  font-family: "Hack";
+  font-size: 0.9em;
 }
 
 img {
@@ -157,8 +193,9 @@ img {
 }
 
 code {
-  color: #509fff;
-  font-size: 0.9em;
+  color: #9ef01a;
+  font-size: 0.8em;
+  font-family: "Hack";
 }
 
 .highlight {
@@ -178,22 +215,24 @@ code {
 }
 
 header {
-  margin-bottom: 1em;
-  border-bottom: 3px solid #eee;
+  background-color: #22333b;
+  width: 100%;
 }
 
 footer {
-  height: 60px;
-  margin-top: 20px;
-  text-align: center;
-  color: #ef8354;
-  border-top: 3px solid #ef8354;
-  align-content: center;
+  background-color: #22333b;
+  color: #eee;
+  height: 50px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 footer > a {
-  color: #ef8354;
-  text-decoration: underline;
-  padding-left: 1em;
+  color: #eee;
+}
+footer > a:hover {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -212,6 +251,13 @@ footer > a {
   img {
     max-width: 100%;
   }
+}
+.nf-dev-google {
+  color: #1976D2;
+}
+
+.nf-md-email_check {
+  color: #F44F5A;
 }
 
 /*# sourceMappingURL=styles.css.map */

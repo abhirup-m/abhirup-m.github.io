@@ -41,6 +41,7 @@ defaults:
   - scope:
       type: posts
     values:
+      toc: true
       layout: posts
       katex: true
       figCounter: 1

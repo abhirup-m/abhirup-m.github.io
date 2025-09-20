@@ -3,11 +3,7 @@
 
 {% include head.html %}
 <body>
-	<nav class="navbar">
-	{% for pair in site.data.navbar %}
-	<a href={{ pair["url"] | relative_url }}>{{ pair["show"] }}</a>
-	{% endfor %}
-	</nav>
+	{% include header.html %}
 	<main>
 	{{ content }}
 	</main>

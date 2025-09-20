@@ -3,9 +3,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href={{ "assets/css/styles.css" | relative_url }}>
-  <link rel="stylesheet" href={{ "assets/fonts/Lato/stylesheet.css" | relative_url }}>
-  <link rel="stylesheet" href={{ "assets/fonts/Hero New/stylesheet.css" | relative_url }}>
-  <link rel="stylesheet" href={{ "assets/fonts/Fira Math/stylesheet.css" | relative_url }}>
+
+  {% for file in site.static_files %}
+  {% if file.path contains "/assets/fonts/" %}
+  {% if file.path contains "/stylesheet.css" %}
+  <link rel="stylesheet" href={{ file.path | relative_url }}>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
   <meta name="description" content={{ site.description }}>
 
   <meta property="og:title" content={{ page.title }}>
