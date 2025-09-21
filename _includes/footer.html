@@ -4,5 +4,5 @@
 	{% assign class = site.data.nf-class[k] %}
 	<a class="nf {{ class }} icon" href="{{ pair[1] }}"></a>
 	{%- endfor -%}
-	<span>Updated: &nbsp;<b>{{ "now" | date: "%b %d, %Y" }}</b> </span>
+	<i>Updated: &nbsp;{{ "now" | date: "%b %Y" }} </i>
 </footer>

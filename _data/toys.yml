@@ -1,0 +1,21 @@
+Fermions.jl:
+  url: https://github.com/abhirup-m/Fermions.jl
+  desc: "**Fermions.jl is a toolkit for designing and analysing second-quantised many-particle Hamiltonians of electrons**, potentially interacting with each other. The main point in designing this library is to abstract away the detailed task of writing matrices for many-body Hamiltonians and operators (for correlations functions) with large Hilbert spaces; all operators (including Hamiltonians) can be specified using predefined symbols, and the library then provides functions for diagonalising such Hamiltonians and computing observables within the states. 
+
+  Some useful features include (i) freedom in constructing fermionic Hamiltonians, (ii) ability to specify any general correlation function by using fermionic operators, and (iii) an iterative diagonalization function that is useful for working with systems of larger sizes."
+InScight Magazine Website:
+  url: https://github.com/InScight-Magazine/InScight-Magazine.github.io
+  desc: "**InScight-Magazine.github.io is a static website that provides an online interface to _InScight_, the IISER Kolkata science magazine**. The website is designed using Jekyll, and is meant to be extremely simple and fast. The templating is carried out using Liquid. Apart from displaying all articles and interviews that appear in the print version, it also provides an interactive interface for the various games such as quizzes, crosswords, etc."
+
+InScight Magazine Print Templates:
+  url: https://github.com/InScight-Magazine/Print-Templates.git
+  desc: "**InScight Magazine Print Templates is a set of template files written in Typst for generating a consistent polished magazine**. I use it for generating PDFs of the IISER Kolkata science magazine InScight. **Typst** allows the implementation of various rules for styling and formatting content. It also ensures that the formatting is uniform even when several people collaborate to create an issue. This helps us obtain a consistent design of the magazine across the pages."
+Crosswords.jl:
+  url: https://github.com/abhirup-m/Crosswords.jl
+  desc: "**Crosswords.jl is a crossword generator written in Julia**. It accepts an input file which contains the list of words to be put on the crossword and some other requirements for the crossword (size etc), and tries to obtain a compatible arrangement of words on a grid that satisfies all requirements. If such an arrangement is found, it spits out an output file with sufficient details to reconstruct the grid using a suitable parser."
+Backup Manager:
+  url: https://github.com/abhirup-m/Backup-Manager.git
+  desc: "**Backup Manager is a very simple python script for backing up dotfiles and other configuration files**. Specify full paths of files that you want backed up in sources.json, and run backupManager.py; it copies these folders into a backup folder created within the repository. Also works for system files (such as pacman.conf, doas.conf, etc), as long as you specify the paths properly. Additionally, creates list of gtk themes, icon themes and fonts stored in specified folders (~/.themes, ~/.icons etc). Backs up conda environment, if path to conda binary is provided."
+Research Profile Constructor:
+  url: https://github.com/abhirup-m/Research-Profile.git
+  desc: "**Research Profile Constructor is a set of typst source files and associated resources for generating various professional documents related to my research profile, including cover letters, CVs, research statements, and publication lists**. The point of using typst and keeping everything together is to ensure all files have a uniform style and design. The documents linked at various places on this website ([research statement](/assets/documents/researchStatement_AbhirupMukherjee.pdf), [Cv](/assets/documents/CurrVitae_AbhirupMukherjee.pdf) and [publications list](/assets/documents/publications_AbhirupMukherjee.pdf)) have been generated using this template."

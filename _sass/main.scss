@@ -22,14 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
-  min-height: calc(100vh);
+  min-height: 100vh;
 }
 
 main {
   margin: calc(50vw - 0.5 * constants.$width);
+  min-height: calc(100% - constants.$bar-height - 2 * constants.$margin);
   max-width: constants.$width;
   margin-top: constants.$margin;
-  flex-grow: 1;
+  margin-bottom: constants.$margin;
+  flex: 1;
 }
 
 h1 {
@@ -56,6 +58,10 @@ h3 {
   font-weight: 600;
   font-family: constants.$hn-font;
   text-align: left;
+}
+
+b, strong {
+  color: constants.$bold-color;
 }
 
 a {
@@ -116,7 +122,7 @@ ul > li::marker {
   gap: constants.$bar-ele-gap;
   height: constants.$bar-height;
   > * {
-    color: constants.$fg-color;
+    color: constants.$bold-color;
     font-weight: 700;
     font-size: 0.9em;
   }
@@ -217,10 +223,10 @@ header {
 
 footer {
   background-color: constants.$bar-color;
-  color: constants.$fg-color;
+  color: constants.$bold-color;
   height: constants.$bar-height;
   > a {
-    color: constants.$fg-color;
+    color: constants.$bold-color;
   }
   > a:hover {
     text-decoration: none;
@@ -234,7 +240,6 @@ footer {
 @media only screen and (max-width: constants.$breakpoint1)  {
   body {
     width: 100vw;
-    // max-width: 100%;
   }
   main {
     margin-left: constants.$margin;
@@ -255,7 +260,7 @@ footer {
   color: constants.$google;
 }
 .nf-dev-github {
-  // color: white;
+  color: constants.$github;
 }
 .nf-md-email_check {
   color: constants.$email;
