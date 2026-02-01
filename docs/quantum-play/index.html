@@ -668,10 +668,14 @@
   
   
   
+  
+  
+  
+  
   <meta name="description" content=Graduate student, India.>
 
-  <meta property="og:title" content=Publications and Preprints>
-  <meta property="og:url" content=/publications/>
+  <meta property="og:title" content=Seeing the Schrödinger Equation>
+  <meta property="og:url" content=/quantum-play/>
   <meta property="og:image" content=>
 
   <link rel="icon" href="/assets/images/favicon.svg" type="image/x-icon">
@@ -696,34 +700,25 @@
 </header>
 
 	<main>
-	<h1> Publications and Preprints </h1>
+	<h1> Seeing the Schrödinger Equation </h1>
 
-<h1 id="publications-and-preprints">Publications and Preprints</h1>
+<div>
+  <p><input id="potential" value="x**2" /><button id="run">Go!</button>&lt;/div&gt;</p>
 
-<p>Mott Criticality as the Confinement Transition of a Pseudogap-Mott Metal<span class="button">arXiv:2507.17201</span> 
-<br />
-<br /></p>
+  <div>
+    <svg id="plot" width="800" height="800"></svg>
+  </div>
 
-<p>Revealing the magnetic dimensional crossover in the Heisenberg ferromagnet CrSiTe<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow></mrow><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4511em;vertical-align:-0.15em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> through picosecond strain pulses<span class="button">PRB 111, L140414</span> 
-<br />
-<br /></p>
+  <script type="module">
+import { runSolver } from "/assets/solver/solver.js";
 
-<p>Holographic entanglement renormalisation for fermionic quantum matter: geometrical and topological aspects<span class="button">JPA: Math. Theor. 57 275401</span> 
-<br />
-<br /></p>
+document.getElementById("run").onclick = async () => {
+  const potential = document.getElementById("potential").value;
+  runSolver(potential);
+};
+</script>
 
-<p>Kondo frustration via charge fluctuations: a route to Mott localisation<span class="button">NJP 25 113011</span> 
-<br />
-<br /></p>
-
-<p>Frustration shapes multi-channel Kondo physics: a star graph perspective<span class="button">JPCM 35 315601</span> 
-<br />
-<br /></p>
-
-<p>Unveiling the Kondo cloud: unitary RG study of the Kondo model<span class="button">PRB 105, 085119</span> 
-<br />
-<br /></p>
-
+</div>
 
 
 	</main>

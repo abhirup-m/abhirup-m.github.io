@@ -266,3 +266,90 @@ footer {
   color: constants.$email;
 }
 
+
+.potential-box {
+  background: #2d333b; /* $bar-color */
+  border-radius: 6px;
+  color: #d9e1e9; /* $fg-color */
+  font-size: 0.95rem;
+  > p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+.potential-box label {
+  font-weight: 500;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.potential-box input {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  background: #22272e; /* $bg-color */
+  border: 1px solid #3b3b3b; /* $bg-color-lighter */
+  border-radius: 4px;
+  color: #d9e1e9;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9rem;
+}
+
+.potential-box input::placeholder {
+  color: #9aa4ad;
+}
+
+.potential-box input:focus {
+  outline: none;
+  border-color: #f28482; /* $hn-color */
+}
+
+button.apply-potential  {
+  padding: 0.35rem 0.75rem;
+  background: transparent;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  color: #d9e1e9;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+button:hover.apply-potential {
+  border-color: #E5AA70; /* $link-color */
+  color: #E5AA70;
+}
+
+button:active.apply-potential  {
+  background: #22272e;
+}
+
+#plot {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  min-height: 260px;
+
+  background: #2d333b;            /* $bar-color */
+  border-radius: 8px;
+  border: 1px solid #3b3b3b;       /* $bg-color-lighter */
+
+  color: #9aa4ad;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#plot svg {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  font-style: normal;   /* reset placeholder styling */
+  color: inherit;
+}
