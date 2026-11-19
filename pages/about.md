@@ -6,8 +6,9 @@ permalink: /about/
 
 {% include figure.html image="eqmat.jpg" width=500 %}
 
-I am a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), living in Kalyani, West Bengal, India.
-I work in theoretical condensed matter physics, and am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group.
+
+
+I am a postdoctoral research in the [_computational quantum many-body theory_ group](https://cqm.snu.ac.kr/home) at Seoul National University.
 I study various topics in the field of strongly correlated materials.
 
 ## Education

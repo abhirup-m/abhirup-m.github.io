@@ -4,8 +4,7 @@ permalink: /
 ---
 
 # Hey There!
-Welcome to my website. I am **Abhirup**, a research scholar at the Indian Institute of Science Education and Research Kolkata [(IISER Kolkata)](https://www.iiserkol.ac.in/), in India.
-I work in **theoretical condensed matter physics**, and am a part of the Emergent Phenomena and Quantum Matter ([EPQM](https://www.iiserkol.ac.in/~slal/index.html)) group. I study various topics in the field of **strongly correlated materials**. I also happen to be the co-founder of IISER Kolkata's science magazine [_InScight_](https://scicomm.iiserkol.ac.in/), and currently lead the graphic design and web-development unit.
+Welcome to my website. I am **Abhirup**, a postdoctoral research in the [_computational quantum many-body theory_ group](https://cqm.snu.ac.kr/home) at Seoul National University, South Korea. I work in **theoretical condensed matter physics**, focusing on **strongly correlated materials**. I obtained my PhD in the same field from the Indian Institute of Science Education and Research (IISER) Kolkata, India. I happen to be the co-founder of IISER Kolkata's student-run science magazine [_InScight_](https://scicomm.iiserkol.ac.in/), and currently lead the graphic design and web-development unit.
 
 ## Recent Publications and Preprints
 Check out [my CV](/assets/documents/CurrVitae_AbhirupMukherjee.pdf) if you are interested.
